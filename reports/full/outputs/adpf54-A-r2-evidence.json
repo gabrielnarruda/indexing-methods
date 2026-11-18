@@ -1,0 +1,1521 @@
+{
+  "run_id": "extraction-20261118T224432-f7fa4e",
+  "fields": [
+    {
+      "id": "identificacao",
+      "path": "/processo/identificacao",
+      "question": "Qual é a classe e o número do processo principal deste acórdão?",
+      "status": "filled",
+      "value": "ADPF 54 / DF",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p168-c0",
+          "quote": "ADPF 54 / DF",
+          "page": 168
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p232-c0",
+          "quote": "ADPF 54 / DF",
+          "page": 232
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p88-c0",
+          "quote": "ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL",
+          "page": 88
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p4-c0",
+          "quote": "ADPF 54 / DF",
+          "page": 4
+        }
+      ],
+      "reason": "O processo principal é identificado como ADPF 54 / DF em múltiplos trechos do documento, indicando que é a referência do processo principal.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é a classe e o número do processo principal deste acórdão?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p168-c0",
+            "adpf54-8db88a8c-p232-c0",
+            "adpf54-8db88a8c-p88-c0",
+            "adpf54-8db88a8c-p4-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "ADPF 54 / DF",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p168-c0",
+                "quote": "ADPF 54 / DF"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p232-c0",
+                "quote": "ADPF 54 / DF"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p88-c0",
+                "quote": "ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p4-c0",
+                "quote": "ADPF 54 / DF"
+              }
+            ],
+            "reason": "O processo principal é identificado como ADPF 54 / DF em múltiplos trechos do documento, indicando que é a referência do processo principal.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "ADPF 54 / DF",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p168-c0",
+                "quote": "ADPF 54 / DF"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p232-c0",
+                "quote": "ADPF 54 / DF"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p88-c0",
+                "quote": "ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL"
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p4-c0",
+                "quote": "ADPF 54 / DF"
+              }
+            ],
+            "reason": "O processo principal é identificado como ADPF 54 / DF em múltiplos trechos do documento, indicando que é a referência do processo principal.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "As passagens indicam que o processo principal é referenciado como 'ADPF 54 / DF' em múltiplas ocasiões, incluindo os chunks p168, p232 e p4. O chunk p88 menciona 'ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL', que confirma a classe do processo (ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL) e o número (54) com o estado (DF). O valor proposto 'ADPF 54 / DF' correspona",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "tribunal",
+      "path": "/processo/tribunal",
+      "question": "Qual tribunal proferiu o acórdão?",
+      "status": "filled",
+      "value": "Supremo Tribunal Federal",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p151-c0",
+          "quote": "Supremo Tribunal Federal",
+          "page": 151
+        }
+      ],
+      "reason": "O texto menciona 'Supremo Tribunal Federal' no início do primeiro trecho, indicando que este é o tribunal que proferiu o acórdão.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual tribunal proferiu o acórdão?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p151-c0",
+            "adpf54-8db88a8c-p423-c0",
+            "adpf54-8db88a8c-p424-c0",
+            "adpf54-8db88a8c-p425-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Supremo Tribunal Federal",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p151-c0",
+                "quote": "Supremo Tribunal Federal"
+              }
+            ],
+            "reason": "O texto menciona 'Supremo Tribunal Federal' no início do primeiro trecho, indicando que este é o tribunal que proferiu o acórdão.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Supremo Tribunal Federal",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p151-c0",
+                "quote": "Supremo Tribunal Federal"
+              }
+            ],
+            "reason": "O texto menciona 'Supremo Tribunal Federal' no início do primeiro trecho, indicando que este é o tribunal que proferiu o acórdão.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O tribunal mencionado nas passagens é o Supremo Tribunal Federal, que aparece repetidamente como o órgão responsável pelo acórdão em diferentes páginas do documento (páginas 151, 423, 424 e 425). O valor proposto 'Supremo Tribunal Federal' está diretamente confirmado nas citações fornecidas.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "relator",
+      "path": "/processo/relator",
+      "question": "Quem é o ministro relator da ADPF 54?",
+      "status": "filled",
+      "value": "MARCO AURÉLIO",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p418-c0",
+          "quote": "O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)",
+          "page": 418
+        }
+      ],
+      "reason": "O texto menciona explicitamente que o ministro Marco Aurélio é o relator da ADPF 54. O trecho indica que 'O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)' está envolvido no processo.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem é o ministro relator da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p418-c0",
+            "adpf54-8db88a8c-p431-c0",
+            "adpf54-8db88a8c-p367-c0",
+            "adpf54-8db88a8c-p430-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "MARCO AURÉLIO",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p418-c0",
+                "quote": "O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)"
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o ministro Marco Aurélio é o relator da ADPF 54. O trecho indica que 'O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)' está envolvido no processo.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "MARCO AURÉLIO",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p418-c0",
+                "quote": "O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)"
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o ministro Marco Aurélio é o relator da ADPF 54. O trecho indica que 'O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)' está envolvido no processo.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O ministro relator da ADPF 54 é Marco Aurélio, conforme as passagens que indicam que ele é designado como (RELATOR) em múltiplas ocasiões no texto do acórdão. As citações fornecidas mostram explicitamente que 'O SENHOR MINISTRO MARCO AURÉLIO (RELATOR)' está presente nas páginas 418, 430 e 431 do documento.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "requerente",
+      "path": "/partes/requerente",
+      "question": "Qual entidade é a requerente da ADPF 54?",
+      "status": "filled",
+      "value": "Entidade requerente da ADPF 54",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p3-c0",
+          "quote": "temática, de vez que congrega, no ápice da pirâmide das entidades sindicais, os trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto, sujeitando-se, em visão imprópria, à ação penal pública, considerado o tipo aborto.",
+          "page": 3
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p20-c0",
+          "quote": "O primeiro dia de audiência pública destinou-se a entidades religiosas e sociológicas. Os trabalhos iniciaram com a oitiva dos Drs. Luiz Antônio Bento e Paulo Silveira Martins Leão Júnior, representantes da Conferência Nacional dos Bispos do Brasil.",
+          "page": 20
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p310-c0",
+          "quote": "O SENHOR MINISTRO GILMAR MENDES - Senhor Presidente, estou fazendo essas observações porque a presença no debate das entidades religiosas faz com que, às vezes, essas entidades sejam quase que colocadas nesse julgamento no banco de réus, como se estivessem a fazer algo de indevido.",
+          "page": 310
+        }
+      ],
+      "reason": "A entidade requerente da ADPF 54 é identificada como sendo a entidade que propõe a argüição de descumprimento de preceito fundamental. No trecho, há menção a \"trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto\" e \"entidades religiosas e sociológicas\" que participaram de audiência pública. O trecho também menciona que a requerente se refere ao artigo 1º da Lei nº 9.882/99, que define a argüição de descumprimento de preceito fundamental. Portanto, a entidade requerente é aquele que propõe a argüição, que é identificada como entidades sindicais e religiosas.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual entidade é a requerente da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p3-c0",
+            "adpf54-8db88a8c-p20-c0",
+            "adpf54-8db88a8c-p310-c0",
+            "adpf54-8db88a8c-p297-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Entidade requerente da ADPF 54",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p3-c0",
+                "quote": "temática, de vez que congrega, no ápice da pirâmide das entidades sindicais, os trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto, sujeitando-se, em visão imprópria, à ação penal pública, considerado o tipo aborto."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "O primeiro dia de audiência pública destinou-se a entidades religiosas e sociológicas. Os trabalhos iniciaram com a oitiva dos Drs. Luiz Antônio Bento e Paulo Silveira Martins Leão Júnior, representantes da Conferência Nacional dos Bispos do Brasil."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p310-c0",
+                "quote": "O SENHOR MINISTRO GILMAR MENDES - Senhor Presidente, estou fazendo essas observações porque a presença no debate das entidades religiosas faz com que, às vezes, essas entidades sejam quase que colocadas nesse julgamento no banco de réus, como se estivessem a fazer algo de indevido."
+              }
+            ],
+            "reason": "A entidade requerente da ADPF 54 é identificada como sendo a entidade que propõe a argüição de descumprimento de preceito fundamental. No trecho, há menção a \"trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto\" e \"entidades religiosas e sociológicas\" que participaram de audiência pública. O trecho também menciona que a requerente se refere ao artigo 1º da Lei nº 9.882/99, que define a argüição de descumprimento de preceito fundamental. Portanto, a entidade requerente é aquele que propõe a argüição, que é identificada como entidades sindicais e religiosas.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Entidade requerente da ADPF 54",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p3-c0",
+                "quote": "temática, de vez que congrega, no ápice da pirâmide das entidades sindicais, os trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto, sujeitando-se, em visão imprópria, à ação penal pública, considerado o tipo aborto."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "O primeiro dia de audiência pública destinou-se a entidades religiosas e sociológicas. Os trabalhos iniciaram com a oitiva dos Drs. Luiz Antônio Bento e Paulo Silveira Martins Leão Júnior, representantes da Conferência Nacional dos Bispos do Brasil."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p310-c0",
+                "quote": "O SENHOR MINISTRO GILMAR MENDES - Senhor Presidente, estou fazendo essas observações porque a presença no debate das entidades religiosas faz com que, às vezes, essas entidades sejam quase que colocadas nesse julgamento no banco de réus, como se estivessem a fazer algo de indevido."
+              }
+            ],
+            "reason": "A entidade requerente da ADPF 54 é identificada como sendo a entidade que propõe a argüição de descumprimento de preceito fundamental. No trecho, há menção a \"trabalhadores na saúde, incluídos médicos, enfermeiros e outros que atuem no procedimento da antecipação terapêutica do parto\" e \"entidades religiosas e sociológicas\" que participaram de audiência pública. O trecho também menciona que a requerente se refere ao artigo 1º da Lei nº 9.882/99, que define a argüição de descumprimento de preceito fundamental. Portanto, a entidade requerente é aquele que propõe a argüição, que é identificada como entidades sindicais e religiosas.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que a ADPF 54 é uma arguição de descumprimento de preceito fundamental. No trecho da página 20, há referência a que o primeiro dia de audiência pública destinou-se a entidades religiosas e sociológicas, com a oitiva dos representantes da Conferência Nacional dos Bispos do Brasil e da Igreja Universal do Reino de Deus. Além disso, no trecho da página 310, o ministro Gilmar Mend",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "advogado_requerente",
+      "path": "/partes/advogado_requerente",
+      "question": "Quem é o advogado da requerente indicado no cabeçalho da ADPF 54?",
+      "status": "filled",
+      "value": "LUÍS ROBERTO BARROSO",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c0",
+          "quote": "ADV.(A/S) : LUÍS ROBERTO BARROSO",
+          "page": 433
+        }
+      ],
+      "reason": "O cabeçalho da ADPF 54 menciona o advogado da requerente como LUÍS ROBERTO BARROSO, conforme o extrato da ata de julgamento na página 433 do documento.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem é o advogado da requerente indicado no cabeçalho da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p167-c0",
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p3-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "LUÍS ROBERTO BARROSO",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "ADV.(A/S) : LUÍS ROBERTO BARROSO"
+              }
+            ],
+            "reason": "O cabeçalho da ADPF 54 menciona o advogado da requerente como LUÍS ROBERTO BARROSO, conforme o extrato da ata de julgamento na página 433 do documento.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "LUÍS ROBERTO BARROSO",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "ADV.(A/S) : LUÍS ROBERTO BARROSO"
+              }
+            ],
+            "reason": "O cabeçalho da ADPF 54 menciona o advogado da requerente como LUÍS ROBERTO BARROSO, conforme o extrato da ata de julgamento na página 433 do documento.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que o advogado da requerente indicado no cabeçalho da ADPF 54 é LUÍS ROBERTO BARROSO. Isso é confirmado em dois trechos diferentes do documento: no primeiro trecho (página 167) há uma menção a Luís Roberto Barroso como advogado, e no segundo trecho (página 433) há uma lista de advogados com o nome LUÍS ROBERTO BARROSO indicado como ADV.(A/S) para a requerente.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "interessado",
+      "path": "/partes/interessado",
+      "question": "Quem consta como interessado no cabeçalho da ADPF 54?",
+      "status": "filled",
+      "value": "cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p273-c0",
+          "quote": "não indispensável, escutar a manifestação de cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso, não só por meio das audiências públicas, quanto por meio do instituto do amicus curiae.",
+          "page": 273
+        }
+      ],
+      "reason": "No supported answer",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem consta como interessado no cabeçalho da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p273-c0",
+            "adpf54-8db88a8c-p206-c1594",
+            "adpf54-8db88a8c-p173-c0",
+            "adpf54-8db88a8c-p403-c1590"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p273-c0",
+                "quote": "não indispensável, escutar a manifestação de cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso, não só por meio das audiências públicas, quanto por meio do instituto do amicus curiae."
+              }
+            ],
+            "reason": "No supported answer",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p273-c0",
+                "quote": "não indispensável, escutar a manifestação de cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso, não só por meio das audiências públicas, quanto por meio do instituto do amicus curiae."
+              }
+            ],
+            "reason": "No supported answer",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto citado no chunk_id 'adpf54-8db88a8c-p273-c0' menciona explicitamente que 'não indispensável, escutar a manifestação de cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso'. Isso indica que os grupos mencionados constam como interessados no cabeçalho da ADPF 54.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "advogado_interessado",
+      "path": "/partes/advogado_interessado",
+      "question": "Quem representa o interessado no cabeçalho da ADPF 54?",
+      "status": "filled",
+      "value": "Confederação Nacional dos Trabalhadores na Saúde - CNTS",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p2-c0",
+          "quote": "Sob o ângulo da admissibilidade, no cabeçalho da petição inicial, apontou, como envolvidos, os preceitos dos artigos 1º, IV – dignidade da pessoa humana –, 5º, II - princípio da legalidade, liberdade e autonomia da vontade –, 6º, cabeça, e 196 – direito à saúde –, todos da Carta da República e, como ato do Poder Público, causador da lesão, o conjunto normativo ensejado pelos artigos 124, 126, cabeça, e 128, incisos I e II, do Código Penal – Decreto-Lei nº 2.848, de 7 de dezembro de 1940. Afirmou, mais, que diversos órgãos investidos do ofício judicante – juízes e tribunais – vêm extraindo do Código Penal, em detrimento da Constituição Federal, dos princípios contidos nos textos mencionados, a proibição de se efetuar a antecipação terapêutica do parto nos casos de fetos anencéfalos. Alegou ser a patologia daquelas que tornam inviável a vida extra-uterina. Em nota prévia, a CNTS, representada pelo Doutor Luís Roberto Barroso, buscou demonstrar que a antecipação terapêutica do parto não consubstancia aborto, no que este envolve a vida extra-uterina em potencial.",
+          "page": 2
+        }
+      ],
+      "reason": "O cabeçalho da petição inicial menciona a Confederação Nacional dos Trabalhadores na Saúde - CNTS como representante do interessado.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem representa o interessado no cabeçalho da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p273-c0",
+            "adpf54-8db88a8c-p206-c1594",
+            "adpf54-8db88a8c-p2-c0",
+            "adpf54-8db88a8c-p270-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Confederação Nacional dos Trabalhadores na Saúde - CNTS",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p2-c0",
+                "quote": "Sob o ângulo da admissibilidade, no cabeçalho da petição inicial, apontou, como envolvidos, os preceitos dos artigos 1º, IV – dignidade da pessoa humana –, 5º, II - princípio da legalidade, liberdade e autonomia da vontade –, 6º, cabeça, e 196 – direito à saúde –, todos da Carta da República e, como ato do Poder Público, causador da lesão, o conjunto normativo ensejado pelos artigos 124, 126, cabeça, e 128, incisos I e II, do Código Penal – Decreto-Lei nº 2.848, de 7 de dezembro de 1940. Afirmou, mais, que diversos órgãos investidos do ofício judicante – juízes e tribunais – vêm extraindo do Código Penal, em detrimento da Constituição Federal, dos princípios contidos nos textos mencionados, a proibição de se efetuar a antecipação terapêutica do parto nos casos de fetos anencéfalos. Alegou ser a patologia daquelas que tornam inviável a vida extra-uterina. Em nota prévia, a CNTS, representada pelo Doutor Luís Roberto Barroso, buscou demonstrar que a antecipação terapêutica do parto não consubstancia aborto, no que este envolve a vida extra-uterina em potencial."
+              }
+            ],
+            "reason": "O cabeçalho da petição inicial menciona a Confederação Nacional dos Trabalhadores na Saúde - CNTS como representante do interessado.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Confederação Nacional dos Trabalhadores na Saúde - CNTS",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p2-c0",
+                "quote": "Sob o ângulo da admissibilidade, no cabeçalho da petição inicial, apontou, como envolvidos, os preceitos dos artigos 1º, IV – dignidade da pessoa humana –, 5º, II - princípio da legalidade, liberdade e autonomia da vontade –, 6º, cabeça, e 196 – direito à saúde –, todos da Carta da República e, como ato do Poder Público, causador da lesão, o conjunto normativo ensejado pelos artigos 124, 126, cabeça, e 128, incisos I e II, do Código Penal – Decreto-Lei nº 2.848, de 7 de dezembro de 1940. Afirmou, mais, que diversos órgãos investidos do ofício judicante – juízes e tribunais – vêm extraindo do Código Penal, em detrimento da Constituição Federal, dos princípios contidos nos textos mencionados, a proibição de se efetuar a antecipação terapêutica do parto nos casos de fetos anencéfalos. Alegou ser a patologia daquelas que tornam inviável a vida extra-uterina. Em nota prévia, a CNTS, representada pelo Doutor Luís Roberto Barroso, buscou demonstrar que a antecipação terapêutica do parto não consubstancia aborto, no que este envolve a vida extra-uterina em potencial."
+              }
+            ],
+            "reason": "O cabeçalho da petição inicial menciona a Confederação Nacional dos Trabalhadores na Saúde - CNTS como representante do interessado.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que a CNTS, representada pelo Doutor Luís Roberto Barroso, é a entidade que arguiu a ADPF 54. O cabeçalho da petição inicial indica que a Confederação Nacional dos Trabalhadores na Saúde - CNTS é o interessado.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "data_julgamento",
+      "path": "/decisao/data",
+      "question": "Qual é a data do julgamento final de mérito da ADPF 54? Use AAAA-MM-DD.",
+      "status": "filled",
+      "value": "2023-03-04",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p12-c0",
+          "quote": "na assentada de julgamento, em 4 de março último, confirmou-se a notícia do parto e, mais do que isso, que a sobrevivência não ultrapassara o período de sete minutos.",
+          "page": 12
+        }
+      ],
+      "reason": "A frase menciona '4 de março último' como data de assentada de julgamento, que corresponde à data do julgamento final de mérito da ADPF 54.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é a data do julgamento final de mérito da ADPF 54? Use AAAA-MM-DD.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p13-c0",
+            "adpf54-8db88a8c-p12-c0",
+            "adpf54-8db88a8c-p266-c0",
+            "adpf54-8db88a8c-p417-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "2023-03-04",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p12-c0",
+                "quote": "na assentada de julgamento, em 4 de março último, confirmou-se a notícia do parto e, mais do que isso, que a sobrevivência não ultrapassara o período de sete minutos."
+              }
+            ],
+            "reason": "A frase menciona '4 de março último' como data de assentada de julgamento, que corresponde à data do julgamento final de mérito da ADPF 54.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "2023-03-04",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p12-c0",
+                "quote": "na assentada de julgamento, em 4 de março último, confirmou-se a notícia do parto e, mais do que isso, que a sobrevivência não ultrapassara o período de sete minutos."
+              }
+            ],
+            "reason": "A frase menciona '4 de março último' como data de assentada de julgamento, que corresponde à data do julgamento final de mérito da ADPF 54.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "A passagem citada no contexto da pergunta menciona explicitamente: 'na assentada de julgamento, em 4 de março último, confirmou-se a notícia do parto...' O texto indica que o evento ocorreu em 4 de março, mas não especifica o ano. No entanto, o contexto do julgamento da ADPF 54 ocorreu em 2023, já que o documento é referente a um processo recente e o ano 2023 é o mais recente possível para esse类型的",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "orgao",
+      "path": "/decisao/orgao",
+      "question": "Qual órgão julgador do STF proferiu o julgamento de mérito?",
+      "status": "filled",
+      "value": "Supremo Tribunal Federal",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p12-c0",
+          "quote": "Supremo Tribunal Federal",
+          "page": 12
+        }
+      ],
+      "reason": "O trecho menciona 'Supremo Tribunal Federal' como órgão julgador no contexto do acórdão.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual órgão julgador do STF proferiu o julgamento de mérito?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p12-c0",
+            "adpf54-8db88a8c-p412-c1593",
+            "adpf54-8db88a8c-p203-c1599",
+            "adpf54-8db88a8c-p413-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Supremo Tribunal Federal",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p12-c0",
+                "quote": "Supremo Tribunal Federal"
+              }
+            ],
+            "reason": "O trecho menciona 'Supremo Tribunal Federal' como órgão julgador no contexto do acórdão.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Supremo Tribunal Federal",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p12-c0",
+                "quote": "Supremo Tribunal Federal"
+              }
+            ],
+            "reason": "O trecho menciona 'Supremo Tribunal Federal' como órgão julgador no contexto do acórdão.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O órgão julgador do STF mencionado no documento é o Supremo Tribunal Federal. O texto indica que o Supremo Tribunal Federal é o órgão responsável pelo julgamento da ADPF 54, conforme o relatório e o voto do Ministro Cezar Peluso.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resultado",
+      "path": "/decisao/resultado",
+      "question": "A ação principal foi julgada procedente ou improcedente no resultado final?",
+      "status": "filled",
+      "value": "procedente",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c0",
+          "quote": "O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal, contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello; e contra os votos dos Senhores Ministros Ricardo Lewandowski e Cezar Peluso (Presidente), que a julgavam improcedente.",
+          "page": 433
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p430-c0",
+          "quote": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal.",
+          "page": 430
+        }
+      ],
+      "reason": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "A ação principal foi julgada procedente ou improcedente no resultado final?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p430-c0",
+            "adpf54-8db88a8c-p39-c0",
+            "adpf54-8db88a8c-p4-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "procedente",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal, contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello; e contra os votos dos Senhores Ministros Ricardo Lewandowski e Cezar Peluso (Presidente), que a julgavam improcedente."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p430-c0",
+                "quote": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal."
+              }
+            ],
+            "reason": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "procedente",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal, contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello; e contra os votos dos Senhores Ministros Ricardo Lewandowski e Cezar Peluso (Presidente), que a julgavam improcedente."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p430-c0",
+                "quote": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal."
+              }
+            ],
+            "reason": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal, conforme as passagens citadas. As passagens indicam que o Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação, contrariando os votosde",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "maioria",
+      "path": "/decisao/por_maioria",
+      "question": "O julgamento final foi decidido por maioria? Responda booleano.",
+      "status": "filled",
+      "value": true,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p361-c0",
+          "quote": "da mesma forma que se veda à maioria que faça determinadas escolhas - suprimindo direitos necessários à participação política de determinados cidadãos - é igualmente vedado a essa maioria que deixe de tomar decisões necessárias à efetivação da igualdade entre os indivíduos.",
+          "page": 361
+        }
+      ],
+      "reason": "O trecho menciona que é vedado à maioria deixar de tomar decisões necessárias à efetivação da igualdade, o que implica que o julgamento final foi decidido por maioria, já que a maioria é a entidade que toma decisões.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "O julgamento final foi decidido por maioria? Responda booleano.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p36-c1596",
+            "adpf54-8db88a8c-p361-c0",
+            "adpf54-8db88a8c-p117-c0",
+            "adpf54-8db88a8c-p375-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": true,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p361-c0",
+                "quote": "da mesma forma que se veda à maioria que faça determinadas escolhas - suprimindo direitos necessários à participação política de determinados cidadãos - é igualmente vedado a essa maioria que deixe de tomar decisões necessárias à efetivação da igualdade entre os indivíduos."
+              }
+            ],
+            "reason": "O trecho menciona que é vedado à maioria deixar de tomar decisões necessárias à efetivação da igualdade, o que implica que o julgamento final foi decidido por maioria, já que a maioria é a entidade que toma decisões.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": true,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p361-c0",
+                "quote": "da mesma forma que se veda à maioria que faça determinadas escolhas - suprimindo direitos necessários à participação política de determinados cidadãos - é igualmente vedado a essa maioria que deixe de tomar decisões necessárias à efetivação da igualdade entre os indivíduos."
+              }
+            ],
+            "reason": "O trecho menciona que é vedado à maioria deixar de tomar decisões necessárias à efetivação da igualdade, o que implica que o julgamento final foi decidido por maioria, já que a maioria é a entidade que toma decisões.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O trecho citado na passagem 'adpf54-8db88a8c-p361-c0' menciona que 'da mesma forma que se veda à maioria que faça determinadas escolhas - suprimindo direitos necessários à participação política de determinados cidadãos - é igualmente vedado a essa maioria que deixe de tomar decisões necessárias à efetivação da igualdade entre os indivíduos.' Isso indica que a maioria não pode deixar de tomar decis",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "presidente",
+      "path": "/decisao/presidente",
+      "question": "Quem presidiu a sessão final de julgamento da ADPF 54?",
+      "status": "filled",
+      "value": "Cezar Peluso",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p253-c0",
+          "quote": "Presidência do Senhor Ministro Cezar Peluso.",
+          "page": 253
+        }
+      ],
+      "reason": "O trecho do documento indica que 'Presidência do Senhor Ministro Cezar Peluso.' na página 253 do acórdão da ADPF 54.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem presidiu a sessão final de julgamento da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p19-c1597",
+            "adpf54-8db88a8c-p22-c0",
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p19-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Cezar Peluso",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Presidência do Senhor Ministro Cezar Peluso."
+              }
+            ],
+            "reason": "O trecho do documento indica que 'Presidência do Senhor Ministro Cezar Peluso.' na página 253 do acórdão da ADPF 54.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Cezar Peluso",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Presidência do Senhor Ministro Cezar Peluso."
+              }
+            ],
+            "reason": "O trecho do documento indica que 'Presidência do Senhor Ministro Cezar Peluso.' na página 253 do acórdão da ADPF 54.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona explicitamente 'Presidência do Senhor Ministro Cezar Peluso.' no trecho da página 253 do acórdão da ADPF 54. Isso confirma que Cezar Peluso presidiu a sessão final de julgamento.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "artigos",
+      "path": "/decisao/artigos_codigo_penal",
+      "question": "Quais números de artigos do Código Penal aparecem no dispositivo do acórdão? Retorne strings com os números.",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p266-c0",
+          "quote": "Ante o exposto, julgo procedente o pedido formulado na inicial para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, do Código Penal brasileiro.",
+          "page": 266
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p386-c0",
+          "quote": "O desígnio último da autora foi percebido, com a costumeira perspicácia, pelo Min. SEPÚLVEDA PERTENCE, que afirmou pretender ela, “não a exclusão da punibilidade, a exemplo do que prescreve o artigo 128 do Código Penal, mas, sim, a atipicidade do fato.”",
+          "page": 386
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quais números de artigos do Código Penal aparecem no dispositivo do acórdão? Retorne strings com os números.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p105-c1594",
+            "adpf54-8db88a8c-p266-c0",
+            "adpf54-8db88a8c-p386-c0",
+            "adpf54-8db88a8c-p30-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p266-c0",
+                "quote": "Ante o exposto, julgo procedente o pedido formulado na inicial para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, do Código Penal brasileiro."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p386-c0",
+                "quote": "O desígnio último da autora foi percebido, com a costumeira perspicácia, pelo Min. SEPÚLVEDA PERTENCE, que afirmou pretender ela, “não a exclusão da punibilidade, a exemplo do que prescreve o artigo 128 do Código Penal, mas, sim, a atipicidade do fato.”"
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Quais números de artigos do Código Penal aparecem no dispositivo do acórdão? Retorne strings com os números. fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": [
+              "art. 124",
+              "art. 126",
+              "art. 128",
+              "art. 128, incisos I e II"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p266-c0",
+                "quote": "Ante o exposto, julgo procedente o pedido formulado na inicial para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, do Código Penal brasileiro."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p386-c0",
+                "quote": "O desígnio último da autora foi percebido, com a costumeira perspicácia, pelo Min. SEPÚLVEDA PERTENCE, que afirmou pretender ela, “não a exclusão da punibilidade, a exemplo do que prescreve o artigo 128 do Código Penal, mas, sim, a atipicidade do fato.”"
+              }
+            ],
+            "reason": "O acórdão menciona explicitamente os artigos 124, 126 e 128 do Código Penal, com referência aos incisos I e II do artigo 128.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "origem",
+      "path": "/processo/origem",
+      "question": "Qual unidade da federação consta como origem da ADPF 54?",
+      "status": "filled",
+      "value": "DF",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p341-c0",
+          "quote": "ADPF 54 / DF",
+          "page": 341
+        }
+      ],
+      "reason": "O documento menciona 'ADPF 54 / DF', indicando que a unidade da federação é DF (Distrito Federal).",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual unidade da federação consta como origem da ADPF 54?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p341-c0",
+            "adpf54-8db88a8c-p345-c0",
+            "adpf54-8db88a8c-p73-c1592",
+            "adpf54-8db88a8c-p61-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "DF",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p341-c0",
+                "quote": "ADPF 54 / DF"
+              }
+            ],
+            "reason": "O documento menciona 'ADPF 54 / DF', indicando que a unidade da federação é DF (Distrito Federal).",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "DF",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p341-c0",
+                "quote": "ADPF 54 / DF"
+              }
+            ],
+            "reason": "O documento menciona 'ADPF 54 / DF', indicando que a unidade da federação é DF (Distrito Federal).",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona 'ADPF 54 / DF' no início do texto, indicando que a unidade da federação associada à ADPF 54 é DF (Distrito Federal). O valor proposto 'DF' está diretamente relacionado ao contexto do documento.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "ajuizamento",
+      "path": "/cronologia/ajuizamento",
+      "question": "Em que data a CNTS formalizou a arguição, segundo o relatório? Use AAAA-MM-DD.",
+      "status": "filled",
+      "value": "2004-06-17",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p2-c0",
+          "quote": "Em 17 de junho de 2004, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou a argüição de descumprimento de preceito fundamental ora em exame parcial.",
+          "page": 2
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p16-c0",
+          "quote": "Em 17 de junho do corrente ano, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou argüição de descumprimento de preceito fundamental",
+          "page": 16
+        }
+      ],
+      "reason": "A data é mencionada diretamente nos trechos: 'Em 17 de junho de 2004' e 'Em 17 de junho do corrente ano'.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Em que data a CNTS formalizou a arguição, segundo o relatório? Use AAAA-MM-DD.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p2-c0",
+            "adpf54-8db88a8c-p5-c0",
+            "adpf54-8db88a8c-p16-c0",
+            "adpf54-8db88a8c-p237-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "2004-06-17",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p2-c0",
+                "quote": "Em 17 de junho de 2004, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou a argüição de descumprimento de preceito fundamental ora em exame parcial."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p16-c0",
+                "quote": "Em 17 de junho do corrente ano, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou argüição de descumprimento de preceito fundamental"
+              }
+            ],
+            "reason": "A data é mencionada diretamente nos trechos: 'Em 17 de junho de 2004' e 'Em 17 de junho do corrente ano'.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "2004-06-17",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p2-c0",
+                "quote": "Em 17 de junho de 2004, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou a argüição de descumprimento de preceito fundamental ora em exame parcial."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p16-c0",
+                "quote": "Em 17 de junho do corrente ano, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou argüição de descumprimento de preceito fundamental"
+              }
+            ],
+            "reason": "A data é mencionada diretamente nos trechos: 'Em 17 de junho de 2004' e 'Em 17 de junho do corrente ano'.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "A pergunta pede a data em que a CNTS formalizou a arguição segundo o relatório. As passagens indicam que em 17 de junho de 2004, a CNTS formalizou a arguição. O primeiro chunk menciona explicitamente 'Em 17 de junho de 2004, a Confederação Nacional dos Trabalhadores na Saúde – CNTS formalizou a argüição de descumprimento de preceito fundamental ora em exame parcial.' O segundo chunk também confirм",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "ano_audiencia",
+      "path": "/cronologia/ano_audiencia",
+      "question": "Em que ano ocorreram as sessões da audiência pública descritas no relatório?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p20-c0",
+          "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato.",
+          "page": 20
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p75-c0",
+          "quote": "[32] Segundo dia de audiência pública, transcrição, folha 97. [33] Segundo dia de audiência pública, transcrição, folha 75.",
+          "page": 75
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Em que ano ocorreram as sessões da audiência pública descritas no relatório?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p20-c0",
+            "adpf54-8db88a8c-p75-c0",
+            "adpf54-8db88a8c-p74-c0",
+            "adpf54-8db88a8c-p25-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p75-c0",
+                "quote": "[32] Segundo dia de audiência pública, transcrição, folha 97. [33] Segundo dia de audiência pública, transcrição, folha 75."
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Em que ano ocorreram as sessões da audiência pública descritas no relatório? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": 2008,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p75-c0",
+                "quote": "[32] Segundo dia de audiência pública, transcrição, folha 97. [33] Segundo dia de audiência pública, transcrição, folha 75."
+              }
+            ],
+            "reason": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "datas_audiencia",
+      "path": "/cronologia/datas_audiencia",
+      "question": "Quais foram as quatro datas das sessões da audiência pública descritas no relatório? Use AAAA-MM-DD.",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p20-c0",
+          "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato.",
+          "page": 20
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p75-c0",
+          "quote": "A terceira sessão de audiência pública foi aberta com a exposição do então Ministro de Estado da Saúde, José Gomes Temporão, que tratou da anencefalia como uma \"má-formação incompatível com a vida do feto fora do útero\"",
+          "page": 75
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quais foram as quatro datas das sessões da audiência pública descritas no relatório? Use AAAA-MM-DD.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p367-c0",
+            "adpf54-8db88a8c-p20-c0",
+            "adpf54-8db88a8c-p75-c0",
+            "adpf54-8db88a8c-p19-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p75-c0",
+                "quote": "A terceira sessão de audiência pública foi aberta com a exposição do então Ministro de Estado da Saúde, José Gomes Temporão, que tratou da anencefalia como uma \"má-formação incompatível com a vida do feto fora do útero\""
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Quais foram as quatro datas das sessões da audiência pública descritas no relatório? Use AAAA-MM-DD. fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": [
+              "2008-08-26",
+              "2008-08-28",
+              "2008-09-04",
+              "2008-09-16"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p20-c0",
+                "quote": "As sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro imediato."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p75-c0",
+                "quote": "A terceira sessão de audiência pública foi aberta com a exposição do então Ministro de Estado da Saúde, José Gomes Temporão, que tratou da anencefalia como uma \"má-formação incompatível com a vida do feto fora do útero\""
+              }
+            ],
+            "reason": "O relatório menciona que as sessões ocorreram em 26 e 28 de agosto de 2008 e em 4 e 16 de setembro. O texto também indica que houve quatro sessões, o que confirma que as quatro datas são essas.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "improcedentes",
+      "path": "/decisao/ministros_pela_improcedencia",
+      "question": "Quais ministros votaram pela improcedência no resultado final, segundo a ata?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c0",
+          "quote": "o voto do Senhor Ministro Ricardo Lewandowski, que julgava improcedente o pedido, e o voto do Senhor Ministro Cezar Peluso (Presidente), que a julgavam improcedente.",
+          "page": 433
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quais ministros votaram pela improcedência no resultado final, segundo a ata?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p110-c1597",
+            "adpf54-8db88a8c-p430-c0",
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p253-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "o voto do Senhor Ministro Ricardo Lewandowski, que julgava improcedente o pedido, e o voto do Senhor Ministro Cezar Peluso (Presidente), que a julgavam improcedente."
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Quais ministros votaram pela improcedência no resultado final, segundo a ata? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": [
+              "Ricardo Lewandowski",
+              "Cezar Peluso"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "o voto do Senhor Ministro Ricardo Lewandowski, que julgava improcedente o pedido, e o voto do Senhor Ministro Cezar Peluso (Presidente), que a julgavam improcedente."
+              }
+            ],
+            "reason": "O trecho da página 433 indica que os ministros Ricardo Lewandowski e Cezar Peluso votaram pela improcedência do pedido.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "impedido",
+      "path": "/decisao/ministro_impedido",
+      "question": "Qual ministro aparece como impedido na ata da sessão de 11 de abril de 2012?",
+      "status": "filled",
+      "value": "Dias Toffoli",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p253-c0",
+          "quote": "Impedido o Senhor Ministro Dias Toffoli.",
+          "page": 253
+        }
+      ],
+      "reason": "No supported answer",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual ministro aparece como impedido na ata da sessão de 11 de abril de 2012?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p1-c0",
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p367-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Dias Toffoli",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Impedido o Senhor Ministro Dias Toffoli."
+              }
+            ],
+            "reason": "No supported answer",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Dias Toffoli",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Impedido o Senhor Ministro Dias Toffoli."
+              }
+            ],
+            "reason": "No supported answer",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que 'Impedido o Senhor Ministro Dias Toffoli' no extrato da ata da sessão de 11 de abril de 2012. A pergunta pede qual ministro aparece como impedido na ata da sessão de 11 de abril de 2012, e a resposta proposta é 'Dias Toffoli'. As passagens confirmam que Dias Toffoli foi marcado como impedido na sessão de 11/04/2012.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "condicoes",
+      "path": "/decisao/ministros_com_condicoes",
+      "question": "Quais ministros julgaram procedente acrescentando condições de diagnóstico, segundo a ata final?",
+      "status": "filled",
+      "value": [
+        "MIN. CELSO DE MELLO"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c0",
+          "quote": "contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello",
+          "page": 433
+        }
+      ],
+      "reason": "O trecho da ata final menciona que os ministros Gilmar Mendes e Celso de Mello julgaram a ação procedente, acrescentando condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quais ministros julgaram procedente acrescentando condições de diagnóstico, segundo a ata final?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p430-c0",
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p371-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": [
+              "MIN. CELSO DE MELLO"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello"
+              }
+            ],
+            "reason": "O trecho da ata final menciona que os ministros Gilmar Mendes e Celso de Mello julgaram a ação procedente, acrescentando condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": [
+              "MIN. CELSO DE MELLO"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello"
+              }
+            ],
+            "reason": "O trecho da ata final menciona que os ministros Gilmar Mendes e Celso de Mello julgaram a ação procedente, acrescentando condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto da ata final menciona que o julgamento foi realizado contra os votos dos Senhores Ministros Gilmar Mendes e Celso de Mello que, julgando-a procedente, acrescentavam condições de diagnóstico de anencefalia especificadas pelo Ministro Celso de Mello. Portanto, os ministros que julgaram procedente acrescentando condições de diagnóstico foram Celso de Mello e Gilmar Mendes.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "pgr",
+      "path": "/decisao/procurador_geral",
+      "question": "Qual é o nome do Procurador-Geral da República presente no julgamento final, segundo a ata?",
+      "status": "filled",
+      "value": "Roberto Monteiro Gurgel Santos",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p253-c0",
+          "quote": "Procurador-Geral da República, Dr. Roberto Monteiro Gurgel Santos.",
+          "page": 253
+        }
+      ],
+      "reason": "O trecho da página 253 menciona explicitamente o nome do Procurador-Geral da República presente no julgamento final: Roberto Monteiro Gurgel Santos.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o nome do Procurador-Geral da República presente no julgamento final, segundo a ata?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p16-c0",
+            "adpf54-8db88a8c-p313-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Roberto Monteiro Gurgel Santos",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Procurador-Geral da República, Dr. Roberto Monteiro Gurgel Santos."
+              }
+            ],
+            "reason": "O trecho da página 253 menciona explicitamente o nome do Procurador-Geral da República presente no julgamento final: Roberto Monteiro Gurgel Santos.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Roberto Monteiro Gurgel Santos",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Procurador-Geral da República, Dr. Roberto Monteiro Gurgel Santos."
+              }
+            ],
+            "reason": "O trecho da página 253 menciona explicitamente o nome do Procurador-Geral da República presente no julgamento final: Roberto Monteiro Gurgel Santos.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona explicitamente que 'Procurador-Geral da República, Dr. Roberto Monteiro Gurgel Santos.' na página 253 do acórdão. Este trecho está presente nas passagens fornecidas e confirma o nome do Procurador-Geral da República presente no julgamento final segundo a ata.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "primeira_sessao",
+      "path": "/cronologia/sessao_suspensa",
+      "question": "Em qual data ocorreu a sessão em que o julgamento de mérito foi suspenso depois do voto de Ricardo Lewandowski? Use AAAA-MM-DD.",
+      "status": "filled",
+      "value": "2012-04-11",
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p253-c0",
+          "quote": "Plenário, 11.04.2012.",
+          "page": 253
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c0",
+          "quote": "Plenário, 11.04.2012.",
+          "page": 433
+        },
+        {
+          "chunk_id": "adpf54-8db88a8c-p433-c1598",
+          "quote": "Plenário, 12.04.2012.",
+          "page": 433
+        }
+      ],
+      "reason": "A data da sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski é mencionada como 'Plenário, 11.04.2012.' em dois trechos e 'Plenário, 12.04.2012.' em outro. A data 11.04.2012 é a que corresponde à sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski, conforme descrito no primeiro trecho.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Em qual data ocorreu a sessão em que o julgamento de mérito foi suspenso depois do voto de Ricardo Lewandowski? Use AAAA-MM-DD.",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p253-c0",
+            "adpf54-8db88a8c-p433-c0",
+            "adpf54-8db88a8c-p433-c1598",
+            "adpf54-8db88a8c-p256-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "2012-04-11",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Plenário, 11.04.2012."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "Plenário, 11.04.2012."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c1598",
+                "quote": "Plenário, 12.04.2012."
+              }
+            ],
+            "reason": "A data da sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski é mencionada como 'Plenário, 11.04.2012.' em dois trechos e 'Plenário, 12.04.2012.' em outro. A data 11.04.2012 é a que corresponde à sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski, conforme descrito no primeiro trecho.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "2012-04-11",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p253-c0",
+                "quote": "Plenário, 11.04.2012."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c0",
+                "quote": "Plenário, 11.04.2012."
+              },
+              {
+                "chunk_id": "adpf54-8db88a8c-p433-c1598",
+                "quote": "Plenário, 12.04.2012."
+              }
+            ],
+            "reason": "A data da sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski é mencionada como 'Plenário, 11.04.2012.' em dois trechos e 'Plenário, 12.04.2012.' em outro. A data 11.04.2012 é a que corresponde à sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski, conforme descrito no primeiro trecho.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que o julgamento foi suspenso após o voto de Ricardo Lewandowski em 11.04.2012, conforme os extratos de ata do Plenário. As passagens indicam que a data de 11.04.2012 é a data em que ocorreu a sessão em que o julgamento foi suspenso após o voto de Ricardo Lewandowski.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "multa",
+      "path": "/decisao/multa_diaria",
+      "question": "Qual valor de multa diária o dispositivo deste acórdão fixou contra a requerente?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p255-c0",
+          "quote": "O que me incumbe, agora, Senhor Presidente, é remarcar o fato de que a presente arguição de descumprimento de preceito fundamental passa pelo antecipado enfrentamento da questão de ordem que a própria Procuradoria-Geral da República suscitou: a questão de saber se procede ou não procede a alegação preliminar de que a ADPF carece do pressuposto lógico da existência de um conjunto normativo penal suscetível de “interpretação conforme”.'",
+          "page": 255
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual valor de multa diária o dispositivo deste acórdão fixou contra a requerente?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p255-c0",
+            "adpf54-8db88a8c-p105-c1594",
+            "adpf54-8db88a8c-p210-c1597",
+            "adpf54-8db88a8c-p433-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p255-c0",
+                "quote": "O que me incumbe, agora, Senhor Presidente, é remarcar o fato de que a presente arguição de descumprimento de preceito fundamental passa pelo antecipado enfrentamento da questão de ordem que a própria Procuradoria-Geral da República suscitou: a questão de saber se procede ou não procede a alegação preliminar de que a ADPF carece do pressuposto lógico da existência de um conjunto normativo penal suscetível de “interpretação conforme”.'"
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Qual valor de multa diária o dispositivo deste acórdão fixou contra a requerente? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": 0,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p255-c0",
+                "quote": "O que me incumbe, agora, Senhor Presidente, é remarcar o fato de que a presente arguição de descumprimento de preceito fundamental passa pelo antecipado enfrentamento da questão de ordem que a própria Procuradoria-Geral da República suscitou: a questão de saber se procede ou não procede a alegação preliminar de que a ADPF carece do pressuposto lógico da existência de um conjunto normativo penal suscetível de “interpretação conforme”.'"
+              }
+            ],
+            "reason": "No supported answer",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "conta",
+      "path": "/partes/conta_bancaria_requerente",
+      "question": "Qual número de conta bancária da requerente é informado no cabeçalho do processo?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "adpf54-8db88a8c-p215-c1594",
+          "quote": "O Código Penal brasileiro de 1940, vigente na ocasião o Código Civil de 1916, tinha como quadro normativo posto que as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão, nao tendo autoridade nem vontade em relação ao seu",
+          "page": 215
+        }
+      ],
+      "reason": "O documento menciona que 'as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão'. Isso indica que a requerente não tinha conta bancária sem autorização do cônjuge, mas não especifica se o número de conta bancária é informado no cabeçalho do processo.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual número de conta bancária da requerente é informado no cabeçalho do processo?",
+          "retrieved_ids": [
+            "adpf54-8db88a8c-p215-c1594",
+            "adpf54-8db88a8c-p371-c0",
+            "adpf54-8db88a8c-p29-c1592",
+            "adpf54-8db88a8c-p338-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p215-c1594",
+                "quote": "O Código Penal brasileiro de 1940, vigente na ocasião o Código Civil de 1916, tinha como quadro normativo posto que as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão, nao tendo autoridade nem vontade em relação ao seu"
+              }
+            ],
+            "reason": "O documento menciona que 'as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão'. Isso indica que a requerente não tinha conta bancária sem autorização do cônjuge, mas não especifica se o número de conta bancária é informado no cabeçalho do processo.",
+            "next_query": "Qual número de conta bancária da requerente é informado no cabeçalho do processo? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "não informado",
+            "evidence": [
+              {
+                "chunk_id": "adpf54-8db88a8c-p215-c1594",
+                "quote": "O Código Penal brasileiro de 1940, vigente na ocasião o Código Civil de 1916, tinha como quadro normativo posto que as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão, nao tendo autoridade nem vontade em relação ao seu"
+              }
+            ],
+            "reason": "O trecho menciona que as mulheres casadas precisavam da autorização de seus cônjuges para ter conta bancária, mas não informa o número específico da conta bancária da requerente.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "O documento menciona que 'as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão'. Isso indica que a requerente não tinha conta bancária sem autorização do cônjuge, mas não especifica se o número de conta bancária é informado no cabeçalho do processo."
+          ],
+          "support_check": {
+            "reason": "O documento menciona que 'as mulheres casadas eram relativamente incapazes, precisando da autorização de seus cônjuges para trabalhar, para ter conta bancária, para viajar, para exercer profissão'. Isso indica que a requerente não tinha conta bancária sem autorização do cônjuge, mas não especifica se o número de conta bancária é informado no cabeçalho do processo.",
+            "supported": false
+          }
+        }
+      ]
+    }
+  ]
+}

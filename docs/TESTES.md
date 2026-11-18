@@ -4,9 +4,9 @@
 
 ## Casos e referência
 
-Proposta inicial de 40 campos ou perguntas, com 24 judiciais e 16 literários. Distribuir entre recuperação literal, cronologia, evidências distantes, síntese, listas, conflitos e informação ausente. Cada caso guarda resposta esperada ou rubrica, evidências e escopo documental.
+Foram implementados 40 campos: 24 judiciais e 16 literários. Há recuperação literal, datas, relações, listas e três perguntas sobre informação ausente. Cada caso guarda resposta esperada, aliases quando aplicáveis, páginas de referência e escopo documental. Conflitos e síntese ampla ainda não possuem casos anotados suficientes para uma avaliação dedicada.
 
-Reservar aproximadamente um terço dos casos para a avaliação final. As anotações preliminares preparadas pelo agente devem ser identificadas como tal e acompanhadas das fontes. Guardar correções de referência com versão. Evitar ajustar prompts a partir dos erros do conjunto reservado.
+O arquivo de referências marca cerca de um terço dos campos como `held_out`. Contudo, o campo `relator`, que estava nessa divisão, também foi usado no teste preliminar de contrato de resposta, junto de `identificacao`. Por isso, este relatório é uma avaliação exploratória e não uma avaliação final inteiramente cega. As anotações foram preparadas pelo agente, têm páginas de fonte e permanecem provisórias, sem revisão humana. A configuração foi congelada antes do benchmark completo, sem ajustes a partir dos resultados por variante.
 
 ## Testes automatizados
 
@@ -24,11 +24,19 @@ Reservar aproximadamente um terço dos casos para a avaliação final. As anota�
 
 ## Níveis de execução
 
-- Teste rápido com páginas selecionadas e poucos campos dos dois documentos.
+- Teste rápido com dois campos judiciais sobre o índice completo.
 - Benchmark completo com as 433 páginas judiciais e 105 páginas literárias.
 - Regressão com o mesmo corpus, referências e configuração de execuções anteriores.
 
 Falhas de referência, infraestrutura, recuperação e geração devem ter causas registradas para permitir a investigação do resultado. Dados simulados só podem validar contratos e contabilidade. Resultados de qualidade precisam vir dos documentos reais.
+
+## Pipeline executável e cobertura atual
+
+`tools/validate.ps1 -Full -Name local` encadeia download/verificação, indexação, testes, benchmark, relatório e auditoria das saídas. Os 25 testes automatizados compreendem 21 verificações de contrato/limites e quatro integrações reais: sessão MCP, ponto de entrada para cliente externo e integridade de cada corpus nos dois bancos. O arquivo [JUnit](../reports/validation/junit.xml) registra o resultado da suíte.
+
+A auditoria `tools/verify_run.py` confere todos os formulários completos, tipos dos valores, origem e página das citações de campos preenchidos, limites de rodadas, relações entre spans, contagens de chamadas, custos e igualdade dos JSONs exportados. Essa auditoria não atesta a correção semântica das respostas. `tools/verify-html.cjs` usa Playwright e Edge para verificar os diagramas, filtros, navegação pelo grafo, calculadora de custos e layout móvel; depende de Node e Playwright disponíveis.
+
+Os testes de timeout, saída truncada e cache usam transporte HTTP simulado para verificar comportamento e contabilidade de forma determinística. Os testes MCP abrem cliente e servidor reais e consultam o índice publicado. Foram medidas uma indexação inicial e uma reutilização completa por corpus. Não foi executada uma campanha de desligamento forçado dos contêineres durante a gravação; a presença de checkpoints não deve ser interpretada como comprovação de recuperação para toda falha possível.
 
 ## Variantes
 
@@ -43,7 +51,7 @@ Falhas de referência, infraestrutura, recuperação e geração devem ter causa
 
 Usar o mesmo modelo extrator e orçamento comparável de evidências. Os dados extraídos usados como metadados estarão disponíveis em B e D. A comparação D contra B mede a contribuição da travessia.
 
-Registrar uma indexação nova e uma execução com reaproveitamento. Proposta de três repetições da extração por configuração, com ordem, seed quando suportada, estado de aquecimento, cache, modelos e versões registrados.
+O benchmark usa três repetições por configuração, ordem embaralhada com seed 42 e seeds de geração 42, 43 e 44. A temperatura é zero, portanto seeds distintas não garantem respostas estocasticamente independentes. Modelos já estavam carregados após a indexação e os testes preliminares. Embeddings de consultas podem ser reutilizados; geração e validação semântica sempre executam. O manifesto preserva hashes de código, configuração, formulários, referências e índices.
 
 ## Métricas de qualidade
 
@@ -56,6 +64,8 @@ Registrar uma indexação nova e uma execução com reaproveitamento. Proposta d
 - Tempo, tokens, chamadas MCP e custo por campo correto.
 
 Métricas de cobertura exigem conjuntos de evidência anotados. Listas equivalentes podem variar de ordem e forma textual, conforme a rubrica. O avaliador deve distinguir uma localização válida de uma afirmação realmente sustentada.
+
+Nesta versão, `reference_page_hit` verifica se alguma página de referência foi recuperada; não mede cobertura completa de todas as evidências. A exatidão de strings aceita aliases por correspondência textual normalizada e pode produzir falsos positivos em respostas contraditórias. Listas exigem todos os itens esperados, mesmo tamanho e ausência de duplicatas. Os resultados ficam disponíveis para revisão por campo. JSON válido, citação localizada e resposta correta são critérios distintos.
 
 ## Critérios de aceite e análise
 

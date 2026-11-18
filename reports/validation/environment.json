@@ -1,0 +1,12 @@
+{
+  "ram_bytes": 68133470208,
+  "docker_compose": "5.6.0",
+  "cpu": "Intel(R) Core(TM) Ultra 7 270K Plus",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 617.42",
+  "python": "Python 3.12.14",
+  "images": {
+    "opensearchproject/opensearch:3.3.0": "opensearchproject/opensearch@sha256:d96afaf6cbd2a6a3695aeb2f1d48c9a16ad5c8918eb849e5cbf43475f0f8e146",
+    "neo4j:5.26-community": "neo4j@sha256:577eb43120e8688e62e753e962c47d30044ecaa95147ee5386c29f226b878008",
+    "ollama/ollama:0.13.0": "ollama/ollama@sha256:d4188c1dfa870386a14e299976aed96daeb83876b69e1a852c9d09ea76463b9f"
+  }
+}

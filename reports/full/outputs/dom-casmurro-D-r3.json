@@ -1,0 +1,32 @@
+{
+  "obra": {
+    "titulo": "Tudo por estar cochilando!",
+    "autor": null
+  },
+  "familia": {
+    "pai": "Pedro de Albuquerque Santiago",
+    "mae": "Mamãe",
+    "tio": "Tio Cosme",
+    "profissao_tio": "advogado",
+    "prima": "Justina",
+    "filho": "Ezequiel",
+    "idade_mae_viuvez": 31,
+    "tres_viuvos": [
+      "Tio Cosme",
+      "Justina",
+      "Mãe"
+    ],
+    "cpf_narrador": null
+  },
+  "relacoes": {
+    "nome_amigo": "Ezequiel de Sousa Escobar",
+    "homenagem_filhos": null,
+    "autor_descricao_olhos": "José Dias"
+  },
+  "lugares": {
+    "casa_reconstruida": "Engenho Novo"
+  },
+  "eventos": {
+    "desejo_escobar": "comércio"
+  }
+}

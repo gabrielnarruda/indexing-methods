@@ -2,6 +2,8 @@
 
 Revisão de 18 de novembro de 2026. Implementação e avaliação autorizadas pelo usuário após a revisão inicial do plano.
 
+Este documento conserva o desenho inicial. A implementação entregue usa uma versão reduzida da hierarquia e do grafo; a descrição exata e a comparação com o plano estão em [IMPLEMENTACAO.md](IMPLEMENTACAO.md). O [relatório](../reports/full/relatorio.html) apresenta as medições efetivamente obtidas.
+
 [Diagrama interativo](arquitetura.html) · [Testes](TESTES.md) · [Métricas](METRICAS.md) · [Fontes](FONTES.md) · [Repositório](https://github.com/gabrielnarruda/indexing-methods)
 
 ## Objetivo e entregas

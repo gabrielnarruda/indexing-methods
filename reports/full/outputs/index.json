@@ -1,0 +1,218 @@
+[
+  {
+    "name": "dom-casmurro-D-r1",
+    "run_id": "extraction-20261118T224329-f41264",
+    "result": "outputs/dom-casmurro-D-r1.json",
+    "evidence": "outputs/dom-casmurro-D-r1-evidence.json"
+  },
+  {
+    "name": "adpf54-A-r2",
+    "run_id": "extraction-20261118T224432-f7fa4e",
+    "result": "outputs/adpf54-A-r2.json",
+    "evidence": "outputs/adpf54-A-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-F-r1",
+    "run_id": "extraction-20261118T224615-81a5a2",
+    "result": "outputs/adpf54-F-r1.json",
+    "evidence": "outputs/adpf54-F-r1-evidence.json"
+  },
+  {
+    "name": "adpf54-D-r3",
+    "run_id": "extraction-20261118T224821-fba756",
+    "result": "outputs/adpf54-D-r3.json",
+    "evidence": "outputs/adpf54-D-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-C-r3",
+    "run_id": "extraction-20261118T224959-d76a3c",
+    "result": "outputs/dom-casmurro-C-r3.json",
+    "evidence": "outputs/dom-casmurro-C-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-B-r2",
+    "run_id": "extraction-20261118T225105-8d9a0e",
+    "result": "outputs/dom-casmurro-B-r2.json",
+    "evidence": "outputs/dom-casmurro-B-r2-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-A-r3",
+    "run_id": "extraction-20261118T225205-ab3fc4",
+    "result": "outputs/dom-casmurro-A-r3.json",
+    "evidence": "outputs/dom-casmurro-A-r3-evidence.json"
+  },
+  {
+    "name": "adpf54-B-r3",
+    "run_id": "extraction-20261118T225310-2d7c95",
+    "result": "outputs/adpf54-B-r3.json",
+    "evidence": "outputs/adpf54-B-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-E-r2",
+    "run_id": "extraction-20261118T225449-903b3e",
+    "result": "outputs/dom-casmurro-E-r2.json",
+    "evidence": "outputs/dom-casmurro-E-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-C-r3",
+    "run_id": "extraction-20261118T225553-19f29f",
+    "result": "outputs/adpf54-C-r3.json",
+    "evidence": "outputs/adpf54-C-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-B-r3",
+    "run_id": "extraction-20261118T225733-33dfff",
+    "result": "outputs/dom-casmurro-B-r3.json",
+    "evidence": "outputs/dom-casmurro-B-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-E-r1",
+    "run_id": "extraction-20261118T225834-f1594c",
+    "result": "outputs/dom-casmurro-E-r1.json",
+    "evidence": "outputs/dom-casmurro-E-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-F-r1",
+    "run_id": "extraction-20261118T225939-d07cb0",
+    "result": "outputs/dom-casmurro-F-r1.json",
+    "evidence": "outputs/dom-casmurro-F-r1-evidence.json"
+  },
+  {
+    "name": "adpf54-E-r3",
+    "run_id": "extraction-20261118T230050-a6fa94",
+    "result": "outputs/adpf54-E-r3.json",
+    "evidence": "outputs/adpf54-E-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-C-r1",
+    "run_id": "extraction-20261118T230227-f91661",
+    "result": "outputs/dom-casmurro-C-r1.json",
+    "evidence": "outputs/dom-casmurro-C-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-C-r2",
+    "run_id": "extraction-20261118T230334-96c0c8",
+    "result": "outputs/dom-casmurro-C-r2.json",
+    "evidence": "outputs/dom-casmurro-C-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-E-r2",
+    "run_id": "extraction-20261118T230440-d245f4",
+    "result": "outputs/adpf54-E-r2.json",
+    "evidence": "outputs/adpf54-E-r2-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-F-r3",
+    "run_id": "extraction-20261118T230618-07e37f",
+    "result": "outputs/dom-casmurro-F-r3.json",
+    "evidence": "outputs/dom-casmurro-F-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-A-r1",
+    "run_id": "extraction-20261118T230728-eef94d",
+    "result": "outputs/dom-casmurro-A-r1.json",
+    "evidence": "outputs/dom-casmurro-A-r1-evidence.json"
+  },
+  {
+    "name": "adpf54-A-r3",
+    "run_id": "extraction-20261118T230834-fa87b5",
+    "result": "outputs/adpf54-A-r3.json",
+    "evidence": "outputs/adpf54-A-r3-evidence.json"
+  },
+  {
+    "name": "adpf54-A-r1",
+    "run_id": "extraction-20261118T231014-0b88b3",
+    "result": "outputs/adpf54-A-r1.json",
+    "evidence": "outputs/adpf54-A-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-E-r3",
+    "run_id": "extraction-20261118T231155-ee10bf",
+    "result": "outputs/dom-casmurro-E-r3.json",
+    "evidence": "outputs/dom-casmurro-E-r3-evidence.json"
+  },
+  {
+    "name": "adpf54-B-r2",
+    "run_id": "extraction-20261118T231300-5d4230",
+    "result": "outputs/adpf54-B-r2.json",
+    "evidence": "outputs/adpf54-B-r2-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-A-r2",
+    "run_id": "extraction-20261118T231440-05499e",
+    "result": "outputs/dom-casmurro-A-r2.json",
+    "evidence": "outputs/dom-casmurro-A-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-C-r1",
+    "run_id": "extraction-20261118T231546-64bd39",
+    "result": "outputs/adpf54-C-r1.json",
+    "evidence": "outputs/adpf54-C-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-D-r3",
+    "run_id": "extraction-20261118T231727-99a808",
+    "result": "outputs/dom-casmurro-D-r3.json",
+    "evidence": "outputs/dom-casmurro-D-r3-evidence.json"
+  },
+  {
+    "name": "adpf54-F-r3",
+    "run_id": "extraction-20261118T231828-6ae68d",
+    "result": "outputs/adpf54-F-r3.json",
+    "evidence": "outputs/adpf54-F-r3-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-D-r2",
+    "run_id": "extraction-20261118T232030-b78f47",
+    "result": "outputs/dom-casmurro-D-r2.json",
+    "evidence": "outputs/dom-casmurro-D-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-D-r1",
+    "run_id": "extraction-20261118T232131-0a75df",
+    "result": "outputs/adpf54-D-r1.json",
+    "evidence": "outputs/adpf54-D-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-F-r2",
+    "run_id": "extraction-20261118T232310-e95097",
+    "result": "outputs/dom-casmurro-F-r2.json",
+    "evidence": "outputs/dom-casmurro-F-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-E-r1",
+    "run_id": "extraction-20261118T232420-f537c4",
+    "result": "outputs/adpf54-E-r1.json",
+    "evidence": "outputs/adpf54-E-r1-evidence.json"
+  },
+  {
+    "name": "adpf54-C-r2",
+    "run_id": "extraction-20261118T232558-781525",
+    "result": "outputs/adpf54-C-r2.json",
+    "evidence": "outputs/adpf54-C-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-D-r2",
+    "run_id": "extraction-20261118T232739-18d5cd",
+    "result": "outputs/adpf54-D-r2.json",
+    "evidence": "outputs/adpf54-D-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-F-r2",
+    "run_id": "extraction-20261118T232918-bc6863",
+    "result": "outputs/adpf54-F-r2.json",
+    "evidence": "outputs/adpf54-F-r2-evidence.json"
+  },
+  {
+    "name": "adpf54-B-r1",
+    "run_id": "extraction-20261118T233121-a9d065",
+    "result": "outputs/adpf54-B-r1.json",
+    "evidence": "outputs/adpf54-B-r1-evidence.json"
+  },
+  {
+    "name": "dom-casmurro-B-r1",
+    "run_id": "extraction-20261118T233301-1c014b",
+    "result": "outputs/dom-casmurro-B-r1.json",
+    "evidence": "outputs/dom-casmurro-B-r1-evidence.json"
+  }
+]

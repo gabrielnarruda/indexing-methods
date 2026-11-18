@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "human_reviewed": false,
+  "cases": [
+    {
+      "corpus_id": "adpf54",
+      "field_id": "identificacao",
+      "expected": "ADPF 54",
+      "aliases": [
+        "ADPF 54",
+        "descumprimento de preceito fundamental 54"
+      ],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "tribunal",
+      "expected": "Supremo Tribunal Federal",
+      "aliases": [
+        "STF",
+        "Supremo Tribunal Federal"
+      ],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "relator",
+      "expected": "Marco Aurélio",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "requerente",
+      "expected": "Confederação Nacional dos Trabalhadores na Saúde",
+      "aliases": [
+        "CNTS"
+      ],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "advogado_requerente",
+      "expected": "Luís Roberto Barroso",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "interessado",
+      "expected": "Presidente da República",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "advogado_interessado",
+      "expected": "Advogado-Geral da União",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "data_julgamento",
+      "expected": "2012-04-12",
+      "aliases": [],
+      "reference_pages": [
+        1,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "orgao",
+      "expected": "Plenário",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "resultado",
+      "expected": "procedente",
+      "aliases": [],
+      "reference_pages": [
+        1,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "maioria",
+      "expected": true,
+      "aliases": [],
+      "reference_pages": [
+        1,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "presidente",
+      "expected": "Cezar Peluso",
+      "aliases": [],
+      "reference_pages": [
+        1,
+        433
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "artigos",
+      "expected": [
+        "124",
+        "126",
+        "128"
+      ],
+      "aliases": [],
+      "reference_pages": [
+        1,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "origem",
+      "expected": "Distrito Federal",
+      "aliases": [
+        "DF"
+      ],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "ajuizamento",
+      "expected": "2004-06-17",
+      "aliases": [],
+      "reference_pages": [
+        2
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "ano_audiencia",
+      "expected": 2008,
+      "aliases": [],
+      "reference_pages": [
+        20
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "datas_audiencia",
+      "expected": [
+        "2008-08-26",
+        "2008-08-28",
+        "2008-09-04",
+        "2008-09-16"
+      ],
+      "aliases": [],
+      "reference_pages": [
+        20
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "improcedentes",
+      "expected": [
+        "Ricardo Lewandowski",
+        "Cezar Peluso"
+      ],
+      "aliases": [],
+      "reference_pages": [
+        433
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "impedido",
+      "expected": "Dias Toffoli",
+      "aliases": [],
+      "reference_pages": [
+        253,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "condicoes",
+      "expected": [
+        "Gilmar Mendes",
+        "Celso de Mello"
+      ],
+      "aliases": [],
+      "reference_pages": [
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "pgr",
+      "expected": "Roberto Monteiro Gurgel Santos",
+      "aliases": [
+        "Roberto Gurgel"
+      ],
+      "reference_pages": [
+        433
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "primeira_sessao",
+      "expected": "2012-04-11",
+      "aliases": [],
+      "reference_pages": [
+        253,
+        433
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "multa",
+      "expected": null,
+      "aliases": [],
+      "reference_pages": [],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "adpf54",
+      "field_id": "conta",
+      "expected": null,
+      "aliases": [],
+      "reference_pages": [],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "titulo",
+      "expected": "Dom Casmurro",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "autor",
+      "expected": "Machado de Assis",
+      "aliases": [],
+      "reference_pages": [
+        1
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "pai",
+      "expected": "Pedro de Albuquerque Santiago",
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "mae",
+      "expected": "Glória",
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "tio",
+      "expected": "Cosme",
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "profissao_tio",
+      "expected": "advogado",
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "prima",
+      "expected": "Justina",
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "amigo",
+      "expected": "Ezequiel de Sousa Escobar",
+      "aliases": [],
+      "reference_pages": [
+        46
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "filho",
+      "expected": "Ezequiel",
+      "aliases": [],
+      "reference_pages": [
+        82
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "homenagem",
+      "expected": "Escobar",
+      "aliases": [],
+      "reference_pages": [
+        82
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "olhos_autor",
+      "expected": "José Dias",
+      "aliases": [],
+      "reference_pages": [
+        20,
+        26
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "casa",
+      "expected": "Engenho Novo",
+      "aliases": [],
+      "reference_pages": [
+        1,
+        33
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "escobar_desejo",
+      "expected": "comércio",
+      "aliases": [],
+      "reference_pages": [
+        61,
+        74
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "idade_mae",
+      "expected": 31,
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "viuvos",
+      "expected": [
+        "Cosme",
+        "Justina",
+        "Glória"
+      ],
+      "aliases": [],
+      "reference_pages": [
+        5
+      ],
+      "split": "held_out",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    },
+    {
+      "corpus_id": "dom-casmurro",
+      "field_id": "cpf",
+      "expected": null,
+      "aliases": [],
+      "reference_pages": [],
+      "split": "development",
+      "annotation": "assistant_prepared_source_linked",
+      "reference_status": "provisional",
+      "rubric": "Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required."
+    }
+  ]
+}

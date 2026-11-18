@@ -1,0 +1,36 @@
+{
+  "processo": {
+    "identificacao": "ADPF 54 / DF",
+    "tribunal": "Supremo Tribunal Federal",
+    "relator": "MARCO AURÉLIO",
+    "origem": "DF"
+  },
+  "partes": {
+    "requerente": "Entidade requerente da ADPF 54",
+    "advogado_requerente": "LUÍS ROBERTO BARROSO",
+    "interessado": "cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso",
+    "advogado_interessado": "Confederação Nacional dos Trabalhadores na Saúde - CNTS",
+    "conta_bancaria_requerente": null
+  },
+  "decisao": {
+    "data": "2023-03-04",
+    "orgao": "Supremo Tribunal Federal",
+    "resultado": "procedente",
+    "por_maioria": true,
+    "presidente": "Cezar Peluso",
+    "artigos_codigo_penal": null,
+    "ministros_pela_improcedencia": null,
+    "ministro_impedido": "Dias Toffoli",
+    "ministros_com_condicoes": [
+      "MIN. CELSO DE MELLO"
+    ],
+    "procurador_geral": "Roberto Monteiro Gurgel Santos",
+    "multa_diaria": null
+  },
+  "cronologia": {
+    "ajuizamento": "2004-06-17",
+    "ano_audiencia": null,
+    "datas_audiencia": null,
+    "sessao_suspensa": "2012-04-11"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "corpus_id": "dom-casmurro",
+  "fields": [
+    {
+      "id": "titulo",
+      "path": "/obra/titulo",
+      "question": "Qual é o título da obra?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "autor",
+      "path": "/obra/autor",
+      "question": "Quem é o autor da obra?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "pai",
+      "path": "/familia/pai",
+      "question": "Qual é o nome completo do pai do narrador, mencionado no capítulo D. Glória?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "mae",
+      "path": "/familia/mae",
+      "question": "Como se chama a mãe de Bentinho?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "tio",
+      "path": "/familia/tio",
+      "question": "Qual é o nome do tio de Bentinho que trabalhava no crime como advogado?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "profissao_tio",
+      "path": "/familia/profissao_tio",
+      "question": "Qual é a profissão de tio Cosme?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "prima",
+      "path": "/familia/prima",
+      "question": "Qual é o nome da prima viúva que morava na casa da mãe do narrador?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "amigo",
+      "path": "/relacoes/nome_amigo",
+      "question": "Qual é o nome completo do seminarista Escobar quando ele é apresentado no capítulo Um seminarista?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "filho",
+      "path": "/familia/filho",
+      "question": "Qual nome foi dado ao filho do narrador na pia batismal?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "homenagem",
+      "path": "/relacoes/homenagem_filhos",
+      "question": "O nome dado ao filho do narrador homenageia qual amigo?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "olhos_autor",
+      "path": "/relacoes/autor_descricao_olhos",
+      "question": "Quem descreveu os olhos de Capitu como de cigana oblíqua e dissimulada?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "casa",
+      "path": "/lugares/casa_reconstruida",
+      "question": "Em que bairro o narrador construiu a casa que reproduz a casa da infância?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "escobar_desejo",
+      "path": "/eventos/desejo_escobar",
+      "question": "Qual atividade Escobar desejava seguir em vez de terminar o curso do seminário?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "idade_mae",
+      "path": "/familia/idade_mae_viuvez",
+      "question": "Quantos anos tinha a mãe do narrador quando morreu o marido?",
+      "value_schema": {
+        "type": "integer"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "viuvos",
+      "path": "/familia/tres_viuvos",
+      "question": "Quais eram os três viúvos da casa descrita no capítulo Tio Cosme?",
+      "value_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "cpf",
+      "path": "/familia/cpf_narrador",
+      "question": "Qual é o número de CPF do narrador registrado no livro?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    }
+  ]
+}

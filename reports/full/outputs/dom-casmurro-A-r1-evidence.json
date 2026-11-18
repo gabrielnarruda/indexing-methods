@@ -1,0 +1,1048 @@
+{
+  "run_id": "extraction-20261118T230728-eef94d",
+  "fields": [
+    {
+      "id": "titulo",
+      "path": "/obra/titulo",
+      "question": "Qual é o título da obra?",
+      "status": "filled",
+      "value": "Tudo por estar cochilando",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+          "quote": "o. Tudo por estar cochilando! Também não achei melhor título para a minha narração - se não tiver outro daqui até ao fim do livro, vai este mesmo.",
+          "page": 1
+        }
+      ],
+      "reason": "O texto menciona explicitamente que o autor não achou melhor título para a narração, indicando que o título é 'Tudo por estar cochilando'.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o título da obra?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p1-c1595",
+            "dom-casmurro-8810ab88-p7-c1594",
+            "dom-casmurro-8810ab88-p85-c0",
+            "dom-casmurro-8810ab88-p45-c3188"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Tudo por estar cochilando",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+                "quote": "o. Tudo por estar cochilando! Também não achei melhor título para a minha narração - se não tiver outro daqui até ao fim do livro, vai este mesmo."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o autor não achou melhor título para a narração, indicando que o título é 'Tudo por estar cochilando'.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Tudo por estar cochilando",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+                "quote": "o. Tudo por estar cochilando! Também não achei melhor título para a minha narração - se não tiver outro daqui até ao fim do livro, vai este mesmo."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o autor não achou melhor título para a narração, indicando que o título é 'Tudo por estar cochilando'.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto citado no chunk_id 'dom-casmurro-8810ab88-p1-c1595' menciona explicitamente que o autor considerou 'Tudo por estar cochilando' como título para a narração, indicando que é o título da obra. Não há contradição ou falta de suporte nas passagens fornecidas.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "autor",
+      "path": "/obra/autor",
+      "question": "Quem é o autor da obra?",
+      "status": "filled",
+      "value": "O autor da obra é o autor do livro",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p7-c1594",
+          "quote": "posto o libreto; estou pronto a dividir contigo os direitos de autor.",
+          "page": 7
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+          "quote": "O meu poeta do trem ficará sabendo que não lhe guardo rancor. E com pequeno esforço, sendo o título seu, poderá cuidar que a obra é sua.",
+          "page": 1
+        }
+      ],
+      "reason": "O texto menciona que o autor do livro é o responsável pela obra, indicando que o título é seu e que ele é o autor.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem é o autor da obra?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p7-c1594",
+            "dom-casmurro-8810ab88-p1-c1595",
+            "dom-casmurro-8810ab88-p62-c0",
+            "dom-casmurro-8810ab88-p7-c3192"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "O autor da obra é o autor do livro",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p7-c1594",
+                "quote": "posto o libreto; estou pronto a dividir contigo os direitos de autor."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+                "quote": "O meu poeta do trem ficará sabendo que não lhe guardo rancor. E com pequeno esforço, sendo o título seu, poderá cuidar que a obra é sua."
+              }
+            ],
+            "reason": "O texto menciona que o autor do livro é o responsável pela obra, indicando que o título é seu e que ele é o autor.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "O autor da obra é o autor do livro",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p7-c1594",
+                "quote": "posto o libreto; estou pronto a dividir contigo os direitos de autor."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p1-c1595",
+                "quote": "O meu poeta do trem ficará sabendo que não lhe guardo rancor. E com pequeno esforço, sendo o título seu, poderá cuidar que a obra é sua."
+              }
+            ],
+            "reason": "O texto menciona que o autor do livro é o responsável pela obra, indicando que o título é seu e que ele é o autor.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona que 'O meu poeta do trem ficará sabendo que não lhe guardo rancor. E com pequeno esforço, sendo o título seu, poderá cuidar que a obra é sua.' Isso indica que o autor da obra é alguém que está se referindo a um poeta do trem, mas não especifica diretamente quem é o autor da obra. O texto também menciona que 'posto o libreto; estou pronto a dividir contigo os direitos de autor', oq",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai",
+      "path": "/familia/pai",
+      "question": "Qual é o nome completo do pai do narrador, mencionado no capítulo D. Glória?",
+      "status": "filled",
+      "value": "D. Glória Fernandes Santiago",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c3194",
+          "quote": "D. Maria da Glória Fernandes Santiago contava quarenta e",
+          "page": 5
+        }
+      ],
+      "reason": "O texto menciona 'D. Maria da Glória Fernandes Santiago' no capítulo que se refere ao pai do narrador. O nome completo do pai do narrador é D. Glória Fernandes Santiago, pois o narrador é o filho de D. Glória e D. Justina, conforme o contexto do documento.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o nome completo do pai do narrador, mencionado no capítulo D. Glória?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p53-c0",
+            "dom-casmurro-8810ab88-p82-c1595",
+            "dom-casmurro-8810ab88-p5-c3194",
+            "dom-casmurro-8810ab88-p37-c1599"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "D. Glória Fernandes Santiago",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c3194",
+                "quote": "D. Maria da Glória Fernandes Santiago contava quarenta e"
+              }
+            ],
+            "reason": "O texto menciona 'D. Maria da Glória Fernandes Santiago' no capítulo que se refere ao pai do narrador. O nome completo do pai do narrador é D. Glória Fernandes Santiago, pois o narrador é o filho de D. Glória e D. Justina, conforme o contexto do documento.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "D. Glória Fernandes Santiago",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c3194",
+                "quote": "D. Maria da Glória Fernandes Santiago contava quarenta e"
+              }
+            ],
+            "reason": "O texto menciona 'D. Maria da Glória Fernandes Santiago' no capítulo que se refere ao pai do narrador. O nome completo do pai do narrador é D. Glória Fernandes Santiago, pois o narrador é o filho de D. Glória e D. Justina, conforme o contexto do documento.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona que 'D. Maria da Glória Fernandes Santiago contava quarenta e' no capítulo D. Glória. O nome completo do pai do narrador mencionado no capítulo D. Glória é D. Glória Fernandes Santiago. O nome completo do pai do narrador é D. Glória Fernandes Santiago.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "mae",
+      "path": "/familia/mae",
+      "question": "Como se chama a mãe de Bentinho?",
+      "status": "filled",
+      "value": "mãe",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p36-c0",
+          "quote": "--Se eu acendesse vela, mamãe zangava-se.",
+          "page": 36
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p22-c0",
+          "quote": "--Está dito, pede a mamãe que me não meta no seminário?",
+          "page": 22
+        }
+      ],
+      "reason": "O trecho menciona 'mamãe' como referência para a mãe do personagem, que é Bentinho.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Como se chama a mãe de Bentinho?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p36-c0",
+            "dom-casmurro-8810ab88-p22-c0",
+            "dom-casmurro-8810ab88-p62-c1597",
+            "dom-casmurro-8810ab88-p65-c1595"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "mãe",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p36-c0",
+                "quote": "--Se eu acendesse vela, mamãe zangava-se."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p22-c0",
+                "quote": "--Está dito, pede a mamãe que me não meta no seminário?"
+              }
+            ],
+            "reason": "O trecho menciona 'mamãe' como referência para a mãe do personagem, que é Bentinho.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "mãe",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p36-c0",
+                "quote": "--Se eu acendesse vela, mamãe zangava-se."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p22-c0",
+                "quote": "--Está dito, pede a mamãe que me não meta no seminário?"
+              }
+            ],
+            "reason": "O trecho menciona 'mamãe' como referência para a mãe do personagem, que é Bentinho.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que 'mamãe' é usado para referir-se à mãe do personagem principal, Bentinho. Nas passagens, há referências como 'mamãe zangava-se' e 'pede a mamãe que me não meta no seminário', indicando que 'mamãe' é a mãe de Bentinho. O termo 'mãe' é uma forma mais formal ou genérica de se referir à mesma pessoa.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "tio",
+      "path": "/familia/tio",
+      "question": "Qual é o nome do tio de Bentinho que trabalhava no crime como advogado?",
+      "status": "filled",
+      "value": "Tio Cosme",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+          "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.",
+          "page": 5
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+          "quote": "CAPÍTULO VI / TIO COSME",
+          "page": 5
+        }
+      ],
+      "reason": "O trecho menciona que Tio Cosme era advogado e está relacionado ao personagem Bentinho. O nome do tio de Bentinho que trabalhava no crime como advogado é Tio Cosme.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o nome do tio de Bentinho que trabalhava no crime como advogado?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p5-c0",
+            "dom-casmurro-8810ab88-p101-c0",
+            "dom-casmurro-8810ab88-p78-c0",
+            "dom-casmurro-8810ab88-p29-c1594"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Tio Cosme",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "CAPÍTULO VI / TIO COSME"
+              }
+            ],
+            "reason": "O trecho menciona que Tio Cosme era advogado e está relacionado ao personagem Bentinho. O nome do tio de Bentinho que trabalhava no crime como advogado é Tio Cosme.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Tio Cosme",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "CAPÍTULO VI / TIO COSME"
+              }
+            ],
+            "reason": "O trecho menciona que Tio Cosme era advogado e está relacionado ao personagem Bentinho. O nome do tio de Bentinho que trabalhava no crime como advogado é Tio Cosme.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que 'Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.' e também há um capítulo chamado 'CAPÍTULO VI / TIO COSME'. Além disso, no texto, é descrito que 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso confirma que Tio Cosme é o tio de Bentinho e trabalhava como advogado.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "profissao_tio",
+      "path": "/familia/profissao_tio",
+      "question": "Qual é a profissão de tio Cosme?",
+      "status": "filled",
+      "value": "advogado",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+          "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.",
+          "page": 5
+        }
+      ],
+      "reason": "O trecho menciona explicitamente que Tio Cosme era advogado.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é a profissão de tio Cosme?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p5-c0",
+            "dom-casmurro-8810ab88-p57-c0",
+            "dom-casmurro-8810ab88-p29-c1594",
+            "dom-casmurro-8810ab88-p3-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "advogado",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos."
+              }
+            ],
+            "reason": "O trecho menciona explicitamente que Tio Cosme era advogado.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "advogado",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos."
+              }
+            ],
+            "reason": "O trecho menciona explicitamente que Tio Cosme era advogado.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona explicitamente que 'Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.' Isso indica claramente que Tio Cosme é advogado. A informação está presente na passagem fornecida e não há contradição ou falta de suporte nas demais passagens.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "prima",
+      "path": "/familia/prima",
+      "question": "Qual é o nome da prima viúva que morava na casa da mãe do narrador?",
+      "status": "filled",
+      "value": "Justina",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+          "quote": "Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.",
+          "page": 5
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p91-c0",
+          "quote": "A Viúva... Poupo-vos as lágrimas da viúva, as minhas, as da outra gente. Saí de lá cerca de onze horas; Capitu e prima Justina esperavam-me, uma com o parecer abatido e estúpido, outra enfastiada apenas.",
+          "page": 91
+        }
+      ],
+      "reason": "O texto menciona que 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso indica que Justina é a prima viúva. Além disso, no capítulo CXXII, há menção a 'prima Justina esperavam-me' no contexto de viúva.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o nome da prima viúva que morava na casa da mãe do narrador?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p5-c0",
+            "dom-casmurro-8810ab88-p8-c1597",
+            "dom-casmurro-8810ab88-p91-c0",
+            "dom-casmurro-8810ab88-p19-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Justina",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p91-c0",
+                "quote": "A Viúva... Poupo-vos as lágrimas da viúva, as minhas, as da outra gente. Saí de lá cerca de onze horas; Capitu e prima Justina esperavam-me, uma com o parecer abatido e estúpido, outra enfastiada apenas."
+              }
+            ],
+            "reason": "O texto menciona que 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso indica que Justina é a prima viúva. Além disso, no capítulo CXXII, há menção a 'prima Justina esperavam-me' no contexto de viúva.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Justina",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p91-c0",
+                "quote": "A Viúva... Poupo-vos as lágrimas da viúva, as minhas, as da outra gente. Saí de lá cerca de onze horas; Capitu e prima Justina esperavam-me, uma com o parecer abatido e estúpido, outra enfastiada apenas."
+              }
+            ],
+            "reason": "O texto menciona que 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso indica que Justina é a prima viúva. Além disso, no capítulo CXXII, há menção a 'prima Justina esperavam-me' no contexto de viúva.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O documento menciona que 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso indica que Justina é a prima viúva do narrador. Além disso, no segundo trecho, há a referência 'Capitu e prima Justina esperavam-me', confirmando que Justina é a prima viúva que morava na casa da mãe do narrador.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "amigo",
+      "path": "/relacoes/nome_amigo",
+      "question": "Qual é o nome completo do seminarista Escobar quando ele é apresentado no capítulo Um seminarista?",
+      "status": "filled",
+      "value": "Ezequiel de Sousa Escobar",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p46-c0",
+          "quote": "Eis aqui outro seminarista. Chamava-se Ezequiel de Sousa Escobar era um rapaz esbelto, olhos claros, um pouco fugitivos, como as mãos, como os pés, como a fala, como tudo.",
+          "page": 46
+        }
+      ],
+      "reason": "O texto menciona explicitamente que o seminarista chamado Ezequiel de Sousa Escobar é apresentado no capítulo Um seminarista.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o nome completo do seminarista Escobar quando ele é apresentado no capítulo Um seminarista?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p71-c3187",
+            "dom-casmurro-8810ab88-p46-c0",
+            "dom-casmurro-8810ab88-p43-c1599",
+            "dom-casmurro-8810ab88-p46-c3194"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Ezequiel de Sousa Escobar",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p46-c0",
+                "quote": "Eis aqui outro seminarista. Chamava-se Ezequiel de Sousa Escobar era um rapaz esbelto, olhos claros, um pouco fugitivos, como as mãos, como os pés, como a fala, como tudo."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o seminarista chamado Ezequiel de Sousa Escobar é apresentado no capítulo Um seminarista.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Ezequiel de Sousa Escobar",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p46-c0",
+                "quote": "Eis aqui outro seminarista. Chamava-se Ezequiel de Sousa Escobar era um rapaz esbelto, olhos claros, um pouco fugitivos, como as mãos, como os pés, como a fala, como tudo."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o seminarista chamado Ezequiel de Sousa Escobar é apresentado no capítulo Um seminarista.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto do capítulo LVI menciona explicitamente: 'Eis aqui outro seminarista. Chamava-se Ezequiel de Sousa Escobar era um rapaz esbelto...' Portanto, o nome completo do seminarista Escobar apresentado no capítulo Um seminarista é Ezequiel de Sousa Escobar.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "filho",
+      "path": "/familia/filho",
+      "question": "Qual nome foi dado ao filho do narrador na pia batismal?",
+      "status": "filled",
+      "value": "Ezequiel",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p82-c0",
+          "quote": "Não houve remédio senão levar o menino à pia, onde se lhe deu o nome de Ezequiel; era o de Escobar, e eu quis suprir deste modo a falta de compadrio.",
+          "page": 82
+        }
+      ],
+      "reason": "O texto menciona explicitamente que o menino foi batizado com o nome de Ezequiel, que é o nome dado pelo pai (Escobar) e que o narrador utilizou para suprir a falta de compadrio.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual nome foi dado ao filho do narrador na pia batismal?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p81-c0",
+            "dom-casmurro-8810ab88-p82-c0",
+            "dom-casmurro-8810ab88-p24-c0",
+            "dom-casmurro-8810ab88-p101-c1587"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Ezequiel",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p82-c0",
+                "quote": "Não houve remédio senão levar o menino à pia, onde se lhe deu o nome de Ezequiel; era o de Escobar, e eu quis suprir deste modo a falta de compadrio."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o menino foi batizado com o nome de Ezequiel, que é o nome dado pelo pai (Escobar) e que o narrador utilizou para suprir a falta de compadrio.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Ezequiel",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p82-c0",
+                "quote": "Não houve remédio senão levar o menino à pia, onde se lhe deu o nome de Ezequiel; era o de Escobar, e eu quis suprir deste modo a falta de compadrio."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que o menino foi batizado com o nome de Ezequiel, que é o nome dado pelo pai (Escobar) e que o narrador utilizou para suprir a falta de compadrio.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona que o menino foi batizado com o nome de Ezequiel na pia, conforme a passagem: 'Não houve remédio senão levar o menino à pia, onde se lhe deu o nome de Ezequiel; era o de Escobar, e eu quis suprir deste modo a falta de compadrio.' Isso confirma que o nome dado ao filho do narrador na pia batismal foi Ezequiel.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "homenagem",
+      "path": "/relacoes/homenagem_filhos",
+      "question": "O nome dado ao filho do narrador homenageia qual amigo?",
+      "status": "filled",
+      "value": "Escobar",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+          "quote": "Quando íamos a Andaraí e víamos a filha de Escobar e Sancha, familiarmente Capituzinha, por diferençá-la de minha mulher, visto que lhe deram o mesmo nome à pia, ficávamos cheios de invejas.",
+          "page": 81
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+          "quote": "A pequena era graciosa e gorducha, faladeira e curiosa.",
+          "page": 81
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+          "quote": "As invejas morreram, as esperanças nasceram, e não tardou que viesse ao mundo o fruto delas.",
+          "page": 81
+        }
+      ],
+      "reason": "O nome dado ao filho do narrador é 'Capituzinha' (por diferençá-la de minha mulher), mas o filho é mencionado como 'um rapagão robusto e lindo' e o pai do filho é Escobar. O narrador diz que 'vimos a filha de Escobar e Sancha, familiarmente Capituzinha' e que 'não tardou que viesse ao mundo o fruto delas' (as invejas). Portanto, o amigo homenageado pelo nome do filho é Escobar.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "O nome dado ao filho do narrador homenageia qual amigo?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p81-c0",
+            "dom-casmurro-8810ab88-p80-c0",
+            "dom-casmurro-8810ab88-p101-c1587",
+            "dom-casmurro-8810ab88-p63-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Escobar",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "Quando íamos a Andaraí e víamos a filha de Escobar e Sancha, familiarmente Capituzinha, por diferençá-la de minha mulher, visto que lhe deram o mesmo nome à pia, ficávamos cheios de invejas."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "A pequena era graciosa e gorducha, faladeira e curiosa."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "As invejas morreram, as esperanças nasceram, e não tardou que viesse ao mundo o fruto delas."
+              }
+            ],
+            "reason": "O nome dado ao filho do narrador é 'Capituzinha' (por diferençá-la de minha mulher), mas o filho é mencionado como 'um rapagão robusto e lindo' e o pai do filho é Escobar. O narrador diz que 'vimos a filha de Escobar e Sancha, familiarmente Capituzinha' e que 'não tardou que viesse ao mundo o fruto delas' (as invejas). Portanto, o amigo homenageado pelo nome do filho é Escobar.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Escobar",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "Quando íamos a Andaraí e víamos a filha de Escobar e Sancha, familiarmente Capituzinha, por diferençá-la de minha mulher, visto que lhe deram o mesmo nome à pia, ficávamos cheios de invejas."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "A pequena era graciosa e gorducha, faladeira e curiosa."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p81-c0",
+                "quote": "As invejas morreram, as esperanças nasceram, e não tardou que viesse ao mundo o fruto delas."
+              }
+            ],
+            "reason": "O nome dado ao filho do narrador é 'Capituzinha' (por diferençá-la de minha mulher), mas o filho é mencionado como 'um rapagão robusto e lindo' e o pai do filho é Escobar. O narrador diz que 'vimos a filha de Escobar e Sancha, familiarmente Capituzinha' e que 'não tardou que viesse ao mundo o fruto delas' (as invejas). Portanto, o amigo homenageado pelo nome do filho é Escobar.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O nome dado ao filho do narrador homenageia qual amigo? A resposta proposta é 'Escobar'.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "olhos_autor",
+      "path": "/relacoes/autor_descricao_olhos",
+      "question": "Quem descreveu os olhos de Capitu como de cigana oblíqua e dissimulada?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p26-c1595",
+          "quote": "Tinha-me lembrado a definição que José Dias dera deles, \"olhos de cigana oblíqua e dissimulada.\"",
+          "page": 26
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p20-c0",
+          "quote": "Capitu, apesar deles olhos que o Diabo lhe deu... Você já reparou nos olhos dela? São assim de cigana oblíqua e dissimulada.",
+          "page": 20
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p104-c1597",
+          "quote": "Talvez porque nenhuma tinha os olhos de ressaca, nem os de cigana oblíqua e dissimulada.",
+          "page": 104
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p37-c0",
+          "quote": "Capitu olhou para mim, mas de um modo que me fez lembrar a definição de José Dias, oblíquo e dissimulado",
+          "page": 37
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quem descreveu os olhos de Capitu como de cigana oblíqua e dissimulada?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p26-c1595",
+            "dom-casmurro-8810ab88-p20-c0",
+            "dom-casmurro-8810ab88-p104-c1597",
+            "dom-casmurro-8810ab88-p37-c0"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p26-c1595",
+                "quote": "Tinha-me lembrado a definição que José Dias dera deles, \"olhos de cigana oblíqua e dissimulada.\""
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p20-c0",
+                "quote": "Capitu, apesar deles olhos que o Diabo lhe deu... Você já reparou nos olhos dela? São assim de cigana oblíqua e dissimulada."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p104-c1597",
+                "quote": "Talvez porque nenhuma tinha os olhos de ressaca, nem os de cigana oblíqua e dissimulada."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p37-c0",
+                "quote": "Capitu olhou para mim, mas de um modo que me fez lembrar a definição de José Dias, oblíquo e dissimulado"
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Quem descreveu os olhos de Capitu como de cigana oblíqua e dissimulada? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "José Dias",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p26-c1595",
+                "quote": "Tinha-me lembrado a definição que José Dias dera deles, \"olhos de cigana oblíqua e dissimulada.\""
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p20-c0",
+                "quote": "Capitu, apesar deles olhos que o Diabo lhe deu... Você já reparou nos olhos dela? São assim de cigana oblíqua e dissimulada."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p104-c1597",
+                "quote": "Talvez porque nenhuma tinha os olhos de ressaca, nem os de cigana oblíqua e dissimulada."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p37-c0",
+                "quote": "Capitu olhou para mim, mas de um modo que me fez lembrar a definição de José Dias, oblíquo e dissimulado"
+              }
+            ],
+            "reason": "O texto menciona explicitamente que José Dias descreveu os olhos de Capitu como \"olhos de cigana oblíqua e dissimulada\" em múltiplos trechos do documento.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "casa",
+      "path": "/lugares/casa_reconstruida",
+      "question": "Em que bairro o narrador construiu a casa que reproduz a casa da infância?",
+      "status": "filled",
+      "value": "Engenho Novo",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p102-c0",
+          "quote": "Esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela, e mais por efeito de comparação e de reflexão que de sentimento.",
+          "page": 102
+        }
+      ],
+      "reason": "O trecho menciona que a casa do Engenho Novo reproduz a casa da infância, especificamente referindo que 'esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela'.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Em que bairro o narrador construiu a casa que reproduz a casa da infância?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p15-c1588",
+            "dom-casmurro-8810ab88-p102-c0",
+            "dom-casmurro-8810ab88-p9-c3196",
+            "dom-casmurro-8810ab88-p66-c1598"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "Engenho Novo",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p102-c0",
+                "quote": "Esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela, e mais por efeito de comparação e de reflexão que de sentimento."
+              }
+            ],
+            "reason": "O trecho menciona que a casa do Engenho Novo reproduz a casa da infância, especificamente referindo que 'esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela'.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "Engenho Novo",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p102-c0",
+                "quote": "Esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela, e mais por efeito de comparação e de reflexão que de sentimento."
+              }
+            ],
+            "reason": "O trecho menciona que a casa do Engenho Novo reproduz a casa da infância, especificamente referindo que 'esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela'.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona que \"Esta casa do Engenho Novo, conquanto reproduza a de Mata-cavalos, apenas me lembra aquela, e mais por efeito de comparação e de reflexão que de sentimento.\" Isso indica que o narrador construiu uma casa no bairro Engenho Novo que reproduz a casa da infância (Mata-cavalos).",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "escobar_desejo",
+      "path": "/eventos/desejo_escobar",
+      "question": "Qual atividade Escobar desejava seguir em vez de terminar o curso do seminário?",
+      "status": "filled",
+      "value": "comércio",
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p61-c0",
+          "quote": "Segredo por segredo; também eu tenho o propósito de não acabar o curso; meu desejo é o comércio, mas não diga nada, absolutamente nada- fica só entre nós.",
+          "page": 61
+        }
+      ],
+      "reason": "O trecho menciona que Escobar tem 'meu desejo é o comércio', indicando que ele deseja seguir a atividade de comércio em vez de terminar o curso do seminário.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual atividade Escobar desejava seguir em vez de terminar o curso do seminário?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p61-c0",
+            "dom-casmurro-8810ab88-p1-c0",
+            "dom-casmurro-8810ab88-p60-c1594",
+            "dom-casmurro-8810ab88-p33-c1595"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": "comércio",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p61-c0",
+                "quote": "Segredo por segredo; também eu tenho o propósito de não acabar o curso; meu desejo é o comércio, mas não diga nada, absolutamente nada- fica só entre nós."
+              }
+            ],
+            "reason": "O trecho menciona que Escobar tem 'meu desejo é o comércio', indicando que ele deseja seguir a atividade de comércio em vez de terminar o curso do seminário.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "comércio",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p61-c0",
+                "quote": "Segredo por segredo; também eu tenho o propósito de não acabar o curso; meu desejo é o comércio, mas não diga nada, absolutamente nada- fica só entre nós."
+              }
+            ],
+            "reason": "O trecho menciona que Escobar tem 'meu desejo é o comércio', indicando que ele deseja seguir a atividade de comércio em vez de terminar o curso do seminário.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O trecho citado no documento indica que Escobar diz: 'meu desejo é o comércio, mas não diga nada, absolutamente nada- fica só entre nós'. Portanto, a atividade que Escobar desejava seguir em vez de terminar o curso do seminário é o comércio.",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "idade_mae",
+      "path": "/familia/idade_mae_viuvez",
+      "question": "Quantos anos tinha a mãe do narrador quando morreu o marido?",
+      "status": "filled",
+      "value": 31,
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c1598",
+          "quote": "Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade",
+          "page": 5
+        }
+      ],
+      "reason": "A informação está claramente indicada no trecho: 'Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade'.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quantos anos tinha a mãe do narrador quando morreu o marido?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p5-c1598",
+            "dom-casmurro-8810ab88-p51-c0",
+            "dom-casmurro-8810ab88-p76-c0",
+            "dom-casmurro-8810ab88-p6-c0"
+          ],
+          "answer": {
+            "status": "filled",
+            "value": 31,
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c1598",
+                "quote": "Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade"
+              }
+            ],
+            "reason": "A informação está claramente indicada no trecho: 'Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade'.",
+            "next_query": ""
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": 31,
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c1598",
+                "quote": "Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade"
+              }
+            ],
+            "reason": "A informação está claramente indicada no trecho: 'Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade'.",
+            "next_query": ""
+          },
+          "validation_errors": [],
+          "support_check": {
+            "reason": "O texto menciona que \"Quando lhe morreu o marido, Pedro de Albuquerque Santiago, contava trinta e um anos de idade\". Isso indica que a mãe do narrador tinha 31 anos quando morreu o marido (Pedro de Albuquerque Santiago).",
+            "supported": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "viuvos",
+      "path": "/familia/tres_viuvos",
+      "question": "Quais eram os três viúvos da casa descrita no capítulo Tio Cosme?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+          "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.\nCAPÍTULO VI / TIO COSME\nTio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.",
+          "page": 5
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p57-c0",
+          "quote": "Tio Cosme e José Dias gostaram do moço; o agregado disse-lhe que vira uma vez o pai no Rio de Janeiro.",
+          "page": 57
+        },
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p8-c1597",
+          "quote": "Minha mãe pegou-se com Deus para que o segundo vingasse, prometendo, se fosse varão, metê-lo na Igreja. Talvez esperasse uma menina. Não disse nada a meu pai, nem antes, nem depois de me dar à luz, contava fazê-lo quando eu entrasse para a escola, mas enviuvou antes disso.",
+          "page": 8
+        }
+      ],
+      "reason": "Citation does not match a supplied passage",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Quais eram os três viúvos da casa descrita no capítulo Tio Cosme?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p5-c0",
+            "dom-casmurro-8810ab88-p91-c1598",
+            "dom-casmurro-8810ab88-p57-c0",
+            "dom-casmurro-8810ab88-p8-c1597"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.\nCAPÍTULO VI / TIO COSME\nTio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p57-c0",
+                "quote": "Tio Cosme e José Dias gostaram do moço; o agregado disse-lhe que vira uma vez o pai no Rio de Janeiro."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p8-c1597",
+                "quote": "Minha mãe pegou-se com Deus para que o segundo vingasse, prometendo, se fosse varão, metê-lo na Igreja. Talvez esperasse uma menina. Não disse nada a meu pai, nem antes, nem depois de me dar à luz, contava fazê-lo quando eu entrasse para a escola, mas enviuvou antes disso."
+              }
+            ],
+            "reason": "Citation does not match a supplied passage",
+            "next_query": "Quais eram os três viúvos da casa descrita no capítulo Tio Cosme? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": [
+              "Tio Cosme",
+              "Justina",
+              "Mãe"
+            ],
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p5-c0",
+                "quote": "Tio Cosme, que era advogado, confiava-lhe a cópia de papéis de autos.\nCAPÍTULO VI / TIO COSME\nTio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p57-c0",
+                "quote": "Tio Cosme e José Dias gostaram do moço; o agregado disse-lhe que vira uma vez o pai no Rio de Janeiro."
+              },
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p8-c1597",
+                "quote": "Minha mãe pegou-se com Deus para que o segundo vingasse, prometendo, se fosse varão, metê-lo na Igreja. Talvez esperasse uma menina. Não disse nada a meu pai, nem antes, nem depois de me dar à luz, contava fazê-lo quando eu entrasse para a escola, mas enviuvou antes disso."
+              }
+            ],
+            "reason": "O trecho do capítulo VI menciona que Tio Cosme e Justina eram viúvos, e que a mãe também havia se tornado viúva. O texto afirma: 'Tio Cosme vivia com minha mãe, desde que ela enviuvou. Já então era viúvo, como prima Justina; era a casa dos três viúvos.' Isso indica que os três viúvos são Tio Cosme, Justina e a mãe.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "Citation does not match a supplied passage"
+          ],
+          "support_check": null
+        }
+      ]
+    },
+    {
+      "id": "cpf",
+      "path": "/familia/cpf_narrador",
+      "question": "Qual é o número de CPF do narrador registrado no livro?",
+      "status": "limit_reached",
+      "value": null,
+      "evidence": [
+        {
+          "chunk_id": "dom-casmurro-8810ab88-p51-c1591",
+          "quote": "Tinha o número 4004.",
+          "page": 51
+        }
+      ],
+      "reason": "O texto menciona explicitamente que 'Tinha o número 4004.' no contexto de um bilhete de loteria. O CPF é um número de 11 dígitos, mas o valor proposto é '4004', que corresponde ao número do bilhete de loteria mencionado no texto. O narrador está referindo-se ao número do bilhete de loteria, não ao CPF.",
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Qual é o número de CPF do narrador registrado no livro?",
+          "retrieved_ids": [
+            "dom-casmurro-8810ab88-p51-c1591",
+            "dom-casmurro-8810ab88-p94-c3195",
+            "dom-casmurro-8810ab88-p19-c1593",
+            "dom-casmurro-8810ab88-p56-c1590"
+          ],
+          "answer": {
+            "status": "search_again",
+            "value": null,
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p51-c1591",
+                "quote": "Tinha o número 4004."
+              }
+            ],
+            "reason": "O texto menciona explicitamente que 'Tinha o número 4004.' no contexto de um bilhete de loteria. O CPF é um número de 11 dígitos, mas o valor proposto é '4004', que corresponde ao número do bilhete de loteria mencionado no texto. O narrador está referindo-se ao número do bilhete de loteria, não ao CPF.",
+            "next_query": "Qual é o número de CPF do narrador registrado no livro? fonte literal"
+          },
+          "raw_answer": {
+            "status": "filled",
+            "value": "4004",
+            "evidence": [
+              {
+                "chunk_id": "dom-casmurro-8810ab88-p51-c1591",
+                "quote": "Tinha o número 4004."
+              }
+            ],
+            "reason": "O texto menciona explicitamente 'Tinha o número 4004.' no capítulo LXI. O número 4004 é referido como o número do bilhete de loteria que o personagem vê em seu sonho.",
+            "next_query": ""
+          },
+          "validation_errors": [
+            "O texto menciona explicitamente que 'Tinha o número 4004.' no contexto de um bilhete de loteria. O CPF é um número de 11 dígitos, mas o valor proposto é '4004', que corresponde ao número do bilhete de loteria mencionado no texto. O narrador está referindo-se ao número do bilhete de loteria, não ao CPF."
+          ],
+          "support_check": {
+            "reason": "O texto menciona explicitamente que 'Tinha o número 4004.' no contexto de um bilhete de loteria. O CPF é um número de 11 dígitos, mas o valor proposto é '4004', que corresponde ao número do bilhete de loteria mencionado no texto. O narrador está referindo-se ao número do bilhete de loteria, não ao CPF.",
+            "supported": false
+          }
+        }
+      ]
+    }
+  ]
+}

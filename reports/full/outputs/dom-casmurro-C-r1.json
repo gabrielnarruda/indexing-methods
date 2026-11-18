@@ -1,0 +1,32 @@
+{
+  "obra": {
+    "titulo": "O meu poeta do trem ficará sabendo que não lhe guardo rancor. E com pequeno esforço, sendo o título seu, poderá cuidar que a obra é sua.",
+    "autor": "Satanás"
+  },
+  "familia": {
+    "pai": "Pedro de Albuquerque Santiago",
+    "mae": "mamãe",
+    "tio": "Tio Cosme",
+    "profissao_tio": "advogado",
+    "prima": "Justina",
+    "filho": "Ezequiel",
+    "idade_mae_viuvez": 31,
+    "tres_viuvos": [
+      "Tio Cosme",
+      "Justina",
+      "mãe"
+    ],
+    "cpf_narrador": null
+  },
+  "relacoes": {
+    "nome_amigo": "Ezequiel de Sousa Escobar",
+    "homenagem_filhos": "Ezequiel",
+    "autor_descricao_olhos": "José Dias"
+  },
+  "lugares": {
+    "casa_reconstruida": "Flamengo"
+  },
+  "eventos": {
+    "desejo_escobar": "comércio"
+  }
+}

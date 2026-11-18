@@ -1,0 +1,45 @@
+{
+  "processo": {
+    "identificacao": "ADPF 54 / DF",
+    "tribunal": "Supremo Tribunal Federal",
+    "relator": "MARCO AURÉLIO",
+    "origem": "DF"
+  },
+  "partes": {
+    "requerente": "Conferência Nacional dos Bispos do Brasil – CNBB",
+    "advogado_requerente": "Confederação Nacional dos Trabalhadores na Saúde – CNTS",
+    "interessado": "Conferência Nacional dos Bispos do Brasil – CNBB",
+    "advogado_interessado": "Conferência Nacional dos Bispos do Brasil – CNBB",
+    "conta_bancaria_requerente": null
+  },
+  "decisao": {
+    "data": null,
+    "orgao": null,
+    "resultado": "improcedente",
+    "por_maioria": true,
+    "presidente": "Rel. Min. Marco Aurélio",
+    "artigos_codigo_penal": [
+      "124",
+      "126",
+      "128"
+    ],
+    "ministros_pela_improcedencia": [
+      "MIN. RICARDO LEWANDOWSKI"
+    ],
+    "ministro_impedido": "Dias Toffoli",
+    "ministros_com_condicoes": null,
+    "procurador_geral": "Roberto Monteiro Gurgel Santos",
+    "multa_diaria": null
+  },
+  "cronologia": {
+    "ajuizamento": "2004-06-17",
+    "ano_audiencia": 2008,
+    "datas_audiencia": [
+      "2008-08-28",
+      "2008-08-29",
+      "2008-08-30",
+      "2008-08-31"
+    ],
+    "sessao_suspensa": "2012-04-11"
+  }
+}

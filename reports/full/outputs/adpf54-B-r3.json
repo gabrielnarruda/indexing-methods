@@ -1,0 +1,42 @@
+{
+  "processo": {
+    "identificacao": "ADPF 54 / DF",
+    "tribunal": "Supremo Tribunal Federal",
+    "relator": "MARCO AURÉLIO",
+    "origem": "DF"
+  },
+  "partes": {
+    "requerente": "Conferência Nacional dos Bispos do Brasil – CNBB",
+    "advogado_requerente": "Confederação Nacional dos Trabalhadores na Saúde – CNTS",
+    "interessado": "cristãos, judeus, muçulmanos, ateus ou de qualquer outro segmento religioso",
+    "advogado_interessado": "MIN. GILMAR MENDES",
+    "conta_bancaria_requerente": null
+  },
+  "decisao": {
+    "data": null,
+    "orgao": "Supremo Tribunal Federal",
+    "resultado": "procedente",
+    "por_maioria": true,
+    "presidente": "Rel. Min. Marco Aurélio",
+    "artigos_codigo_penal": null,
+    "ministros_pela_improcedencia": [
+      "MIN. RICARDO LEWANDOWSKI",
+      "MIN. CEZAR PELUSO"
+    ],
+    "ministro_impedido": "Dias Toffoli",
+    "ministros_com_condicoes": null,
+    "procurador_geral": "Roberto Monteiro Gurgel Santos",
+    "multa_diaria": null
+  },
+  "cronologia": {
+    "ajuizamento": "2004-06-17",
+    "ano_audiencia": 2008,
+    "datas_audiencia": [
+      "2008-08-26",
+      "2008-08-28",
+      "2008-09-04",
+      "2008-09-16"
+    ],
+    "sessao_suspensa": "2012-04-11"
+  }
+}

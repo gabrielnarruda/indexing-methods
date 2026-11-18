@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "report_entries": 720,
+  "javascript_errors": [],
+  "external_requests": [],
+  "checks": [
+    "architecture nodes and zoom",
+    "test pipeline",
+    "graph source and scope",
+    "entity search",
+    "keyboard access",
+    "report filters",
+    "cost projection",
+    "mobile architecture"
+  ],
+  "checked_at": "2026-11-18T23:37:42.026Z"
+}

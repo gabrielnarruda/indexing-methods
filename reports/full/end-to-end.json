@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "benchmark": "full",
+  "checks": {
+    "forms": 36,
+    "fields": 720,
+    "filled_citations_checked": 822,
+    "events_checked": 6810,
+    "mcp_calls": 1476,
+    "agent_rounds": 738,
+    "model_calls": 1450
+  },
+  "field_statuses": {
+    "filled": 585,
+    "limit_reached": 120,
+    "not_found": 15
+  },
+  "scope": "schema, provenance, scope, budget, telemetry and export consistency; not semantic accuracy"
+}

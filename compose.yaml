@@ -24,6 +24,7 @@ services:
       - graph-data:/data
   ollama:
     image: ollama/ollama:0.13.0
+    gpus: all
     ports:
       - '127.0.0.1:11435:11434'
     volumes:

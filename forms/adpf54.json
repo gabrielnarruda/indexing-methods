@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "corpus_id": "adpf54",
+  "fields": [
+    {
+      "id": "identificacao",
+      "path": "/processo/identificacao",
+      "question": "Qual é a classe e o número do processo principal deste acórdão?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "tribunal",
+      "path": "/processo/tribunal",
+      "question": "Qual tribunal proferiu o acórdão?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "relator",
+      "path": "/processo/relator",
+      "question": "Quem é o ministro relator da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "requerente",
+      "path": "/partes/requerente",
+      "question": "Qual entidade é a requerente da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "advogado_requerente",
+      "path": "/partes/advogado_requerente",
+      "question": "Quem é o advogado da requerente indicado no cabeçalho da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "interessado",
+      "path": "/partes/interessado",
+      "question": "Quem consta como interessado no cabeçalho da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "advogado_interessado",
+      "path": "/partes/advogado_interessado",
+      "question": "Quem representa o interessado no cabeçalho da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "data_julgamento",
+      "path": "/decisao/data",
+      "question": "Qual é a data do julgamento final de mérito da ADPF 54? Use AAAA-MM-DD.",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "orgao",
+      "path": "/decisao/orgao",
+      "question": "Qual órgão julgador do STF proferiu o julgamento de mérito?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "resultado",
+      "path": "/decisao/resultado",
+      "question": "A ação principal foi julgada procedente ou improcedente no resultado final?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "maioria",
+      "path": "/decisao/por_maioria",
+      "question": "O julgamento final foi decidido por maioria? Responda booleano.",
+      "value_schema": {
+        "type": "boolean"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "presidente",
+      "path": "/decisao/presidente",
+      "question": "Quem presidiu a sessão final de julgamento da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "artigos",
+      "path": "/decisao/artigos_codigo_penal",
+      "question": "Quais números de artigos do Código Penal aparecem no dispositivo do acórdão? Retorne strings com os números.",
+      "value_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "origem",
+      "path": "/processo/origem",
+      "question": "Qual unidade da federação consta como origem da ADPF 54?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "ajuizamento",
+      "path": "/cronologia/ajuizamento",
+      "question": "Em que data a CNTS formalizou a arguição, segundo o relatório? Use AAAA-MM-DD.",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "ano_audiencia",
+      "path": "/cronologia/ano_audiencia",
+      "question": "Em que ano ocorreram as sessões da audiência pública descritas no relatório?",
+      "value_schema": {
+        "type": "integer"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "datas_audiencia",
+      "path": "/cronologia/datas_audiencia",
+      "question": "Quais foram as quatro datas das sessões da audiência pública descritas no relatório? Use AAAA-MM-DD.",
+      "value_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "improcedentes",
+      "path": "/decisao/ministros_pela_improcedencia",
+      "question": "Quais ministros votaram pela improcedência no resultado final, segundo a ata?",
+      "value_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "impedido",
+      "path": "/decisao/ministro_impedido",
+      "question": "Qual ministro aparece como impedido na ata da sessão de 11 de abril de 2012?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "condicoes",
+      "path": "/decisao/ministros_com_condicoes",
+      "question": "Quais ministros julgaram procedente acrescentando condições de diagnóstico, segundo a ata final?",
+      "value_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "pgr",
+      "path": "/decisao/procurador_geral",
+      "question": "Qual é o nome do Procurador-Geral da República presente no julgamento final, segundo a ata?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "primeira_sessao",
+      "path": "/cronologia/sessao_suspensa",
+      "question": "Em qual data ocorreu a sessão em que o julgamento de mérito foi suspenso depois do voto de Ricardo Lewandowski? Use AAAA-MM-DD.",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "multa",
+      "path": "/decisao/multa_diaria",
+      "question": "Qual valor de multa diária o dispositivo deste acórdão fixou contra a requerente?",
+      "value_schema": {
+        "type": "number"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    },
+    {
+      "id": "conta",
+      "path": "/partes/conta_bancaria_requerente",
+      "question": "Qual número de conta bancária da requerente é informado no cabeçalho do processo?",
+      "value_schema": {
+        "type": "string"
+      },
+      "absence_policy": "null_with_status",
+      "scope": "provided_corpus_only"
+    }
+  ]
+}

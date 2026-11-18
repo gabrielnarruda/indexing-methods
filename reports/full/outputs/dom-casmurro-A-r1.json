@@ -1,0 +1,28 @@
+{
+  "obra": {
+    "titulo": "Tudo por estar cochilando",
+    "autor": "O autor da obra é o autor do livro"
+  },
+  "familia": {
+    "pai": "D. Glória Fernandes Santiago",
+    "mae": "mãe",
+    "tio": "Tio Cosme",
+    "profissao_tio": "advogado",
+    "prima": "Justina",
+    "filho": "Ezequiel",
+    "idade_mae_viuvez": 31,
+    "tres_viuvos": null,
+    "cpf_narrador": null
+  },
+  "relacoes": {
+    "nome_amigo": "Ezequiel de Sousa Escobar",
+    "homenagem_filhos": "Escobar",
+    "autor_descricao_olhos": null
+  },
+  "lugares": {
+    "casa_reconstruida": "Engenho Novo"
+  },
+  "eventos": {
+    "desejo_escobar": "comércio"
+  }
+}

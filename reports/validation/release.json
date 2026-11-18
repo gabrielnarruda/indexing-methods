@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "benchmark": "full",
+  "changed_source_files": [
+    "poc/documents.py",
+    "poc/extraction.py"
+  ],
+  "identical_chunks_under_benchmark_configuration": {
+    "adpf54": 777,
+    "dom-casmurro": 280
+  },
+  "unchanged_functions": "All except split_text and extract_form initialization",
+  "experimental_source": "../full/frozen-inputs.zip",
+  "maintenance_changes": [
+    "Guarantee progress with high overlap",
+    "Reject empty or unknown field selections",
+    "Record initialization failures and timing"
+  ],
+  "scope": "Regression of source layout and unchanged extraction/retrieval logic; benchmark outputs remain from the archived version",
+  "release_smoke": {
+    "run_id": "extraction-20261118T233742-e66c0a",
+    "status": "complete",
+    "result": {
+      "processo": {
+        "identificacao": "ADPF 54 / DF"
+      }
+    },
+    "metrics": {
+      "run_id": "extraction-20261118T233742-e66c0a",
+      "status": "complete",
+      "wall_seconds": 6.194441900006495,
+      "stages": {
+        "retrieval": {
+          "calls": 1,
+          "inclusive_ms": 29.391100048087537,
+          "errors": 0
+        },
+        "initialization": {
+          "calls": 1,
+          "inclusive_ms": 72.14720000047237,
+          "errors": 0
+        },
+        "mcp": {
+          "calls": 2,
+          "inclusive_ms": 96.84540005400777,
+          "errors": 0
+        },
+        "generation": {
+          "calls": 1,
+          "inclusive_ms": 2892.709600040689,
+          "errors": 0
+        },
+        "validation": {
+          "calls": 1,
+          "inclusive_ms": 0.2300000051036477,
+          "errors": 0
+        },
+        "support_validation": {
+          "calls": 1,
+          "inclusive_ms": 2157.387600047514,
+          "errors": 0
+        },
+        "round": {
+          "calls": 1,
+          "inclusive_ms": 5168.767300085165,
+          "errors": 0
+        },
+        "field": {
+          "calls": 1,
+          "inclusive_ms": 5171.204800019041,
+          "errors": 0
+        }
+      },
+      "model_calls": 2,
+      "cache_hits": 0,
+      "input_tokens": 5405,
+      "output_tokens": 383,
+      "usage_unknown_calls": 0,
+      "mcp_calls": 2,
+      "agent_rounds": 1,
+      "api_cost": 0,
+      "currency": "BRL",
+      "machine_cost_estimate": null,
+      "machine_hour_rate": null,
+      "errors": 0
+    }
+  }
+}
