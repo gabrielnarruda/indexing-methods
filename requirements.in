@@ -1,0 +1,6 @@
+pymupdf
+httpx
+jsonschema
+mcp>=1.20,<2
+neo4j
+pytest

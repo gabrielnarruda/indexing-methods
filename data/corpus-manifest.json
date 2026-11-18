@@ -1,0 +1,56 @@
+[
+  {
+    "id": "adpf54",
+    "title": "ADPF 54 — inteiro teor do acórdão de 12/04/2012",
+    "kind": "judicial",
+    "filename": "adpf54-acordao.pdf",
+    "urls": [
+      "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=3707334",
+      "https://www.law.cornell.edu/sites/www.law.cornell.edu/files/women-and-justice/Decriminalization_of_Abortion_in_Cases_of_Anencephaly.pdf"
+    ],
+    "catalog_url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2226954",
+    "scope": "Inteiro teor do acórdão, incluindo relatório, votos, debates e ata. Cobertura dos autos limitada às peças reproduzidas neste PDF.",
+    "access": "Decisão judicial pública, disponibilizada pelo STF e reproduzida pelo Legal Information Institute de Cornell.",
+    "expected_min_pages": 400,
+    "download_url": "https://www.law.cornell.edu/sites/www.law.cornell.edu/files/women-and-justice/Decriminalization_of_Abortion_in_Cases_of_Anencephaly.pdf",
+    "downloaded_at": "2026-11-18T22:12:35.668173+00:00",
+    "sha256": "8db88a8ccd1a7c460be57ef2e31f9e7cce74d2591734603abcc16d0cb09af2d4",
+    "bytes": 4719102,
+    "pages": 433,
+    "download_seconds": 1.8466103000100702,
+    "first_page_preview": "Ementa e Acórdão\n12/04/2012\nPLENÁRIO\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 \nDISTRITO FEDERAL\nRELATOR\n: MIN. MARCO AURÉLIO\nREQTE.(S)\n:CONFEDERAÇÃO \nNACIONAL \nDOS \nTRABALHADORES NA SAÚDE - CNTS \nADV.(A/S)\n:LUÍS ROBERTO BARROSO \nINTDO.(A/S)\n:PRESIDENTE DA REPÚBLICA \nADV.(A/S)\n:ADVOGADO-GERAL DA UNIÃO \nESTADO – LAICIDADE. O Brasil é uma república laica, surgindo \nabsolutamente neutro quanto às religiões. Considerações.\nFETO ANENCÉFALO – INTERRUPÇÃO DA GRAVIDEZ – \nMULHER – LIBERDADE S",
+    "failed_sources": [
+      {
+        "url": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=3707334",
+        "error": "Source returned something other than a PDF"
+      }
+    ]
+  },
+  {
+    "id": "dom-casmurro",
+    "title": "Dom Casmurro — Machado de Assis",
+    "kind": "literature",
+    "filename": "dom-casmurro.pdf",
+    "urls": [
+      "https://www.dominiopublico.gov.br/download/texto/bv00180a.pdf",
+      "https://dominiopublico.mec.gov.br/download/texto/bv00180a.pdf"
+    ],
+    "catalog_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraForm.do?co_obra=1888",
+    "scope": "Obra literária completa na edição do portal Domínio Público.",
+    "access": "Texto de Machado de Assis em domínio público, catálogo do MEC.",
+    "expected_min_pages": 80,
+    "download_url": "https://dominiopublico.mec.gov.br/download/texto/bv00180a.pdf",
+    "downloaded_at": "2026-11-18T22:12:35.925009+00:00",
+    "sha256": "8810ab883c04560574f5b41f7679f437f4c7d5db1e1d17e9de8964056f865985",
+    "bytes": 638531,
+    "pages": 105,
+    "download_seconds": 0.15986030001658946,
+    "first_page_preview": "Dom Casmurro\nMachado de Assis\nCAPÍTULO PRIMEIRO / DO TÍTULO \nUma noite destas, vindo da cidade para o Engenho Novo, encontrei num trem da Central um rapaz \naqui do bairro, que eu conheço de vista e de chapéu. Cumprimentou-me, sentou-se ao pé de mim, \nfalou da lua e dos ministros, e acabou recitando-me versos. A viagem era curta, e os versos pode ser \nque não fossem inteiramente maus. Sucedeu, porém, que, como eu estava cansado, fechei os olhos \ntrês ou quatro vezes; tanto bastou para que ele int",
+    "failed_sources": [
+      {
+        "url": "https://www.dominiopublico.gov.br/download/texto/bv00180a.pdf",
+        "error": "Client error '403 Forbidden' for url 'https://www.dominiopublico.gov.br/download/texto/bv00180a.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      }
+    ]
+  }
+]

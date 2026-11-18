@@ -1,0 +1,30 @@
+[
+  {
+    "id": "adpf54",
+    "title": "ADPF 54 — inteiro teor do acórdão de 12/04/2012",
+    "kind": "judicial",
+    "filename": "adpf54-acordao.pdf",
+    "urls": [
+      "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=3707334",
+      "https://www.law.cornell.edu/sites/www.law.cornell.edu/files/women-and-justice/Decriminalization_of_Abortion_in_Cases_of_Anencephaly.pdf"
+    ],
+    "catalog_url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2226954",
+    "scope": "Inteiro teor do acórdão, incluindo relatório, votos, debates e ata. Cobertura dos autos limitada às peças reproduzidas neste PDF.",
+    "access": "Decisão judicial pública, disponibilizada pelo STF e reproduzida pelo Legal Information Institute de Cornell.",
+    "expected_min_pages": 400
+  },
+  {
+    "id": "dom-casmurro",
+    "title": "Dom Casmurro — Machado de Assis",
+    "kind": "literature",
+    "filename": "dom-casmurro.pdf",
+    "urls": [
+      "https://www.dominiopublico.gov.br/download/texto/bv00180a.pdf",
+      "https://dominiopublico.mec.gov.br/download/texto/bv00180a.pdf"
+    ],
+    "catalog_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraForm.do?co_obra=1888",
+    "scope": "Obra literária completa na edição do portal Domínio Público.",
+    "access": "Texto de Machado de Assis em domínio público, catálogo do MEC.",
+    "expected_min_pages": 80
+  }
+]
