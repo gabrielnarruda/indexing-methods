@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "scope": "Offline UI prototype; simulated runs and metrics only",
+  "checks": [
+    "Graph extraction editor is initial screen",
+    "Persistent simulation disclosure",
+    "Prompt edits mark draft",
+    "Prompt preview substitutes demonstration passage",
+    "Escape closes dialog",
+    "New version saved",
+    "Local persistence after reload",
+    "Earlier saved version remains unchanged",
+    "Configuration duplication",
+    "Invalid overlap is explained",
+    "Stage opens: Leitura do PDF",
+    "Stage opens: Resumos",
+    "Stage opens: Embeddings",
+    "Stage opens: Recuperação",
+    "Stage opens: Extração JSON",
+    "Stage opens: Verificação",
+    "Default matrix has 24 configurations",
+    "Default matrix has 144 document runs",
+    "Changing one axis recomputes runs",
+    "Empty dataset blocks simulation",
+    "Matrix preview lists all combinations",
+    "Export identified as prototype with matching counts",
+    "Simulation table paginated",
+    "Runs expose total time without opening a dialog",
+    "Queued run has unknown duration, not zero",
+    "Pending stages are clearly waiting",
+    "Manual simulation progresses one quarter",
+    "Paused simulation cannot advance",
+    "Empty search state",
+    "Run detail discloses simulated evidence",
+    "Run detail exposes every stage including queue and OCR",
+    "Run stage durations reconcile with total including queue and evaluation",
+    "Cached stage shows historical duration separately",
+    "Cancel preserves completed runs and stops pending",
+    "Comparison clearly fictitious",
+    "Stage timing is prominent in comparison",
+    "Comparison includes all timing stages",
+    "Full pipeline stage times reconcile independently for both versions",
+    "Index duration includes graph and both storage writes",
+    "Extraction includes retrieval, JSON and verification",
+    "Unused OCR is not reported as a zero-duration measurement",
+    "Reused index construction is excluded from current total",
+    "Cached indexing clearly has no new processing",
+    "Comparison preserves historical graph construction time",
+    "Document changes illustrative results",
+    "Changing document updates duration values",
+    "Same version yields zero timing delta",
+    "Field details label fictional content",
+    "Graph keyboard interaction",
+    "Both document cards visible",
+    "Separate prompts for four stages",
+    "Saved version list",
+    "No page overflow: experimentos at 390",
+    "No page overflow: biblioteca at 390",
+    "No page overflow: prompts at 390",
+    "No page overflow: grafo at 390",
+    "No tab overflow: Configuração at 390",
+    "No tab overflow: Matriz de testes at 390",
+    "No tab overflow: Execuções at 390",
+    "No tab overflow: Comparação at 390",
+    "No page overflow: experimentos at 768",
+    "No page overflow: biblioteca at 768",
+    "No page overflow: prompts at 768",
+    "No page overflow: grafo at 768",
+    "No tab overflow: Configuração at 768",
+    "No tab overflow: Matriz de testes at 768",
+    "No tab overflow: Execuções at 768",
+    "No tab overflow: Comparação at 768",
+    "No page overflow: experimentos at 1280",
+    "No page overflow: biblioteca at 1280",
+    "No page overflow: prompts at 1280",
+    "No page overflow: grafo at 1280",
+    "No tab overflow: Configuração at 1280",
+    "No tab overflow: Matriz de testes at 1280",
+    "No tab overflow: Execuções at 1280",
+    "No tab overflow: Comparação at 1280",
+    "No page overflow: experimentos at 1440",
+    "No page overflow: biblioteca at 1440",
+    "No page overflow: prompts at 1440",
+    "No page overflow: grafo at 1440",
+    "No tab overflow: Configuração at 1440",
+    "No tab overflow: Matriz de testes at 1440",
+    "No tab overflow: Execuções at 1440",
+    "No tab overflow: Comparação at 1440",
+    "Mobile navigation opens",
+    "Mobile navigation closes after selection",
+    "Direct time link opens comparison and scrolls to timing section",
+    "Direct timing view fits mobile viewport",
+    "No JavaScript errors",
+    "No external network requests"
+  ],
+  "widths": [
+    {
+      "page": "experimentos",
+      "viewport": 390,
+      "body": 390,
+      "document": 390
+    },
+    {
+      "page": "biblioteca",
+      "viewport": 390,
+      "body": 390,
+      "document": 390
+    },
+    {
+      "page": "prompts",
+      "viewport": 390,
+      "body": 390,
+      "document": 390
+    },
+    {
+      "page": "grafo",
+      "viewport": 390,
+      "body": 390,
+      "document": 390
+    },
+    {
+      "page": "experimentos",
+      "viewport": 768,
+      "body": 768,
+      "document": 768
+    },
+    {
+      "page": "biblioteca",
+      "viewport": 768,
+      "body": 768,
+      "document": 768
+    },
+    {
+      "page": "prompts",
+      "viewport": 768,
+      "body": 768,
+      "document": 768
+    },
+    {
+      "page": "grafo",
+      "viewport": 768,
+      "body": 768,
+      "document": 768
+    },
+    {
+      "page": "experimentos",
+      "viewport": 1280,
+      "body": 1280,
+      "document": 1280
+    },
+    {
+      "page": "biblioteca",
+      "viewport": 1280,
+      "body": 1280,
+      "document": 1280
+    },
+    {
+      "page": "prompts",
+      "viewport": 1280,
+      "body": 1280,
+      "document": 1280
+    },
+    {
+      "page": "grafo",
+      "viewport": 1280,
+      "body": 1280,
+      "document": 1280
+    },
+    {
+      "page": "experimentos",
+      "viewport": 1440,
+      "body": 1440,
+      "document": 1440
+    },
+    {
+      "page": "biblioteca",
+      "viewport": 1440,
+      "body": 1440,
+      "document": 1440
+    },
+    {
+      "page": "prompts",
+      "viewport": 1440,
+      "body": 1440,
+      "document": 1440
+    },
+    {
+      "page": "grafo",
+      "viewport": 1440,
+      "body": 1440,
+      "document": 1440
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "checked_at": "2026-11-19T02:53:31.290Z"
+}

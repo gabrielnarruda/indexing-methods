@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "checks": [
+    "Real execution disclosure",
+    "UI saves edited recipe in the API",
+    "Saved version survives page reload",
+    "Cartesian matrix has two settings times two documents",
+    "UI submits four durable jobs, no simulated results",
+    "Unconfigured hardware cost is not shown as zero",
+    "UI cancellation reaches terminal state and preserves the run",
+    "Real model evaluations exist in the local API",
+    "Same frozen inputs are comparable",
+    "UI shows every real timing stage",
+    "Field comparison opens actual answers and sources",
+    "Different scopes produce an explicit comparison warning",
+    "Timing shortcut brings every stage into view",
+    "Malformed form JSON is rejected in the editor",
+    "Form version is persisted without mutating past runs",
+    "Original PDF text is read through the real API",
+    "Graph selection exposes a real source quotation",
+    "Export reconciles with actual run metrics",
+    "No page overflow: Experimentos at 390",
+    "No page overflow: Biblioteca at 390",
+    "No page overflow: Prompts at 390",
+    "No page overflow: Grafo at 390",
+    "No page overflow: Experimentos at 768",
+    "No page overflow: Biblioteca at 768",
+    "No page overflow: Prompts at 768",
+    "No page overflow: Grafo at 768",
+    "No page overflow: Experimentos at 1280",
+    "No page overflow: Biblioteca at 1280",
+    "No page overflow: Prompts at 1280",
+    "No page overflow: Grafo at 1280",
+    "No page overflow: Experimentos at 1440",
+    "No page overflow: Biblioteca at 1440",
+    "No page overflow: Prompts at 1440",
+    "No page overflow: Grafo at 1440",
+    "Direct timing link waits for data and opens the stage table",
+    "No browser JavaScript errors"
+  ],
+  "widths": [
+    {
+      "page": "Experimentos",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "page": "Biblioteca",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "page": "Prompts",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "page": "Grafo",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "page": "Experimentos",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "page": "Biblioteca",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "page": "Prompts",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "page": "Grafo",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "page": "Experimentos",
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "page": "Biblioteca",
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "page": "Prompts",
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "page": "Grafo",
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "page": "Experimentos",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "page": "Biblioteca",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "page": "Prompts",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "page": "Grafo",
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "errors": [],
+  "created_test_runs": [
+    "wb-bd4a41d4bd91486c8c16f28e00220063",
+    "wb-931a09d2b4cb4985998780b534b12c45",
+    "wb-729786dfa9c2483a83b9da93f444dc18",
+    "wb-ca548c97fbd7427fae341be8129adf64"
+  ],
+  "real_run_inspected": "wb-5c63b9413ba44e409f5132ec2ab5cf16",
+  "comparison_reference": "wb-f1954cc792b24395b08860b27df6b3b0",
+  "checked_at": "2026-11-19T03:55:16.333Z"
+}

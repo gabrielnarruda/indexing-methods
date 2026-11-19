@@ -65,11 +65,11 @@ async def call_tool(session,run,name,arguments,field,round_index):
         return content
 
 
-async def extract_form(corpus_id,variant='F',repetition=0,field_ids=None):
-    run=Run(kind='extraction')
+async def extract_form(corpus_id,variant='F',repetition=0,field_ids=None,*,run=None,index_manifest=None,form=None,finish_run=True):
+    run=run or Run(kind='extraction')
     try:
         with run.span('initialization','form_models_and_index',corpus_id=corpus_id):
-            form=read_json(ROOT/'forms'/f'{corpus_id}.json')
+            form=form or read_json(ROOT/'forms'/f'{corpus_id}.json')
             if field_ids is not None:
                 unknown=set(field_ids)-{field['id'] for field in form['fields']}
                 if not field_ids or unknown:
@@ -81,13 +81,16 @@ async def extract_form(corpus_id,variant='F',repetition=0,field_ids=None):
                 env={**os.environ,'POC_CORPUS':corpus_id,'POC_RUN_ID':run.run_id,'PYTHONIOENCODING':'utf-8'})
             write_json(run.directory/'experiment.json',{'corpus_id':corpus_id,'variant':variant,
                        'repetition':repetition,'field_ids':[f['id'] for f in form['fields']],
-                       'index':read_json(ROOT/'data/indexes'/f'{corpus_id}.json'),'model_digests':models.digests})
+                       'index':index_manifest or read_json(ROOT/'data/indexes'/f'{corpus_id}.json'),'model_digests':models.digests})
         async with stdio_client(params) as (reader,writer):
             async with ClientSession(reader,writer) as session:
                 await session.initialize()
                 tools=await session.list_tools()
                 write_json(run.directory/'mcp-tools.json',[tool.model_dump(mode='json') for tool in tools.tools])
                 for field in form['fields']:
+                    check = getattr(run, 'check_cancelled', None)
+                    if check:
+                        check()
                     try:
                         entry=await extract_field(session,run,models,field,variant,repetition)
                     except Exception as exc:
@@ -99,12 +102,14 @@ async def extract_form(corpus_id,variant='F',repetition=0,field_ids=None):
                     write_json(run.directory/'result.json',result)
                     write_json(run.directory/'fields.json',field_results)
                     print(f"{variant}/{corpus_id}/{field['id']}: {entry['status']}",flush=True)
-        run.finish(status='partial' if any(e['status']=='error' for e in field_results) else 'complete',
+        if finish_run:
+            run.finish(status='partial' if any(e['status']=='error' for e in field_results) else 'complete',
                    corpus_id=corpus_id,variant=variant,repetition=repetition,
                    resolved=sum(entry['status']=='filled' for entry in field_results),fields=len(field_results))
         return run.run_id
     except BaseException:
-        run.finish(status='failed',corpus_id=corpus_id,variant=variant,repetition=repetition)
+        if finish_run:
+            run.finish(status='failed',corpus_id=corpus_id,variant=variant,repetition=repetition)
         raise
 
 
@@ -135,29 +140,37 @@ async def extract_field(session,run,models,field,variant,repetition):
                 prompt=json.dumps({'question':field['question'],'value_schema':field['value_schema'],
                     'instructions':'Extraia somente o que está sustentado nos trechos. Datas em AAAA-MM-DD. Use status filled quando houver resposta sustentada: value contém a resposta, evidence contém citação literal curta com chunk_id e next_query é vazio. Nos estados not_found, conflicting e search_again, value deve ser null. not_found significa que a informação não foi localizada nos trechos; isso não prova ausência no documento. Se faltar evidência, prefira search_again com uma consulta diferente e específica em next_query. Alegações preservam atribuição. Listas pedidas devem incluir todos os itens sustentados. Não use conhecimento externo.',
                     'previous_reason':answer.get('reason',''),'passages':evidence},ensure_ascii=False)
+                if run.settings.get('answer_prompt'):
+                    from workbench.configuration import render_prompt
+                    prompt=render_prompt(run.settings['answer_prompt'],json.loads(prompt))
                 try:
-                    answer=models.generate(prompt,answer_schema(field['value_schema']),'generation',cache=False,seed=42+repetition)
+                    answer=models.generate(prompt,answer_schema(field['value_schema']),'generation',cache=False,seed=run.settings.get('seed',42)+repetition)
                     raw_answer=json.loads(json.dumps(answer))
                     validate(answer,answer_schema(field['value_schema']))
                     with run.span('validation','citations_and_schema',field_path=field['path']):
                         errors=verify_answer(answer,evidence,field['value_schema'])
                     support=None
                     if not errors and answer['status']=='filled':
-                        support=models.generate(json.dumps({
+                        support_payload={
                             'task':'Confira a resposta usando somente as passagens. Primeiro escreva reason com uma justificativa de até duas frases. Depois marque supported=true se as passagens sustentam o valor como resposta à pergunta. Marque false apenas quando houver erro factual, contradição ou falta de suporte. Considere atribuição, datas, negação e escopo. Maiúsculas, acentos e formatos equivalentes de datas não alteram o significado. Para listas, confira cada item.',
                             'question':field['question'],'proposed_value':answer['value'],
-                            'citations':answer['evidence'],'passages':evidence},ensure_ascii=False),
-                            SUPPORT_SCHEMA,'support_validation',cache=False,seed=42+repetition)
+                            'citations':answer['evidence'],'passages':evidence}
+                        if run.settings.get('verify_prompt'):
+                            from workbench.configuration import render_prompt
+                            support_prompt=render_prompt(run.settings['verify_prompt'],support_payload)
+                        else:
+                            support_prompt=json.dumps(support_payload,ensure_ascii=False)
+                        support=models.generate(support_prompt,SUPPORT_SCHEMA,'support_validation',cache=False,seed=run.settings.get('seed',42)+repetition)
                         if not support['supported']:
                             errors.append(support['reason'])
                     if errors:
                         answer.update(status='search_again',value=None,reason='; '.join(errors),next_query=field['question']+' fonte literal')
-                    rounds.append({'round':number,'query':query,'retrieved_ids':ids,'answer':answer.copy(),'raw_answer':raw_answer,
+                    rounds.append({'round':number,'query':query,'retrieved_ids':ids,'retrieval':found,'answer':answer.copy(),'raw_answer':raw_answer,
                                    'validation_errors':errors,'support_check':support})
                 except (ValueError,ValidationError) as exc:
                     answer={'status':'search_again','value':None,'reason':str(exc),'evidence':[],
                             'next_query':field['question']+' trecho original'}
-                    rounds.append({'round':number,'query':query,'retrieved_ids':ids,'answer':answer.copy(),'validation_errors':[str(exc)]})
+                    rounds.append({'round':number,'query':query,'retrieved_ids':ids,'retrieval':found,'answer':answer.copy(),'validation_errors':[str(exc)]})
                 if answer['status'] in ('filled','conflicting'):
                     break
                 next_query=answer.get('next_query','').strip()

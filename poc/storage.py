@@ -29,9 +29,10 @@ class Storage:
         if response.json()['count']!=manifest['chunks']+manifest['sections']:
             return False
         with self.graph.session() as session:
-            chunks=session.run('MATCH (c:Chunk {version:$version}) RETURN count(c) AS n',version=name).single()['n']
-            facts=session.run('MATCH (f:Fact {version:$version}) RETURN count(f) AS n',version=name).single()['n']
-            orphans=session.run('MATCH (f:Fact {version:$version}) WHERE NOT (f)-[:EVIDENCED_BY]->(:Chunk) RETURN count(f) AS n',version=name).single()['n']
+            graph_name=manifest.get('graph_name',name)
+            chunks=session.run('MATCH (c:Chunk {version:$version}) RETURN count(c) AS n',version=graph_name).single()['n']
+            facts=session.run('MATCH (f:Fact {version:$version}) RETURN count(f) AS n',version=graph_name).single()['n']
+            orphans=session.run('MATCH (f:Fact {version:$version}) WHERE NOT (f)-[:EVIDENCED_BY]->(:Chunk) RETURN count(f) AS n',version=graph_name).single()['n']
         return chunks==manifest['chunks'] and facts==manifest['facts'] and orphans==0
 
     def create_index(self, name, dimensions):

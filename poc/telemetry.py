@@ -23,13 +23,16 @@ class Run:
         self.events_path = self.directory / f"events-{os.getpid()}.jsonl"
         self.start = time.perf_counter()
         self.kind = kind
-        if run_id is None:
+        if not manifest_path.exists():
             write_json(self.directory / "run.json", {
                 "run_id": self.run_id, "kind": kind, "status": "running",
                 "started_at": datetime.now(timezone.utc).isoformat(), "config": self.settings})
 
     @contextmanager
     def span(self, stage, operation, **details):
+        check = getattr(self, 'check_cancelled', None)
+        if check:
+            check()
         event = {"run_id": self.run_id, "span_id": uuid.uuid4().hex,
                  "parent_span_id": PARENT.get(), "stage": stage, "operation": operation,
                  "started_at": datetime.now(timezone.utc).isoformat(), "status": "ok", **details}
@@ -42,6 +45,7 @@ class Run:
             raise
         finally:
             event["duration_ms"] = (time.perf_counter() - start) * 1000
+            event["ended_at"] = datetime.now(timezone.utc).isoformat()
             PARENT.reset(token)
             with self.events_path.open("a", encoding="utf-8") as stream:
                 stream.write(json.dumps(event, ensure_ascii=False) + "\n")

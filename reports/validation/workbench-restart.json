@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "original": "wb-7d775bc2b17147a98a1736528d134897",
+  "retry": "wb-522c877dc5584aa99bbf05a291536eae",
+  "frozen_inputs_preserved": true,
+  "checkpoint_reuse": [
+    [
+      "wb-8e2e9973323b4efa9106bc50e274bcc1",
+      57
+    ]
+  ],
+  "note": "The forced terminal shutdown killed its process tree. Recovery detected the dead worker, reused completed packages in another compatible run, and completed the retry without overwriting the original."
+}

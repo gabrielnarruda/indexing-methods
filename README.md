@@ -17,16 +17,24 @@ O sistema combina busca lexical e vetorial, dois níveis de recuperação com re
 - [Crítica do método e prioridades para a próxima versão](docs/DISCUSSAO.md).
 - [Relatório completo em linguagem simples](reports/full/relatorio.html): método, recortes, prompts exatos, resultados, limitações e próximos passos, com os dados técnicos no anexo.
 - [Próxima fase: workbench de testes](docs/WORKBENCH.md): orientação para evoluir cada componente e medir a contribuição dos grafos.
+- [Plano da plataforma local de experimentos](docs/PLATAFORMA.md): telas, versões, runs, variação paramétrica, reaproveitamento e comparação de qualidade, tempo e custo.
+- [Plataforma funcional: instalação e operação](docs/PLATAFORMA-LOCAL.md): interface React ligada ao pipeline real, versões, matriz, fila e comparação por etapa. Após a preparação descrita no guia, inicie com `./tools/start-workbench.ps1` e abra `http://127.0.0.1:18766`.
+- [Validação da plataforma e runs reais](docs/VALIDACAO-PLATAFORMA.md): resultados da bateria, tempos, comparação de prompts, testes e limites.
+- [Protótipo interativo da plataforma](docs/prototipo-plataforma.html): abra no navegador para revisar a UI/UX, editar uma configuração, montar a matriz, simular execuções e comparar dados fictícios. Funciona offline; [escopo e verificação](docs/PROTOTIPO.md).
 - [Como atualizar e conferir o relatório](docs/RELATORIO.md).
 - [Explorador do grafo extraído, com citações e páginas](reports/full/grafo.html).
 
 ## Estado do projeto
 
-Implementação local com Python, OpenSearch, Neo4j, Ollama e cliente/servidor MCP reais. O corpus completo possui 538 páginas, 1.057 trechos, 132 resumos e 187 afirmações ancoradas em citações. A suíte automatizada contém 25 testes; o relatório registra 36 execuções e 720 avaliações de campos, com seis variantes e três repetições.
+Plataforma local funcional com React/TypeScript, API Python, fila SQLite, OpenSearch, Neo4j, Ollama e cliente/servidor MCP reais. Permite editar prompts/modelos por etapa, salvar versões, montar matrizes, executar, cancelar, repetir e comparar respostas, qualidade, custo e **tempo de cada etapa**. A suíte atual contém 39 testes; as medições reais e evidências da interface ficam em `reports/validation/workbench-*`.
+
+O benchmark histórico da PoC permanece preservado: 538 páginas, 1.057 trechos, 132 resumos e 187 afirmações ancoradas em citações; 36 execuções e 720 avaliações de campos, com seis variantes e três repetições. Seus números pertencem à configuração original e não são usados como resultados da nova plataforma.
 
 A avaliação encontrou respostas preenchidas com atribuição incorreta, incluindo confusão entre o processo principal e um precedente citado. Os JSONs produzidos por esta configuração exigem conferência. O relatório conserva esses erros e suas evidências para orientar a próxima versão.
 
 Os modelos de linguagem e embedding executam localmente. OpenSearch, Neo4j e Ollama usam contêineres com portas vinculadas ao endereço de loopback. Os PDFs, modelos, índices e execuções ficam no computador. O repositório contém código, configurações, documentação e artefatos de avaliação selecionados.
+
+Na interface, vá a **Experimentos → Execuções → Inspecionar** para ver o tempo de cada etapa de uma run. Em **Comparação**, escolha referência/candidata e use **Ver tempo de cada etapa** para ver as durações lado a lado e suas diferenças. Fila, trabalho novo, construção histórica reaproveitada e operações parciais ficam separados. O HTML do protótipo continua sendo apenas uma demonstração identificada.
 
 ## Entradas e saídas
 
@@ -76,6 +84,8 @@ Para conectar um cliente MCP externo, use o executável `.venv/Scripts/python.ex
 ```text
 docs/                 Plano, testes, métricas, fontes e diagrama
 poc/                  Implementação Python
+workbench/            API local, versões, matriz, fila, cache e métricas
+frontend/             Interface React + TypeScript
 forms/                Perguntas, caminhos JSON e schemas de valores
 evaluation/           Referências provisórias para avaliação
 tests/                Contratos, limites, integração MCP e bancos
@@ -83,6 +93,7 @@ tools/                Pipeline e geração dos formulários iniciais
 reports/              Relatórios e medições selecionadas
 runs/                 Eventos, resultados e checkpoints de execução
 data/raw/             PDFs e manifestos locais
+data/workbench/       SQLite, artefatos e índices versionados da plataforma
 data/corpus-manifest.json
 sources.json          Catálogo de fontes e escopo
 config.json           Modelos, limites e tarifa opcional

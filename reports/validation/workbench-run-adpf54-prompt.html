@@ -1,0 +1,2562 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Run wb-b07b70355e6d4c649eda0e5accc3c732</title>
+<style>body{font:16px/1.6 system-ui;color:#18352e;background:#f4f6f2;margin:0;padding:clamp(16px,4vw,48px)}main{max-width:1200px;margin:auto}h1{line-height:1.15}.meta{color:#53685f}.cards{display:flex;flex-wrap:wrap;gap:16px}.cards div{padding:16px;background:white;border:1px solid #d5dfd7;flex:1;min-width:180px}strong{display:block}section{background:white;border:1px solid #d5dfd7;margin:24px 0;padding:20px}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;text-align:left}th,td{border-bottom:1px solid #e3e8e2;padding:12px;vertical-align:top}pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;font-weight:600}code{overflow-wrap:anywhere}</style></head>
+<body><main><p class="meta">Indexing Methods · relatório local · dados reais</p>
+<h1>Experimento de prompt · evidências diretas</h1>
+<p><code>wb-b07b70355e6d4c649eda0e5accc3c732</code> · adpf54 · complete</p>
+<div class="cards"><div><span>Acerto automático</span><strong>100.0% · 3 campos anotados</strong></div><div><span>Tempo da run</span><strong>16,680 s</strong></div><div><span>Custo total estimado</span><strong>Não configurado</strong></div><div><span>Investigação</span><strong>6 chamadas MCP · 3 rodadas</strong></div></div>
+<p>Espera na fila: 676,417 s. Referências provisórias; acerto automático não substitui revisão humana.</p>
+<section><h2>Tempo de cada etapa</h2><div class="scroll"><table><thead><tr><th>Etapa</th><th>Duração nesta run</th><th>Estado</th><th>Construção anterior</th><th>API</th><th>Máquina estimada</th></tr></thead><tbody><tr><th>Leitura do PDF</th><td>22 ms</td><td>reused</td><td>1,222 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>OCR</th><td>Não medido</td><td>skipped</td><td>—</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Recortes e pacotes</th><td>30 ms</td><td>reused</td><td>52 ms</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Entidades, eventos e relações</th><td>8 ms</td><td>reused</td><td>783,619 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Resumos</th><td>4 ms</td><td>reused</td><td>370,299 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Embeddings dos trechos</th><td>98 ms</td><td>reused</td><td>1,603 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Embeddings dos resumos</th><td>12 ms</td><td>reused</td><td>2,091 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Gravação no OpenSearch</th><td>25 ms</td><td>reused</td><td>1,425 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Gravação no Neo4j</th><td>26 ms</td><td>reused</td><td>2,702 s</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Recuperação / MCP</th><td>206 ms</td><td>complete</td><td>—</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Extração JSON</th><td>8,476 s</td><td>complete</td><td>—</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Verificação</th><td>6,203 s</td><td>complete</td><td>—</td><td>BRL 0.0000</td><td>Não configurado</td></tr><tr><th>Avaliação</th><td>49 ms</td><td>complete</td><td>—</td><td>BRL 0.0000</td><td>Não configurado</td></tr></tbody></table></div>
+<p>Durações por etapa são disjuntas. MCP inclui espera da ferramenta e embedding da consulta; spans internos não são somados novamente. Total medido inclui inicialização e orquestração.</p><p>Etapas não executadas e durações desconhecidas não são medições de zero. Construção anterior não é somada ao trabalho novo. Custos de hardware sem tarifa permanecem desconhecidos.</p></section>
+<section><h2>Respostas</h2><div class="scroll"><table><thead><tr><th>Pergunta</th><th>Valor</th><th>Estado</th><th>Motivo</th></tr></thead><tbody><tr><th>Qual é a classe e o número do processo principal deste acórdão?</th><td>&quot;ADPF 54 / DF&quot;</td><td>filled</td><td>A passagem do documento página 18 menciona &#x27;ADPF 54 / DF&#x27; como a referência do processo.</td></tr><tr><th>Quem é o ministro relator da ADPF 54?</th><td>&quot;Marco Aurélio&quot;</td><td>filled</td><td>O ministro Marco Aurélio é identificado como RELATOR em múltiplas passagens do documento.</td></tr><tr><th>A ação principal foi julgada procedente ou improcedente no resultado final?</th><td>&quot;procedente&quot;</td><td>filled</td><td>As passagens indicam que o Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação mencionada na pergunta. O resultado final foi procedente, conforme declarado pelo Relator e confirmado pelo Plenário.</td></tr></tbody></table></div></section>
+<details><summary>Configuração, evidências, eventos e métricas completas (JSON)</summary><pre>{
+  &quot;id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+  &quot;batch_id&quot;: &quot;4aca1d3f1d48438bb1335e03d9b0ee87&quot;,
+  &quot;config_id&quot;: &quot;2ec1bf18858e48d5929bcb6c67c4e6e7&quot;,
+  &quot;corpus_id&quot;: &quot;adpf54&quot;,
+  &quot;repetition&quot;: 0,
+  &quot;status&quot;: &quot;complete&quot;,
+  &quot;request&quot;: {
+    &quot;recipe&quot;: {
+      &quot;name&quot;: &quot;Experimento de prompt · evidências diretas&quot;,
+      &quot;parser&quot;: &quot;pymupdf_dedup&quot;,
+      &quot;ocr&quot;: &quot;off&quot;,
+      &quot;ocr_language&quot;: &quot;por&quot;,
+      &quot;pages&quot;: &quot;&quot;,
+      &quot;chunk_characters&quot;: 1800,
+      &quot;overlap_characters&quot;: 200,
+      &quot;section_characters&quot;: 10000,
+      &quot;graph_enabled&quot;: true,
+      &quot;summary_enabled&quot;: true,
+      &quot;graph_model&quot;: &quot;qwen3:4b&quot;,
+      &quot;summary_model&quot;: &quot;qwen3:4b&quot;,
+      &quot;answer_model&quot;: &quot;qwen3:4b&quot;,
+      &quot;verify_model&quot;: &quot;qwen3:4b&quot;,
+      &quot;embedding_model&quot;: &quot;embeddinggemma:300m&quot;,
+      &quot;graph_prompt&quot;: &quot;Extraia entidades, eventos e relações dos trechos abaixo.\nPreserve papéis, atribuição, negação e modalidade. Diferencie fatos, alegações,\ndecisões e referências a outros processos. Não una pessoas por nomes parecidos.\nCada relação precisa de source_idx e citação literal da passagem correspondente.\nUse nomes explícitos; date e speaker ficam vazios quando não estão explícitos.\nCubra as relações relevantes dentro do limite do schema, sem inventar relações.\nTrechos: {{passages}}&quot;,
+      &quot;summary_prompt&quot;: &quot;Crie um título e um resumo descritivo de até 150 palavras dos trechos.\nPreserve nomes, assuntos, datas, atribuição e diferenças entre alegação e decisão.\nO resumo serve para localizar informação; não substitui a fonte.\nTrechos: {{passages}}&quot;,
+      &quot;answer_prompt&quot;: &quot;Extraia a resposta da pergunta a partir das passagens. Retorne o JSON solicitado.\nPergunta: {{question}}\nTipo esperado: {{value_schema}}\nPassagens: {{passages}}\nTentativa anterior: {{previous_reason}}\nQuando a resposta estiver expressa no texto, em um cabeçalho, ficha, identificação ou vínculo familiar, use status=filled, preencha value com o tipo esperado, evidence com citações literais curtas e seus chunk_id, e next_query vazio. Uma informação não precisa estar escrita na forma da pergunta para servir como evidência. Leia o contexto, mantendo pessoa, documento, processo, atribuição e negação corretos. Não exija uma frase formal de confirmação além do conteúdo que sustenta a resposta.\nQuando as passagens não bastarem, deixe value=null e use search_again com uma consulta nova e específica. Se houver contradição relevante não resolvida, use conflicting. Não invente valores e não use conhecimento externo.&quot;,
+      &quot;verify_prompt&quot;: &quot;Confira se o valor responde à pergunta e é sustentado pelas passagens.\nPergunta: {{question}}\nValor: {{proposed_value}}\nCitações: {{citations}}\nPassagens: {{passages}}\nCheque papéis, processo principal versus precedentes, atribuição, negação e listas.\nNão confunda citação literal existente com suporte semântico. Explique reason e\nmarque supported=true somente quando o valor estiver sustentado.&quot;,
+      &quot;max_relations&quot;: 8,
+      &quot;top_k&quot;: 4,
+      &quot;max_rounds_per_field&quot;: 3,
+      &quot;variant&quot;: &quot;F&quot;,
+      &quot;graph_depth&quot;: 1,
+      &quot;max_output_tokens&quot;: 1800,
+      &quot;context_tokens&quot;: 16384,
+      &quot;temperature&quot;: 0.0,
+      &quot;seed&quot;: 42,
+      &quot;request_timeout_seconds&quot;: 300,
+      &quot;machine_hour_rate&quot;: null,
+      &quot;currency&quot;: &quot;BRL&quot;,
+      &quot;cache_policy&quot;: &quot;reuse&quot;
+    },
+    &quot;source&quot;: {
+      &quot;id&quot;: &quot;adpf54&quot;,
+      &quot;title&quot;: &quot;ADPF 54 — inteiro teor do acórdão de 12/04/2012&quot;,
+      &quot;kind&quot;: &quot;judicial&quot;,
+      &quot;filename&quot;: &quot;adpf54-acordao.pdf&quot;,
+      &quot;urls&quot;: [
+        &quot;https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&amp;docID=3707334&quot;,
+        &quot;https://www.law.cornell.edu/sites/www.law.cornell.edu/files/women-and-justice/Decriminalization_of_Abortion_in_Cases_of_Anencephaly.pdf&quot;
+      ],
+      &quot;catalog_url&quot;: &quot;https://portal.stf.jus.br/processos/detalhe.asp?incidente=2226954&quot;,
+      &quot;scope&quot;: &quot;Inteiro teor do acórdão, incluindo relatório, votos, debates e ata. Cobertura dos autos limitada às peças reproduzidas neste PDF.&quot;,
+      &quot;access&quot;: &quot;Decisão judicial pública, disponibilizada pelo STF e reproduzida pelo Legal Information Institute de Cornell.&quot;,
+      &quot;expected_min_pages&quot;: 400,
+      &quot;download_url&quot;: &quot;https://www.law.cornell.edu/sites/www.law.cornell.edu/files/women-and-justice/Decriminalization_of_Abortion_in_Cases_of_Anencephaly.pdf&quot;,
+      &quot;downloaded_at&quot;: &quot;2026-11-18T22:12:35.668173+00:00&quot;,
+      &quot;sha256&quot;: &quot;8db88a8ccd1a7c460be57ef2e31f9e7cce74d2591734603abcc16d0cb09af2d4&quot;,
+      &quot;bytes&quot;: 4719102,
+      &quot;pages&quot;: 433,
+      &quot;download_seconds&quot;: 1.8466103000100702,
+      &quot;first_page_preview&quot;: &quot;Ementa e Acórdão\n12/04/2012\nPLENÁRIO\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 \nDISTRITO FEDERAL\nRELATOR\n: MIN. MARCO AURÉLIO\nREQTE.(S)\n:CONFEDERAÇÃO \nNACIONAL \nDOS \nTRABALHADORES NA SAÚDE - CNTS \nADV.(A/S)\n:LUÍS ROBERTO BARROSO \nINTDO.(A/S)\n:PRESIDENTE DA REPÚBLICA \nADV.(A/S)\n:ADVOGADO-GERAL DA UNIÃO \nESTADO – LAICIDADE. O Brasil é uma república laica, surgindo \nabsolutamente neutro quanto às religiões. Considerações.\nFETO ANENCÉFALO – INTERRUPÇÃO DA GRAVIDEZ – \nMULHER – LIBERDADE S&quot;,
+      &quot;failed_sources&quot;: [
+        {
+          &quot;url&quot;: &quot;https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&amp;docID=3707334&quot;,
+          &quot;error&quot;: &quot;Source returned something other than a PDF&quot;
+        }
+      ]
+    },
+    &quot;form&quot;: {
+      &quot;version&quot;: 1,
+      &quot;corpus_id&quot;: &quot;adpf54&quot;,
+      &quot;fields&quot;: [
+        {
+          &quot;id&quot;: &quot;identificacao&quot;,
+          &quot;path&quot;: &quot;/processo/identificacao&quot;,
+          &quot;question&quot;: &quot;Qual é a classe e o número do processo principal deste acórdão?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;tribunal&quot;,
+          &quot;path&quot;: &quot;/processo/tribunal&quot;,
+          &quot;question&quot;: &quot;Qual tribunal proferiu o acórdão?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;relator&quot;,
+          &quot;path&quot;: &quot;/processo/relator&quot;,
+          &quot;question&quot;: &quot;Quem é o ministro relator da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;requerente&quot;,
+          &quot;path&quot;: &quot;/partes/requerente&quot;,
+          &quot;question&quot;: &quot;Qual entidade é a requerente da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;advogado_requerente&quot;,
+          &quot;path&quot;: &quot;/partes/advogado_requerente&quot;,
+          &quot;question&quot;: &quot;Quem é o advogado da requerente indicado no cabeçalho da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;interessado&quot;,
+          &quot;path&quot;: &quot;/partes/interessado&quot;,
+          &quot;question&quot;: &quot;Quem consta como interessado no cabeçalho da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;advogado_interessado&quot;,
+          &quot;path&quot;: &quot;/partes/advogado_interessado&quot;,
+          &quot;question&quot;: &quot;Quem representa o interessado no cabeçalho da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;data_julgamento&quot;,
+          &quot;path&quot;: &quot;/decisao/data&quot;,
+          &quot;question&quot;: &quot;Qual é a data do julgamento final de mérito da ADPF 54? Use AAAA-MM-DD.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;orgao&quot;,
+          &quot;path&quot;: &quot;/decisao/orgao&quot;,
+          &quot;question&quot;: &quot;Qual órgão julgador do STF proferiu o julgamento de mérito?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;resultado&quot;,
+          &quot;path&quot;: &quot;/decisao/resultado&quot;,
+          &quot;question&quot;: &quot;A ação principal foi julgada procedente ou improcedente no resultado final?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;maioria&quot;,
+          &quot;path&quot;: &quot;/decisao/por_maioria&quot;,
+          &quot;question&quot;: &quot;O julgamento final foi decidido por maioria? Responda booleano.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;presidente&quot;,
+          &quot;path&quot;: &quot;/decisao/presidente&quot;,
+          &quot;question&quot;: &quot;Quem presidiu a sessão final de julgamento da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;artigos&quot;,
+          &quot;path&quot;: &quot;/decisao/artigos_codigo_penal&quot;,
+          &quot;question&quot;: &quot;Quais números de artigos do Código Penal aparecem no dispositivo do acórdão? Retorne strings com os números.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;uniqueItems&quot;: true
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;origem&quot;,
+          &quot;path&quot;: &quot;/processo/origem&quot;,
+          &quot;question&quot;: &quot;Qual unidade da federação consta como origem da ADPF 54?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;ajuizamento&quot;,
+          &quot;path&quot;: &quot;/cronologia/ajuizamento&quot;,
+          &quot;question&quot;: &quot;Em que data a CNTS formalizou a arguição, segundo o relatório? Use AAAA-MM-DD.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;ano_audiencia&quot;,
+          &quot;path&quot;: &quot;/cronologia/ano_audiencia&quot;,
+          &quot;question&quot;: &quot;Em que ano ocorreram as sessões da audiência pública descritas no relatório?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;integer&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;datas_audiencia&quot;,
+          &quot;path&quot;: &quot;/cronologia/datas_audiencia&quot;,
+          &quot;question&quot;: &quot;Quais foram as quatro datas das sessões da audiência pública descritas no relatório? Use AAAA-MM-DD.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;uniqueItems&quot;: true
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;improcedentes&quot;,
+          &quot;path&quot;: &quot;/decisao/ministros_pela_improcedencia&quot;,
+          &quot;question&quot;: &quot;Quais ministros votaram pela improcedência no resultado final, segundo a ata?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;uniqueItems&quot;: true
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;impedido&quot;,
+          &quot;path&quot;: &quot;/decisao/ministro_impedido&quot;,
+          &quot;question&quot;: &quot;Qual ministro aparece como impedido na ata da sessão de 11 de abril de 2012?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;condicoes&quot;,
+          &quot;path&quot;: &quot;/decisao/ministros_com_condicoes&quot;,
+          &quot;question&quot;: &quot;Quais ministros julgaram procedente acrescentando condições de diagnóstico, segundo a ata final?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;uniqueItems&quot;: true
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;pgr&quot;,
+          &quot;path&quot;: &quot;/decisao/procurador_geral&quot;,
+          &quot;question&quot;: &quot;Qual é o nome do Procurador-Geral da República presente no julgamento final, segundo a ata?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;primeira_sessao&quot;,
+          &quot;path&quot;: &quot;/cronologia/sessao_suspensa&quot;,
+          &quot;question&quot;: &quot;Em qual data ocorreu a sessão em que o julgamento de mérito foi suspenso depois do voto de Ricardo Lewandowski? Use AAAA-MM-DD.&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;multa&quot;,
+          &quot;path&quot;: &quot;/decisao/multa_diaria&quot;,
+          &quot;question&quot;: &quot;Qual valor de multa diária o dispositivo deste acórdão fixou contra a requerente?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;number&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        },
+        {
+          &quot;id&quot;: &quot;conta&quot;,
+          &quot;path&quot;: &quot;/partes/conta_bancaria_requerente&quot;,
+          &quot;question&quot;: &quot;Qual número de conta bancária da requerente é informado no cabeçalho do processo?&quot;,
+          &quot;value_schema&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;absence_policy&quot;: &quot;null_with_status&quot;,
+          &quot;scope&quot;: &quot;provided_corpus_only&quot;
+        }
+      ]
+    },
+    &quot;cases&quot;: [
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;identificacao&quot;,
+        &quot;expected&quot;: &quot;ADPF 54&quot;,
+        &quot;aliases&quot;: [
+          &quot;ADPF 54&quot;,
+          &quot;descumprimento de preceito fundamental 54&quot;
+        ],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;tribunal&quot;,
+        &quot;expected&quot;: &quot;Supremo Tribunal Federal&quot;,
+        &quot;aliases&quot;: [
+          &quot;STF&quot;,
+          &quot;Supremo Tribunal Federal&quot;
+        ],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;relator&quot;,
+        &quot;expected&quot;: &quot;Marco Aurélio&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;requerente&quot;,
+        &quot;expected&quot;: &quot;Confederação Nacional dos Trabalhadores na Saúde&quot;,
+        &quot;aliases&quot;: [
+          &quot;CNTS&quot;
+        ],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;advogado_requerente&quot;,
+        &quot;expected&quot;: &quot;Luís Roberto Barroso&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;interessado&quot;,
+        &quot;expected&quot;: &quot;Presidente da República&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;advogado_interessado&quot;,
+        &quot;expected&quot;: &quot;Advogado-Geral da União&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;data_julgamento&quot;,
+        &quot;expected&quot;: &quot;2012-04-12&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;orgao&quot;,
+        &quot;expected&quot;: &quot;Plenário&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;resultado&quot;,
+        &quot;expected&quot;: &quot;procedente&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;maioria&quot;,
+        &quot;expected&quot;: true,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;presidente&quot;,
+        &quot;expected&quot;: &quot;Cezar Peluso&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1,
+          433
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;artigos&quot;,
+        &quot;expected&quot;: [
+          &quot;124&quot;,
+          &quot;126&quot;,
+          &quot;128&quot;
+        ],
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          1,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;origem&quot;,
+        &quot;expected&quot;: &quot;Distrito Federal&quot;,
+        &quot;aliases&quot;: [
+          &quot;DF&quot;
+        ],
+        &quot;reference_pages&quot;: [
+          1
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;ajuizamento&quot;,
+        &quot;expected&quot;: &quot;2004-06-17&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          2
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;ano_audiencia&quot;,
+        &quot;expected&quot;: 2008,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          20
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;datas_audiencia&quot;,
+        &quot;expected&quot;: [
+          &quot;2008-08-26&quot;,
+          &quot;2008-08-28&quot;,
+          &quot;2008-09-04&quot;,
+          &quot;2008-09-16&quot;
+        ],
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          20
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;improcedentes&quot;,
+        &quot;expected&quot;: [
+          &quot;Ricardo Lewandowski&quot;,
+          &quot;Cezar Peluso&quot;
+        ],
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          433
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;impedido&quot;,
+        &quot;expected&quot;: &quot;Dias Toffoli&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          253,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;condicoes&quot;,
+        &quot;expected&quot;: [
+          &quot;Gilmar Mendes&quot;,
+          &quot;Celso de Mello&quot;
+        ],
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;pgr&quot;,
+        &quot;expected&quot;: &quot;Roberto Monteiro Gurgel Santos&quot;,
+        &quot;aliases&quot;: [
+          &quot;Roberto Gurgel&quot;
+        ],
+        &quot;reference_pages&quot;: [
+          433
+        ],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;primeira_sessao&quot;,
+        &quot;expected&quot;: &quot;2012-04-11&quot;,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [
+          253,
+          433
+        ],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;multa&quot;,
+        &quot;expected&quot;: null,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [],
+        &quot;split&quot;: &quot;development&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      },
+      {
+        &quot;corpus_id&quot;: &quot;adpf54&quot;,
+        &quot;field_id&quot;: &quot;conta&quot;,
+        &quot;expected&quot;: null,
+        &quot;aliases&quot;: [],
+        &quot;reference_pages&quot;: [],
+        &quot;split&quot;: &quot;held_out&quot;,
+        &quot;annotation&quot;: &quot;assistant_prepared_source_linked&quot;,
+        &quot;reference_status&quot;: &quot;provisional&quot;,
+        &quot;rubric&quot;: &quot;Match the requested value with attributable supporting evidence. Reference pages are alternatives unless explicitly marked as jointly required.&quot;
+      }
+    ],
+    &quot;dataset_version&quot;: &quot;2ea13af5db5f441ab530af2186d82e9c&quot;,
+    &quot;field_ids&quot;: [
+      &quot;identificacao&quot;,
+      &quot;relator&quot;,
+      &quot;resultado&quot;
+    ],
+    &quot;mode&quot;: &quot;end_to_end&quot;,
+    &quot;split&quot;: &quot;all&quot;,
+    &quot;model_digests&quot;: {
+      &quot;qwen3:4b&quot;: &quot;359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7&quot;,
+      &quot;embeddinggemma:300m&quot;: &quot;85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1&quot;
+    },
+    &quot;input_hash&quot;: &quot;eb81a07edcee69d6520e6f3b01178758c2f7f6e7f2dd58d47f290c4709ea234b&quot;
+  },
+  &quot;created_at&quot;: &quot;2026-11-19T03:42:13.802079+00:00&quot;,
+  &quot;started_at&quot;: &quot;2026-11-19T03:53:30.218695+00:00&quot;,
+  &quot;ended_at&quot;: &quot;2026-11-19T03:53:46.922089+00:00&quot;,
+  &quot;pid&quot;: 34676,
+  &quot;process_created&quot;: 1795060409.4842277,
+  &quot;cancel_requested&quot;: 0,
+  &quot;error&quot;: null,
+  &quot;result&quot;: {
+    &quot;index&quot;: {
+      &quot;corpus_id&quot;: &quot;adpf54&quot;,
+      &quot;fingerprint&quot;: &quot;ef6cba87efc89c3cc2260ccb&quot;,
+      &quot;index_name&quot;: &quot;wb-adpf54-173f55e1d86d54dae94fa0c0&quot;,
+      &quot;graph_name&quot;: &quot;wb-graph-adpf54-d40819ac410a6baea7aba53e&quot;,
+      &quot;directory&quot;: &quot;data\\workbench\\indexes\\ef6cba87efc89c3cc2260ccb&quot;,
+      &quot;pages&quot;: 433,
+      &quot;selected_pages&quot;: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433
+      ],
+      &quot;chunks&quot;: 777,
+      &quot;sections&quot;: 110,
+      &quot;facts&quot;: 468,
+      &quot;source_hash&quot;: &quot;8db88a8ccd1a7c460be57ef2e31f9e7cce74d2591734603abcc16d0cb09af2d4&quot;,
+      &quot;embedding&quot;: {
+        &quot;model&quot;: &quot;embeddinggemma:300m&quot;,
+        &quot;digest&quot;: &quot;85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1&quot;
+      },
+      &quot;run_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;artifacts&quot;: {
+        &quot;parse&quot;: {
+          &quot;key&quot;: &quot;4247207d290bc6abf31ceea28dd7f8ae9ba13edf827e06fe58c583374a64a92b&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\4247207d290bc6abf31ceea28dd7f8ae9ba13edf827e06fe58c583374a64a92b&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;
+        },
+        &quot;chunk&quot;: {
+          &quot;key&quot;: &quot;dd7114f6af10d9b7587d85f253027fffbc12dd8455032e2691904dcb329d34fe&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\dd7114f6af10d9b7587d85f253027fffbc12dd8455032e2691904dcb329d34fe&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;
+        },
+        &quot;relations&quot;: {
+          &quot;key&quot;: &quot;47230de35a00ef518a2791783ec6d06c13d259f933fcfc73fe1060cfca63176d&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\47230de35a00ef518a2791783ec6d06c13d259f933fcfc73fe1060cfca63176d&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        },
+        &quot;summary&quot;: {
+          &quot;key&quot;: &quot;f95d805909ebdfc2d072853df6b55cfaf8edb2f202ac771c9abc3dd72d9c84b1&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\f95d805909ebdfc2d072853df6b55cfaf8edb2f202ac771c9abc3dd72d9c84b1&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        },
+        &quot;embedding&quot;: {
+          &quot;key&quot;: &quot;7df58adff8f7ee8e4a014d78ba93463f312cdb21cdb7078871c495e2c4594fcf&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\7df58adff8f7ee8e4a014d78ba93463f312cdb21cdb7078871c495e2c4594fcf&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        },
+        &quot;summary_embedding&quot;: {
+          &quot;key&quot;: &quot;b509ee8cf3cdd08d360f2e01e4a04b55d8b852a1e8f0ae465cc02d90b895207e&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\b509ee8cf3cdd08d360f2e01e4a04b55d8b852a1e8f0ae465cc02d90b895207e&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        },
+        &quot;search_index&quot;: {
+          &quot;key&quot;: &quot;800043621230e29c875ed72297e7c6e945674f1729b41aa2be2de5695ce83f31&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\800043621230e29c875ed72297e7c6e945674f1729b41aa2be2de5695ce83f31&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        },
+        &quot;graph_index&quot;: {
+          &quot;key&quot;: &quot;f82770c4e130eda32d8887f451e2b33dc40088d16d7690ef2d65bacac8033dd5&quot;,
+          &quot;directory&quot;: &quot;data\\workbench\\artifacts\\f82770c4e130eda32d8887f451e2b33dc40088d16d7690ef2d65bacac8033dd5&quot;,
+          &quot;reused&quot;: true,
+          &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;
+        }
+      },
+      &quot;rejected_facts&quot;: 94
+    },
+    &quot;evaluation&quot;: {
+      &quot;fields&quot;: [
+        {
+          &quot;field_id&quot;: &quot;identificacao&quot;,
+          &quot;annotated&quot;: true,
+          &quot;value_correct&quot;: true,
+          &quot;list_precision&quot;: null,
+          &quot;list_recall&quot;: null,
+          &quot;correct&quot;: true,
+          &quot;actual&quot;: &quot;ADPF 54 / DF&quot;,
+          &quot;expected&quot;: &quot;ADPF 54&quot;,
+          &quot;status&quot;: &quot;filled&quot;,
+          &quot;split&quot;: &quot;development&quot;,
+          &quot;reference_pages&quot;: [
+            1
+          ],
+          &quot;reference_page_hit&quot;: false,
+          &quot;reference_status&quot;: &quot;provisional&quot;,
+          &quot;has_citations&quot;: true,
+          &quot;rounds&quot;: 1
+        },
+        {
+          &quot;field_id&quot;: &quot;relator&quot;,
+          &quot;annotated&quot;: true,
+          &quot;value_correct&quot;: true,
+          &quot;list_precision&quot;: null,
+          &quot;list_recall&quot;: null,
+          &quot;correct&quot;: true,
+          &quot;actual&quot;: &quot;Marco Aurélio&quot;,
+          &quot;expected&quot;: &quot;Marco Aurélio&quot;,
+          &quot;status&quot;: &quot;filled&quot;,
+          &quot;split&quot;: &quot;held_out&quot;,
+          &quot;reference_pages&quot;: [
+            1
+          ],
+          &quot;reference_page_hit&quot;: false,
+          &quot;reference_status&quot;: &quot;provisional&quot;,
+          &quot;has_citations&quot;: true,
+          &quot;rounds&quot;: 1
+        },
+        {
+          &quot;field_id&quot;: &quot;resultado&quot;,
+          &quot;annotated&quot;: true,
+          &quot;value_correct&quot;: true,
+          &quot;list_precision&quot;: null,
+          &quot;list_recall&quot;: null,
+          &quot;correct&quot;: true,
+          &quot;actual&quot;: &quot;procedente&quot;,
+          &quot;expected&quot;: &quot;procedente&quot;,
+          &quot;status&quot;: &quot;filled&quot;,
+          &quot;split&quot;: &quot;development&quot;,
+          &quot;reference_pages&quot;: [
+            1,
+            433
+          ],
+          &quot;reference_page_hit&quot;: true,
+          &quot;reference_status&quot;: &quot;provisional&quot;,
+          &quot;has_citations&quot;: true,
+          &quot;rounds&quot;: 1
+        }
+      ],
+      &quot;field_count&quot;: 3,
+      &quot;annotated_count&quot;: 3,
+      &quot;accuracy&quot;: 1.0,
+      &quot;coverage&quot;: 1.0,
+      &quot;reference_status&quot;: &quot;provisório; exige revisão humana&quot;,
+      &quot;evaluator_version&quot;: &quot;deterministic-v2&quot;,
+      &quot;scope_note&quot;: &quot;Acerto automático contra o gabarito; citação literal e suporte semântico são critérios diferentes.&quot;
+    }
+  },
+  &quot;retry_of&quot;: null,
+  &quot;stages&quot;: [
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;ocr&quot;,
+      &quot;status&quot;: &quot;skipped&quot;,
+      &quot;started_at&quot;: null,
+      &quot;ended_at&quot;: null,
+      &quot;duration_ms&quot;: null,
+      &quot;history_ms&quot;: null,
+      &quot;artifact_key&quot;: null,
+      &quot;source_run&quot;: null,
+      &quot;detail&quot;: {
+        &quot;reason&quot;: &quot;Nenhuma página selecionada precisa de OCR.&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;parse&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.407381+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.428732+00:00&quot;,
+      &quot;duration_ms&quot;: 21.56469994224608,
+      &quot;history_ms&quot;: 1222.3425999982283,
+      &quot;artifact_key&quot;: &quot;4247207d290bc6abf31ceea28dd7f8ae9ba13edf827e06fe58c583374a64a92b&quot;,
+      &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;chunk&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.439832+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.469434+00:00&quot;,
+      &quot;duration_ms&quot;: 29.899500077590346,
+      &quot;history_ms&quot;: 52.03649995382875,
+      &quot;artifact_key&quot;: &quot;dd7114f6af10d9b7587d85f253027fffbc12dd8455032e2691904dcb329d34fe&quot;,
+      &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;relations&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.476698+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.484922+00:00&quot;,
+      &quot;duration_ms&quot;: 8.472000015899539,
+      &quot;history_ms&quot;: 783618.6608005082,
+      &quot;artifact_key&quot;: &quot;47230de35a00ef518a2791783ec6d06c13d259f933fcfc73fe1060cfca63176d&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;summary&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.491923+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.495655+00:00&quot;,
+      &quot;duration_ms&quot;: 4.389600013382733,
+      &quot;history_ms&quot;: 370298.60419989564,
+      &quot;artifact_key&quot;: &quot;f95d805909ebdfc2d072853df6b55cfaf8edb2f202ac771c9abc3dd72d9c84b1&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;embedding&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.502443+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.601026+00:00&quot;,
+      &quot;duration_ms&quot;: 98.4092999715358,
+      &quot;history_ms&quot;: 1603.1339999753982,
+      &quot;artifact_key&quot;: &quot;7df58adff8f7ee8e4a014d78ba93463f312cdb21cdb7078871c495e2c4594fcf&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;summary_embedding&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.607094+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.619306+00:00&quot;,
+      &quot;duration_ms&quot;: 11.745299911126494,
+      &quot;history_ms&quot;: 2090.5331999529153,
+      &quot;artifact_key&quot;: &quot;b509ee8cf3cdd08d360f2e01e4a04b55d8b852a1e8f0ae465cc02d90b895207e&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;search_index&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.627376+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.651933+00:00&quot;,
+      &quot;duration_ms&quot;: 24.55630002077669,
+      &quot;history_ms&quot;: 1425.0938000623137,
+      &quot;artifact_key&quot;: &quot;800043621230e29c875ed72297e7c6e945674f1729b41aa2be2de5695ce83f31&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;graph_index&quot;,
+      &quot;status&quot;: &quot;reused&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:30.659434+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.685800+00:00&quot;,
+      &quot;duration_ms&quot;: 26.37979993596673,
+      &quot;history_ms&quot;: 2701.567000010982,
+      &quot;artifact_key&quot;: &quot;f82770c4e130eda32d8887f451e2b33dc40088d16d7690ef2d65bacac8033dd5&quot;,
+      &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+      &quot;detail&quot;: {
+        &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+      }
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;retrieval&quot;,
+      &quot;status&quot;: &quot;complete&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:31.526683+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:40.416117+00:00&quot;,
+      &quot;duration_ms&quot;: 205.77929995488375,
+      &quot;history_ms&quot;: null,
+      &quot;artifact_key&quot;: null,
+      &quot;source_run&quot;: null,
+      &quot;detail&quot;: {}
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;generation&quot;,
+      &quot;status&quot;: &quot;complete&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:31.685431+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:44.418856+00:00&quot;,
+      &quot;duration_ms&quot;: 8475.625999970362,
+      &quot;history_ms&quot;: null,
+      &quot;artifact_key&quot;: null,
+      &quot;source_run&quot;: null,
+      &quot;detail&quot;: {}
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;verification&quot;,
+      &quot;status&quot;: &quot;complete&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:33.479431+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:46.529891+00:00&quot;,
+      &quot;duration_ms&quot;: 6203.240999835543,
+      &quot;history_ms&quot;: null,
+      &quot;artifact_key&quot;: null,
+      &quot;source_run&quot;: null,
+      &quot;detail&quot;: {}
+    },
+    {
+      &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+      &quot;name&quot;: &quot;evaluation&quot;,
+      &quot;status&quot;: &quot;complete&quot;,
+      &quot;started_at&quot;: &quot;2026-11-19T03:53:46.816409+00:00&quot;,
+      &quot;ended_at&quot;: &quot;2026-11-19T03:53:46.865303+00:00&quot;,
+      &quot;duration_ms&quot;: 48.50439995061606,
+      &quot;history_ms&quot;: null,
+      &quot;artifact_key&quot;: null,
+      &quot;source_run&quot;: null,
+      &quot;detail&quot;: {}
+    }
+  ],
+  &quot;metrics&quot;: {
+    &quot;stages&quot;: [
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;parse&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.407381+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.428732+00:00&quot;,
+        &quot;duration_ms&quot;: 21.56469994224608,
+        &quot;history_ms&quot;: 1222.3425999982283,
+        &quot;artifact_key&quot;: &quot;4247207d290bc6abf31ceea28dd7f8ae9ba13edf827e06fe58c583374a64a92b&quot;,
+        &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Leitura do PDF&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;ocr&quot;,
+        &quot;status&quot;: &quot;skipped&quot;,
+        &quot;started_at&quot;: null,
+        &quot;ended_at&quot;: null,
+        &quot;duration_ms&quot;: null,
+        &quot;history_ms&quot;: null,
+        &quot;artifact_key&quot;: null,
+        &quot;source_run&quot;: null,
+        &quot;detail&quot;: {
+          &quot;reason&quot;: &quot;Nenhuma página selecionada precisa de OCR.&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;OCR&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;chunk&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.439832+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.469434+00:00&quot;,
+        &quot;duration_ms&quot;: 29.899500077590346,
+        &quot;history_ms&quot;: 52.03649995382875,
+        &quot;artifact_key&quot;: &quot;dd7114f6af10d9b7587d85f253027fffbc12dd8455032e2691904dcb329d34fe&quot;,
+        &quot;source_run&quot;: &quot;wb-7d775bc2b17147a98a1736528d134897&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Recortes e pacotes&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;relations&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.476698+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.484922+00:00&quot;,
+        &quot;duration_ms&quot;: 8.472000015899539,
+        &quot;history_ms&quot;: 783618.6608005082,
+        &quot;artifact_key&quot;: &quot;47230de35a00ef518a2791783ec6d06c13d259f933fcfc73fe1060cfca63176d&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Entidades, eventos e relações&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;summary&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.491923+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.495655+00:00&quot;,
+        &quot;duration_ms&quot;: 4.389600013382733,
+        &quot;history_ms&quot;: 370298.60419989564,
+        &quot;artifact_key&quot;: &quot;f95d805909ebdfc2d072853df6b55cfaf8edb2f202ac771c9abc3dd72d9c84b1&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Resumos&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;embedding&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.502443+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.601026+00:00&quot;,
+        &quot;duration_ms&quot;: 98.4092999715358,
+        &quot;history_ms&quot;: 1603.1339999753982,
+        &quot;artifact_key&quot;: &quot;7df58adff8f7ee8e4a014d78ba93463f312cdb21cdb7078871c495e2c4594fcf&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Embeddings dos trechos&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;summary_embedding&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.607094+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.619306+00:00&quot;,
+        &quot;duration_ms&quot;: 11.745299911126494,
+        &quot;history_ms&quot;: 2090.5331999529153,
+        &quot;artifact_key&quot;: &quot;b509ee8cf3cdd08d360f2e01e4a04b55d8b852a1e8f0ae465cc02d90b895207e&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Embeddings dos resumos&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;search_index&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.627376+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.651933+00:00&quot;,
+        &quot;duration_ms&quot;: 24.55630002077669,
+        &quot;history_ms&quot;: 1425.0938000623137,
+        &quot;artifact_key&quot;: &quot;800043621230e29c875ed72297e7c6e945674f1729b41aa2be2de5695ce83f31&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Gravação no OpenSearch&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;graph_index&quot;,
+        &quot;status&quot;: &quot;reused&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:30.659434+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:30.685800+00:00&quot;,
+        &quot;duration_ms&quot;: 26.37979993596673,
+        &quot;history_ms&quot;: 2701.567000010982,
+        &quot;artifact_key&quot;: &quot;f82770c4e130eda32d8887f451e2b33dc40088d16d7690ef2d65bacac8033dd5&quot;,
+        &quot;source_run&quot;: &quot;wb-8e2e9973323b4efa9106bc50e274bcc1&quot;,
+        &quot;detail&quot;: {
+          &quot;new_work&quot;: &quot;checksum, load and availability check&quot;
+        },
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Gravação no Neo4j&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;retrieval&quot;,
+        &quot;status&quot;: &quot;complete&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:31.526683+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:40.416117+00:00&quot;,
+        &quot;duration_ms&quot;: 205.77929995488375,
+        &quot;history_ms&quot;: null,
+        &quot;artifact_key&quot;: null,
+        &quot;source_run&quot;: null,
+        &quot;detail&quot;: {},
+        &quot;calls&quot;: 6,
+        &quot;duration_is_partial&quot;: false,
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 3,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Recuperação / MCP&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;generation&quot;,
+        &quot;status&quot;: &quot;complete&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:31.685431+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:44.418856+00:00&quot;,
+        &quot;duration_ms&quot;: 8475.625999970362,
+        &quot;history_ms&quot;: null,
+        &quot;artifact_key&quot;: null,
+        &quot;source_run&quot;: null,
+        &quot;detail&quot;: {},
+        &quot;calls&quot;: 3,
+        &quot;duration_is_partial&quot;: false,
+        &quot;model_calls&quot;: 3,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 8442,
+        &quot;output_tokens&quot;: 677,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Extração JSON&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;verification&quot;,
+        &quot;status&quot;: &quot;complete&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:33.479431+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:46.529891+00:00&quot;,
+        &quot;duration_ms&quot;: 6203.240999835543,
+        &quot;history_ms&quot;: null,
+        &quot;artifact_key&quot;: null,
+        &quot;source_run&quot;: null,
+        &quot;detail&quot;: {},
+        &quot;calls&quot;: 6,
+        &quot;duration_is_partial&quot;: false,
+        &quot;model_calls&quot;: 3,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 8505,
+        &quot;output_tokens&quot;: 442,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Verificação&quot;
+      },
+      {
+        &quot;job_id&quot;: &quot;wb-b07b70355e6d4c649eda0e5accc3c732&quot;,
+        &quot;name&quot;: &quot;evaluation&quot;,
+        &quot;status&quot;: &quot;complete&quot;,
+        &quot;started_at&quot;: &quot;2026-11-19T03:53:46.816409+00:00&quot;,
+        &quot;ended_at&quot;: &quot;2026-11-19T03:53:46.865303+00:00&quot;,
+        &quot;duration_ms&quot;: 48.50439995061606,
+        &quot;history_ms&quot;: null,
+        &quot;artifact_key&quot;: null,
+        &quot;source_run&quot;: null,
+        &quot;detail&quot;: {},
+        &quot;calls&quot;: 1,
+        &quot;duration_is_partial&quot;: false,
+        &quot;model_calls&quot;: 0,
+        &quot;cached_operations&quot;: 0,
+        &quot;input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 0,
+        &quot;usage_unknown_calls&quot;: 0,
+        &quot;api_cost&quot;: 0,
+        &quot;machine_cost_estimate&quot;: null,
+        &quot;label&quot;: &quot;Avaliação&quot;
+      }
+    ],
+    &quot;wall_seconds&quot;: 16.680479599977843,
+    &quot;wall_seconds_upper_bound&quot;: null,
+    &quot;queue_seconds&quot;: 676.416616,
+    &quot;total_seconds&quot;: 693.0970955999778,
+    &quot;model_calls&quot;: 6,
+    &quot;mcp_calls&quot;: 6,
+    &quot;cached_operations&quot;: 3,
+    &quot;agent_rounds&quot;: 3,
+    &quot;input_tokens&quot;: 16947,
+    &quot;output_tokens&quot;: 1119,
+    &quot;usage_unknown_calls&quot;: 0,
+    &quot;api_cost&quot;: 0,
+    &quot;machine_cost_estimate&quot;: null,
+    &quot;total_cost&quot;: null,
+    &quot;currency&quot;: &quot;BRL&quot;,
+    &quot;cost_status&quot;: &quot;hardware_unpriced&quot;,
+    &quot;timing_note&quot;: &quot;Durações por etapa são disjuntas. MCP inclui espera da ferramenta e embedding da consulta; spans internos não são somados novamente. Total medido inclui inicialização e orquestração.&quot;
+  },
+  &quot;provenance&quot;: {
+    &quot;configuration&quot;: &quot;2ec1bf18858e48d5929bcb6c67c4e6e7&quot;,
+    &quot;input_hash&quot;: &quot;eb81a07edcee69d6520e6f3b01178758c2f7f6e7f2dd58d47f290c4709ea234b&quot;,
+    &quot;model_digests&quot;: {
+      &quot;qwen3:4b&quot;: &quot;359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7&quot;,
+      &quot;embeddinggemma:300m&quot;: &quot;85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1&quot;
+    },
+    &quot;git_commit&quot;: &quot;6385a083525207698b0eb81a195c7e9602c7ffa5&quot;,
+    &quot;implementation_hash&quot;: &quot;a89c8b438d7697fe129228edcabda89a7c5d9c02419f2a24c3f4319370f1dc4d&quot;,
+    &quot;implementation_archive&quot;: &quot;implementation.zip&quot;,
+    &quot;implementation_end_hash&quot;: &quot;a89c8b438d7697fe129228edcabda89a7c5d9c02419f2a24c3f4319370f1dc4d&quot;,
+    &quot;implementation_changed_during_run&quot;: false
+  },
+  &quot;fields&quot;: [
+    {
+      &quot;id&quot;: &quot;identificacao&quot;,
+      &quot;path&quot;: &quot;/processo/identificacao&quot;,
+      &quot;question&quot;: &quot;Qual é a classe e o número do processo principal deste acórdão?&quot;,
+      &quot;status&quot;: &quot;filled&quot;,
+      &quot;value&quot;: &quot;ADPF 54 / DF&quot;,
+      &quot;evidence&quot;: [
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+          &quot;quote&quot;: &quot;ADPF 54 / DF&quot;,
+          &quot;page&quot;: 18
+        }
+      ],
+      &quot;reason&quot;: &quot;A passagem do documento página 18 menciona &#x27;ADPF 54 / DF&#x27; como a referência do processo.&quot;,
+      &quot;rounds&quot;: [
+        {
+          &quot;round&quot;: 1,
+          &quot;query&quot;: &quot;Qual é a classe e o número do processo principal deste acórdão?&quot;,
+          &quot;retrieved_ids&quot;: [
+            &quot;adpf54-4247207d29-p88-c0&quot;,
+            &quot;adpf54-4247207d29-p18-c0&quot;,
+            &quot;adpf54-4247207d29-p168-c0&quot;,
+            &quot;adpf54-4247207d29-p187-c1596&quot;
+          ],
+          &quot;retrieval&quot;: {
+            &quot;query&quot;: &quot;Qual é a classe e o número do processo principal deste acórdão?&quot;,
+            &quot;variant&quot;: &quot;F&quot;,
+            &quot;channels&quot;: {
+              &quot;lexical&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p168-c0&quot;,
+                  &quot;score&quot;: 10.14971
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p232-c0&quot;,
+                  &quot;score&quot;: 7.425995
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p88-c0&quot;,
+                  &quot;score&quot;: 6.1436152
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p98-c1593&quot;,
+                  &quot;score&quot;: 6.017617
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                  &quot;score&quot;: 5.9861393
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p4-c0&quot;,
+                  &quot;score&quot;: 5.9826446
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p361-c0&quot;,
+                  &quot;score&quot;: 5.9050674
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p270-c0&quot;,
+                  &quot;score&quot;: 5.826582
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p358-c0&quot;,
+                  &quot;score&quot;: 5.6626883
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p396-c1595&quot;,
+                  &quot;score&quot;: 5.6230083
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p43-c0&quot;,
+                  &quot;score&quot;: 5.5593567
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p13-c0&quot;,
+                  &quot;score&quot;: 5.5593567
+                }
+              ],
+              &quot;vector&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p309-c0&quot;,
+                  &quot;score&quot;: 0.7800329
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p73-c0&quot;,
+                  &quot;score&quot;: 0.77036
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p362-c0&quot;,
+                  &quot;score&quot;: 0.763286
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p308-c0&quot;,
+                  &quot;score&quot;: 0.7626654
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p9-c0&quot;,
+                  &quot;score&quot;: 0.7620183
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p359-c0&quot;,
+                  &quot;score&quot;: 0.760212
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p15-c0&quot;,
+                  &quot;score&quot;: 0.7597281
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p352-c0&quot;,
+                  &quot;score&quot;: 0.7593008
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                  &quot;score&quot;: 0.75812006
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p428-c0&quot;,
+                  &quot;score&quot;: 0.7566578
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p427-c0&quot;,
+                  &quot;score&quot;: 0.75647664
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p424-c0&quot;,
+                  &quot;score&quot;: 0.75594413
+                }
+              ],
+              &quot;summary&quot;: [
+                {
+                  &quot;id&quot;: &quot;section-51&quot;,
+                  &quot;score&quot;: 3.913641,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p187-c1596&quot;,
+                    &quot;adpf54-4247207d29-p188-c0&quot;,
+                    &quot;adpf54-4247207d29-p188-c1591&quot;,
+                    &quot;adpf54-4247207d29-p189-c0&quot;,
+                    &quot;adpf54-4247207d29-p189-c1598&quot;,
+                    &quot;adpf54-4247207d29-p190-c0&quot;,
+                    &quot;adpf54-4247207d29-p190-c1595&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-22&quot;,
+                  &quot;score&quot;: 3.5787883,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p86-c0&quot;,
+                    &quot;adpf54-4247207d29-p86-c1597&quot;,
+                    &quot;adpf54-4247207d29-p87-c0&quot;,
+                    &quot;adpf54-4247207d29-p88-c0&quot;,
+                    &quot;adpf54-4247207d29-p89-c0&quot;,
+                    &quot;adpf54-4247207d29-p89-c1599&quot;,
+                    &quot;adpf54-4247207d29-p90-c0&quot;,
+                    &quot;adpf54-4247207d29-p90-c1592&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-38&quot;,
+                  &quot;score&quot;: 3.503706,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p138-c1588&quot;,
+                    &quot;adpf54-4247207d29-p139-c0&quot;,
+                    &quot;adpf54-4247207d29-p139-c1596&quot;,
+                    &quot;adpf54-4247207d29-p140-c0&quot;,
+                    &quot;adpf54-4247207d29-p140-c1594&quot;,
+                    &quot;adpf54-4247207d29-p141-c0&quot;,
+                    &quot;adpf54-4247207d29-p141-c1591&quot;
+                  ]
+                }
+              ],
+              &quot;graph&quot;: []
+            },
+            &quot;hits&quot;: [
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p88-c0&quot;,
+                &quot;page&quot;: 88,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nExplicação\nInteiro Teor do Acórdão - Página 88 de 433\n11/04/2012 PLENÁRIO\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL\nRELATOR : MIN. MARCO AURÉLIO REQTE.(S) :CONFEDERAÇ&quot;,
+                &quot;score&quot;: 0.029957522915269395
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                &quot;page&quot;: 18,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nRelatório\nInteiro Teor do Acórdão - Página 18 de 433\nADPF 54 / DF\ndefinitivo, abrindo-se vista do processo ao Procurador- Geral da República.\nA Conferência Nacional dos Bispos do Brasil, ainda du&quot;,
+                &quot;score&quot;: 0.029877369007803793
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p168-c0&quot;,
+                &quot;page&quot;: 168,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nVoto - MIN. LUIZ FUX\nInteiro Teor do Acórdão - Página 168 de 433\nADPF 54 / DF\nobrigadas a percorrer a via crucis nos hospitais públicos; não só dos hospitais públicos, pois também comparecem aos &quot;,
+                &quot;score&quot;: 0.01639344262295082
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p187-c1596&quot;,
+                &quot;page&quot;: 187,
+                &quot;preview&quot;: &quot;ios de muerte, ahora vigentes en gran parte del hemisferio occidental, se han desarrollado como producto de uma convención acordada desde el informe Harvard de 1968 hasta ahora( ).\nEm esta sucesión de modificaciones la d&quot;,
+                &quot;score&quot;: 0.01639344262295082
+              }
+            ]
+          },
+          &quot;answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;ADPF 54 / DF&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                &quot;quote&quot;: &quot;ADPF 54 / DF&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;A passagem do documento página 18 menciona &#x27;ADPF 54 / DF&#x27; como a referência do processo.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;raw_answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;ADPF 54 / DF&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                &quot;quote&quot;: &quot;ADPF 54 / DF&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;A passagem do documento página 18 menciona &#x27;ADPF 54 / DF&#x27; como a referência do processo.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;validation_errors&quot;: [],
+          &quot;support_check&quot;: {
+            &quot;reason&quot;: &quot;O valor &#x27;ADPF 54 / DF&#x27; é uma citação literal presente na passagem com ID &#x27;adpf54-4247207d29-p18-c0&#x27;, que está na página 18 do documento. A passagem menciona explicitamente &#x27;ADPF 54 / DF&#x27; como parte do título do acórdão. Além disso, outras passagens também referenciam o mesmo processo, como na página 88, onde há a descrição &#x27;ARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL&#x27;. O&quot;,
+            &quot;supported&quot;: true
+          }
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;relator&quot;,
+      &quot;path&quot;: &quot;/processo/relator&quot;,
+      &quot;question&quot;: &quot;Quem é o ministro relator da ADPF 54?&quot;,
+      &quot;status&quot;: &quot;filled&quot;,
+      &quot;value&quot;: &quot;Marco Aurélio&quot;,
+      &quot;evidence&quot;: [
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+          &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Eu sei.&quot;,
+          &quot;page&quot;: 373
+        },
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+          &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Vossa Excelência me permite?&quot;,
+          &quot;page&quot;: 367
+        },
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p431-c0&quot;,
+          &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Sim.&quot;,
+          &quot;page&quot;: 431
+        }
+      ],
+      &quot;reason&quot;: &quot;O ministro Marco Aurélio é identificado como RELATOR em múltiplas passagens do documento.&quot;,
+      &quot;rounds&quot;: [
+        {
+          &quot;round&quot;: 1,
+          &quot;query&quot;: &quot;Quem é o ministro relator da ADPF 54?&quot;,
+          &quot;retrieved_ids&quot;: [
+            &quot;adpf54-4247207d29-p373-c0&quot;,
+            &quot;adpf54-4247207d29-p302-c0&quot;,
+            &quot;adpf54-4247207d29-p367-c0&quot;,
+            &quot;adpf54-4247207d29-p431-c0&quot;
+          ],
+          &quot;retrieval&quot;: {
+            &quot;query&quot;: &quot;Quem é o ministro relator da ADPF 54?&quot;,
+            &quot;variant&quot;: &quot;F&quot;,
+            &quot;channels&quot;: {
+              &quot;lexical&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p418-c0&quot;,
+                  &quot;score&quot;: 9.345459
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p431-c0&quot;,
+                  &quot;score&quot;: 8.184441
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+                  &quot;score&quot;: 7.962905
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+                  &quot;score&quot;: 7.7165475
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+                  &quot;score&quot;: 7.6428585
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p371-c0&quot;,
+                  &quot;score&quot;: 7.545647
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+                  &quot;score&quot;: 7.528859
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p372-c0&quot;,
+                  &quot;score&quot;: 7.42107
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p419-c0&quot;,
+                  &quot;score&quot;: 7.412222
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p417-c0&quot;,
+                  &quot;score&quot;: 7.391702
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p422-c0&quot;,
+                  &quot;score&quot;: 7.1587486
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p432-c0&quot;,
+                  &quot;score&quot;: 7.1587486
+                }
+              ],
+              &quot;vector&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p302-c0&quot;,
+                  &quot;score&quot;: 0.745999
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p312-c0&quot;,
+                  &quot;score&quot;: 0.732172
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+                  &quot;score&quot;: 0.7303902
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p255-c0&quot;,
+                  &quot;score&quot;: 0.72972536
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+                  &quot;score&quot;: 0.7267245
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p85-c0&quot;,
+                  &quot;score&quot;: 0.726679
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p368-c0&quot;,
+                  &quot;score&quot;: 0.7245216
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p88-c0&quot;,
+                  &quot;score&quot;: 0.72016466
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p415-c0&quot;,
+                  &quot;score&quot;: 0.71792287
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p366-c0&quot;,
+                  &quot;score&quot;: 0.7176689
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p372-c0&quot;,
+                  &quot;score&quot;: 0.7116907
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p418-c0&quot;,
+                  &quot;score&quot;: 0.71158993
+                }
+              ],
+              &quot;summary&quot;: [
+                {
+                  &quot;id&quot;: &quot;section-109&quot;,
+                  &quot;score&quot;: 8.35687,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p427-c0&quot;,
+                    &quot;adpf54-4247207d29-p428-c0&quot;,
+                    &quot;adpf54-4247207d29-p429-c0&quot;,
+                    &quot;adpf54-4247207d29-p430-c0&quot;,
+                    &quot;adpf54-4247207d29-p431-c0&quot;,
+                    &quot;adpf54-4247207d29-p432-c0&quot;,
+                    &quot;adpf54-4247207d29-p433-c0&quot;,
+                    &quot;adpf54-4247207d29-p433-c1598&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-95&quot;,
+                  &quot;score&quot;: 7.7338667,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p372-c1595&quot;,
+                    &quot;adpf54-4247207d29-p373-c0&quot;,
+                    &quot;adpf54-4247207d29-p374-c0&quot;,
+                    &quot;adpf54-4247207d29-p375-c0&quot;,
+                    &quot;adpf54-4247207d29-p375-c1594&quot;,
+                    &quot;adpf54-4247207d29-p376-c0&quot;,
+                    &quot;adpf54-4247207d29-p376-c1593&quot;,
+                    &quot;adpf54-4247207d29-p377-c0&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-23&quot;,
+                  &quot;score&quot;: 7.5653067,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p91-c0&quot;,
+                    &quot;adpf54-4247207d29-p91-c1598&quot;,
+                    &quot;adpf54-4247207d29-p92-c0&quot;,
+                    &quot;adpf54-4247207d29-p92-c1595&quot;,
+                    &quot;adpf54-4247207d29-p93-c0&quot;,
+                    &quot;adpf54-4247207d29-p93-c1599&quot;,
+                    &quot;adpf54-4247207d29-p94-c0&quot;
+                  ]
+                }
+              ],
+              &quot;graph&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p302-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p142-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p155-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p281-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p288-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p361-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p369-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p427-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p428-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p66-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p67-c0&quot;
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p113-c0&quot;
+                }
+              ]
+            },
+            &quot;hits&quot;: [
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+                &quot;page&quot;: 373,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nDebate\nInteiro Teor do Acórdão - Página 373 de 433\nADPF 54 / DF\nnão vai – e não podemos presumir o excepcional – atuar de forma açodada, não vai correr o risco de cometer, por exemplo, um crime d&quot;,
+                &quot;score&quot;: 0.045054945054945054
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p302-c0&quot;,
+                &quot;page&quot;: 302,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nVoto - MIN. GILMAR MENDES\nInteiro Teor do Acórdão - Página 302 de 433\nADPF 54 / DF\neliminação resultou automaticamente a aplicação, aos referidos trabalhadores inactivos, de um regime de imunidad&quot;,
+                &quot;score&quot;: 0.03278688524590164
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+                &quot;page&quot;: 367,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nEsclarecimento\nInteiro Teor do Acórdão - Página 367 de 433\n12/04/2012 PLENÁRIO\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL\nO SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – V&quot;,
+                &quot;score&quot;: 0.031746031746031744
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p431-c0&quot;,
+                &quot;page&quot;: 431,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nDebate II\nInteiro Teor do Acórdão - Página 431 de 433\nADPF 54 / DF\ndemonstrada.\nO SENHOR MINISTRO LUIZ FUX - Ministro Marco Aurélio, se Vossa Excelência me permite, só para colaborar.\nO SENHOR MI&quot;,
+                &quot;score&quot;: 0.0315136476426799
+              }
+            ]
+          },
+          &quot;answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;Marco Aurélio&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Eu sei.&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Vossa Excelência me permite?&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p431-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Sim.&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;O ministro Marco Aurélio é identificado como RELATOR em múltiplas passagens do documento.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;raw_answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;Marco Aurélio&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p373-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Eu sei.&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p367-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Vossa Excelência me permite?&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p431-c0&quot;,
+                &quot;quote&quot;: &quot;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Sim.&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;O ministro Marco Aurélio é identificado como RELATOR em múltiplas passagens do documento.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;validation_errors&quot;: [],
+          &quot;support_check&quot;: {
+            &quot;reason&quot;: &quot;O valor &#x27;Marco Aurélio&#x27; é sustentado pelas passagens fornecidas. As citações indicam que o ministro relator da ADPF 54 é Marco Aurélio. As passagens mostram que em múltiplas ocasiões, o ministro Marco Aurélio é identificado como (RELATOR) em contextos de debate no Supremo Tribunal Federal. Por exemplo, na página 373, há a frase &#x27;O SENHOR MINISTRO MARCO AURÉLIO (RELATOR) – Eu sei.&#x27;; na página 367, &quot;,
+            &quot;supported&quot;: true
+          }
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;resultado&quot;,
+      &quot;path&quot;: &quot;/decisao/resultado&quot;,
+      &quot;question&quot;: &quot;A ação principal foi julgada procedente ou improcedente no resultado final?&quot;,
+      &quot;status&quot;: &quot;filled&quot;,
+      &quot;value&quot;: &quot;procedente&quot;,
+      &quot;evidence&quot;: [
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+          &quot;quote&quot;: &quot;O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal.&quot;,
+          &quot;page&quot;: 430
+        },
+        {
+          &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+          &quot;quote&quot;: &quot;O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal&quot;,
+          &quot;page&quot;: 433
+        }
+      ],
+      &quot;reason&quot;: &quot;As passagens indicam que o Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação mencionada na pergunta. O resultado final foi procedente, conforme declarado pelo Relator e confirmado pelo Plenário.&quot;,
+      &quot;rounds&quot;: [
+        {
+          &quot;round&quot;: 1,
+          &quot;query&quot;: &quot;A ação principal foi julgada procedente ou improcedente no resultado final?&quot;,
+          &quot;retrieved_ids&quot;: [
+            &quot;adpf54-4247207d29-p430-c0&quot;,
+            &quot;adpf54-4247207d29-p433-c0&quot;,
+            &quot;adpf54-4247207d29-p253-c0&quot;,
+            &quot;adpf54-4247207d29-p18-c0&quot;
+          ],
+          &quot;retrieval&quot;: {
+            &quot;query&quot;: &quot;A ação principal foi julgada procedente ou improcedente no resultado final?&quot;,
+            &quot;variant&quot;: &quot;F&quot;,
+            &quot;channels&quot;: {
+              &quot;lexical&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+                  &quot;score&quot;: 11.9117985
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+                  &quot;score&quot;: 11.319996
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p39-c0&quot;,
+                  &quot;score&quot;: 9.477041
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p4-c0&quot;,
+                  &quot;score&quot;: 8.199196
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p13-c0&quot;,
+                  &quot;score&quot;: 6.8415265
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p253-c0&quot;,
+                  &quot;score&quot;: 6.585353
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p91-c1598&quot;,
+                  &quot;score&quot;: 6.4921865
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p395-c0&quot;,
+                  &quot;score&quot;: 6.456421
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p69-c1595&quot;,
+                  &quot;score&quot;: 6.390896
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p4-c1599&quot;,
+                  &quot;score&quot;: 6.290431
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p263-c0&quot;,
+                  &quot;score&quot;: 6.234269
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p361-c0&quot;,
+                  &quot;score&quot;: 6.22606
+                }
+              ],
+              &quot;vector&quot;: [
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                  &quot;score&quot;: 0.7332659
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p351-c0&quot;,
+                  &quot;score&quot;: 0.71725
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p8-c0&quot;,
+                  &quot;score&quot;: 0.716677
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p15-c0&quot;,
+                  &quot;score&quot;: 0.71648896
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p415-c0&quot;,
+                  &quot;score&quot;: 0.7160766
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p128-c0&quot;,
+                  &quot;score&quot;: 0.71560156
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p309-c0&quot;,
+                  &quot;score&quot;: 0.71400535
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p9-c0&quot;,
+                  &quot;score&quot;: 0.7139964
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p182-c0&quot;,
+                  &quot;score&quot;: 0.7134095
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p129-c0&quot;,
+                  &quot;score&quot;: 0.71234775
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p359-c0&quot;,
+                  &quot;score&quot;: 0.7111506
+                },
+                {
+                  &quot;id&quot;: &quot;adpf54-4247207d29-p308-c0&quot;,
+                  &quot;score&quot;: 0.7109315
+                }
+              ],
+              &quot;summary&quot;: [
+                {
+                  &quot;id&quot;: &quot;section-109&quot;,
+                  &quot;score&quot;: 6.116382,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p427-c0&quot;,
+                    &quot;adpf54-4247207d29-p428-c0&quot;,
+                    &quot;adpf54-4247207d29-p429-c0&quot;,
+                    &quot;adpf54-4247207d29-p430-c0&quot;,
+                    &quot;adpf54-4247207d29-p431-c0&quot;,
+                    &quot;adpf54-4247207d29-p432-c0&quot;,
+                    &quot;adpf54-4247207d29-p433-c0&quot;,
+                    &quot;adpf54-4247207d29-p433-c1598&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-104&quot;,
+                  &quot;score&quot;: 5.460675,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p402-c0&quot;,
+                    &quot;adpf54-4247207d29-p402-c1594&quot;,
+                    &quot;adpf54-4247207d29-p403-c0&quot;,
+                    &quot;adpf54-4247207d29-p403-c1590&quot;,
+                    &quot;adpf54-4247207d29-p404-c0&quot;,
+                    &quot;adpf54-4247207d29-p404-c1591&quot;
+                  ]
+                },
+                {
+                  &quot;id&quot;: &quot;section-67&quot;,
+                  &quot;score&quot;: 4.8328524,
+                  &quot;chunk_ids&quot;: [
+                    &quot;adpf54-4247207d29-p249-c1597&quot;,
+                    &quot;adpf54-4247207d29-p250-c0&quot;,
+                    &quot;adpf54-4247207d29-p250-c1581&quot;,
+                    &quot;adpf54-4247207d29-p251-c0&quot;,
+                    &quot;adpf54-4247207d29-p251-c1592&quot;,
+                    &quot;adpf54-4247207d29-p252-c0&quot;,
+                    &quot;adpf54-4247207d29-p253-c0&quot;,
+                    &quot;adpf54-4247207d29-p254-c0&quot;,
+                    &quot;adpf54-4247207d29-p254-c1595&quot;
+                  ]
+                }
+              ],
+              &quot;graph&quot;: []
+            },
+            &quot;hits&quot;: [
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+                &quot;page&quot;: 430,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nDebate II\nInteiro Teor do Acórdão - Página 430 de 433\n12/04/2012 PLENÁRIO\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 DISTRITO FEDERAL\nDEBATE\nO SENHOR MINISTRO CEZAR PELUSO (PRESIDENTE)&quot;,
+                &quot;score&quot;: 0.031754032258064516
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+                &quot;page&quot;: 433,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nDecisão de Julgamento\nInteiro Teor do Acórdão - Página 433 de 433\nPLENÁRIO\nEXTRATO DE ATA\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 PROCED. : DISTRITO FEDERAL RELATOR : MIN. MARCO AUR&quot;,
+                &quot;score&quot;: 0.03131881575727918
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p253-c0&quot;,
+                &quot;page&quot;: 253,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nDecisão de Julgamento\nInteiro Teor do Acórdão - Página 253 de 433\nPLENÁRIO\nEXTRATO DE ATA\nARGÜIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 54 PROCED. : DISTRITO FEDERAL RELATOR : MIN. MARCO AUR&quot;,
+                &quot;score&quot;: 0.02749719416386083
+              },
+              {
+                &quot;id&quot;: &quot;adpf54-4247207d29-p18-c0&quot;,
+                &quot;page&quot;: 18,
+                &quot;preview&quot;: &quot;Supremo Tribunal Federal\nRelatório\nInteiro Teor do Acórdão - Página 18 de 433\nADPF 54 / DF\ndefinitivo, abrindo-se vista do processo ao Procurador- Geral da República.\nA Conferência Nacional dos Bispos do Brasil, ainda du&quot;,
+                &quot;score&quot;: 0.01639344262295082
+              }
+            ]
+          },
+          &quot;answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;procedente&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+                &quot;quote&quot;: &quot;O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal.&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+                &quot;quote&quot;: &quot;O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;As passagens indicam que o Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação mencionada na pergunta. O resultado final foi procedente, conforme declarado pelo Relator e confirmado pelo Plenário.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;raw_answer&quot;: {
+            &quot;status&quot;: &quot;filled&quot;,
+            &quot;value&quot;: &quot;procedente&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p430-c0&quot;,
+                &quot;quote&quot;: &quot;O Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, inciso I e II, todos do Código Penal.&quot;
+              },
+              {
+                &quot;chunk_id&quot;: &quot;adpf54-4247207d29-p433-c0&quot;,
+                &quot;quote&quot;: &quot;O Tribunal, por maioria e nos termos do voto do Relator, julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal&quot;
+              }
+            ],
+            &quot;reason&quot;: &quot;As passagens indicam que o Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação mencionada na pergunta. O resultado final foi procedente, conforme declarado pelo Relator e confirmado pelo Plenário.&quot;,
+            &quot;next_query&quot;: &quot;&quot;
+          },
+          &quot;validation_errors&quot;: [],
+          &quot;support_check&quot;: {
+            &quot;reason&quot;: &quot;O valor &#x27;procedente&#x27; está sustentado pelas passagens fornecidas. As citações indicam que o Tribunal julgou procedente a ação para declarar a inconstitucionalidade da interpretação segundo a qual a interrupção da gravidez de feto anencéfalo é conduta tipificada nos artigos 124, 126, 128, incisos I e II, todos do Código Penal. No primeiro chunk, o texto afirma: &#x27;O Tribunal julgou procedente a ação&#x27;.&quot;,
+            &quot;supported&quot;: true
+          }
+        }
+      ]
+    }
+  ],
+  &quot;output&quot;: {
+    &quot;processo&quot;: {
+      &quot;identificacao&quot;: &quot;ADPF 54 / DF&quot;,
+      &quot;relator&quot;: &quot;Marco Aurélio&quot;
+    },
+    &quot;decisao&quot;: {
+      &quot;resultado&quot;: &quot;procedente&quot;
+    }
+  }
+}</pre></details>
+</main></body></html>

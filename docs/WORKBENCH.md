@@ -2,6 +2,8 @@
 
 Este é o roteiro solicitado para a próxima implementação. **Ainda não foi executado.** O [relatório explicado](../reports/full/relatorio.html#workbench) apresenta o contexto, as métricas existentes e este plano em linguagem simples.
 
+O [plano da plataforma local](PLATAFORMA.md) detalha as telas, configurações versionadas, runs, matrizes paramétricas, dependências, reaproveitamento, custos e sequência de implementação para tornar este roteiro operável.
+
 ## Objetivo e hipótese
 
 Evoluir leitura de PDF, segmentação, prompts, modelos, extração do grafo, recuperação e preenchimento de JSON. Criar uma bancada que permita trocar cada peça e medir sua contribuição. Manter como entradas os mesmos dois PDFs: acórdão completo da ADPF 54 (433 páginas, não os autos completos) e Dom Casmurro (105 páginas). Preservar seus hashes.
@@ -65,4 +67,4 @@ O workbench estará entregue quando houver componentes substituíveis, matriz re
 
 ## Escopo desta revisão
 
-Esta revisão atualiza o relatório e orienta a próxima fase. Não muda os modelos, prompts, recortes ou resultados do benchmark já executado. Não implementa nem mede ainda o novo workbench. S3 e APIs externas continuam como opções futuras, não componentes usados no resultado histórico.
+Este roteiro foi escrito para orientar a evolução após o benchmark histórico, cujos modelos, prompts, recortes e resultados permanecem preservados. A primeira plataforma funcional foi implementada posteriormente e está descrita em [PLATAFORMA-LOCAL.md](PLATAFORMA-LOCAL.md), com seu escopo e medições separados. Os aprimoramentos deste roteiro ainda não implementados continuam como próximos experimentos. S3 e APIs externas permanecem opções futuras, não componentes usados no resultado histórico.
