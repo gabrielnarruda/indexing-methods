@@ -2,6 +2,8 @@
 
 A aplicação funcional usa a interface aprovada no protótipo e consulta uma API local. Suas tabelas são preenchidas pelos eventos e resultados reais do pipeline. O HTML de demonstração permanece separado em `prototipo-plataforma.html` e continua identificado como fictício.
 
+Para passar o projeto a outro agente desenvolvedor, comece pelo [README-AGENTE.md](../README-AGENTE.md): ele reúne preparação, smoke test real, testes, pontos de alteração e critérios de entrega.
+
 ## Iniciar
 
 Requisitos: Windows, Python 3.12, `uv`, Node.js compatível com Vite 8, npm e Docker Desktop. As versões de Python e JavaScript estão fixadas em `requirements.lock.txt` e `frontend/package-lock.json`.

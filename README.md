@@ -6,6 +6,12 @@ O sistema combina busca lexical e vetorial, dois níveis de recuperação com re
 
 [Repositório privado](https://github.com/gabrielnarruda/indexing-methods)
 
+## Começar como agente desenvolvedor
+
+**Leia [README-AGENTE.md](README-AGENTE.md).** O guia contém instalação do zero, comandos para subir a plataforma, primeiro experimento real de duas runs, testes, mapa do código, diagnóstico e critérios de entrega. [AGENTS.md](AGENTS.md) é a entrada automática para agentes. Não é necessário acessar o chat original.
+
+Para apenas usar a plataforma já preparada, execute `./tools/start-workbench.ps1` e abra `http://127.0.0.1:18766`. Os comandos de `poc` mais abaixo descrevem o caminho histórico; o guia do agente começa pela plataforma atual.
+
 ## Documentação
 
 - [Diagrama interativo da arquitetura e dos testes](docs/arquitetura.html). Baixe ou abra esse arquivo no navegador. O HTML funciona offline e contém zoom, navegação e detalhes dos componentes.
