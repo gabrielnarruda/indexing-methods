@@ -11,6 +11,7 @@ Leia [README-AGENTE.md](README-AGENTE.md) antes de implementar. Ele contém o ca
 ## Contratos que devem ser preservados
 
 - Consulte `git status` antes de editar. Preserve alterações do usuário, relatórios históricos em `reports/full/`, dados locais e runs anteriores.
+- Este repositório é público. Antes de incluir relatórios novos, revise metadados de máquina, caminhos pessoais e credenciais. Nos relatórios destinados à publicação, use `redacted-local-host` para anonimizar o hostname sem alterar resultados ou durações. Consulte [a nota de publicação](docs/PUBLICACAO.md).
 - Receitas, formulários e insumos de runs são versões imutáveis. Alterações criam versões novas; MCP recebe o índice/grafo explícito da run.
 - Mudanças nos algoritmos de artefatos exigem atualização da versão de cache ou parâmetros de versão por etapa. Arquivar o código não invalida o cache automaticamente.
 - Toda etapa conserva duração, uso, falhas e proveniência. Não some spans de MCP com os filhos já incluídos. Fila, trabalho novo e construção reaproveitada são separados. Custo de hardware sem tarifa e tempo não observado são desconhecidos, não zero.

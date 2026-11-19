@@ -4,7 +4,9 @@ Prova de conceito local de recuperação em documentos extensos e extração de 
 
 O sistema combina busca lexical e vetorial, dois níveis de recuperação com resumos, grafo de afirmações com fontes e investigação iterativa por MCP. O benchmark compara qualidade, duração, uso de modelos e custo por etapa.
 
-[Repositório privado](https://github.com/gabrielnarruda/indexing-methods)
+[Repositório público](https://github.com/gabrielnarruda/indexing-methods)
+
+Código, documentação e relatórios exportados estão disponíveis neste repositório. Veja a [nota de publicação e preservação dos resultados](docs/PUBLICACAO.md).
 
 ## Começar como agente desenvolvedor
 

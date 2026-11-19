@@ -1,6 +1,6 @@
 # Comece aqui — agente desenvolvedor
 
-Este guia permite preparar o projeto, executar uma comparação real e continuar o desenvolvimento sem depender do chat original. Repositório privado: [gabrielnarruda/indexing-methods](https://github.com/gabrielnarruda/indexing-methods).
+Este guia permite preparar o projeto, executar uma comparação real e continuar o desenvolvimento sem depender do chat original. Repositório público: [gabrielnarruda/indexing-methods](https://github.com/gabrielnarruda/indexing-methods).
 
 **Produto atual:** bancada local para mudar prompts, modelos, recortes e busca; salvar versões; executar uma matriz; comparar qualidade, custo e tempo das 13 etapas; investigar respostas e fontes. Os dois documentos são o acórdão da ADPF 54 (433 páginas) e Dom Casmurro (105 páginas). O acórdão não corresponde a todos os autos do processo.
 
@@ -8,7 +8,7 @@ Este guia permite preparar o projeto, executar uma comparação real e continuar
 
 ## 1. Entrar no projeto
 
-Se o repositório já estiver aberto no workspace, use essa pasta e pule o clone. Em uma máquina nova, com acesso ao repositório privado já configurado:
+Se o repositório já estiver aberto no workspace, use essa pasta e pule o clone. Em uma máquina nova, o clone público não exige autenticação:
 
 ```powershell
 git clone https://github.com/gabrielnarruda/indexing-methods.git
