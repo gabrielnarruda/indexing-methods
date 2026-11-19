@@ -15,7 +15,9 @@ O sistema combina busca lexical e vetorial, dois níveis de recuperação com re
 - [Corpus e fontes](docs/FONTES.md).
 - [Funcionamento, decisões e limites da implementação](docs/IMPLEMENTACAO.md).
 - [Crítica do método e prioridades para a próxima versão](docs/DISCUSSAO.md).
-- [Relatório dos experimentos](reports/full/relatorio.html).
+- [Relatório completo em linguagem simples](reports/full/relatorio.html): método, recortes, prompts exatos, resultados, limitações e próximos passos, com os dados técnicos no anexo.
+- [Próxima fase: workbench de testes](docs/WORKBENCH.md): orientação para evoluir cada componente e medir a contribuição dos grafos.
+- [Como atualizar e conferir o relatório](docs/RELATORIO.md).
 - [Explorador do grafo extraído, com citações e páginas](reports/full/grafo.html).
 
 ## Estado do projeto

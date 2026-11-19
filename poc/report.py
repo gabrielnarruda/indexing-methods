@@ -9,6 +9,7 @@ import statistics
 import xml.etree.ElementTree as ET
 
 from .common import ROOT, read_json, write_json
+from .report_explained import explained_report, EXPERIMENT
 from tools.render_graph import render_graph
 from tools.export_inputs import export_inputs
 
@@ -266,13 +267,16 @@ def render_report(name='full'):
 <h2>Falhas observadas com citações reais</h2>{''.join(example_html) if example_html else '<p>Nenhum exemplo selecionado nesta execução parcial.</p>'}
 <h2>Respostas, evidências e investigação</h2><label>Corpus <select id="corpus"><option value="">Todos</option><option>adpf54</option><option>dom-casmurro</option></select></label> <label>Variante <select id="variant"><option value="">Todas</option>{''.join('<option>'+v+'</option>' for v in 'ABCDEF')}</select></label>
 {''.join(details)}<script>const filter=()=>{{for(const row of document.querySelectorAll('details[data-corpus]'))row.hidden=(document.getElementById('corpus').value&&row.dataset.corpus!==document.getElementById('corpus').value)||(document.getElementById('variant').value&&row.dataset.variant!==document.getElementById('variant').value);}};document.getElementById('corpus').onchange=filter;document.getElementById('variant').onchange=filter;document.getElementById('rate').oninput=()=>{{const value=document.getElementById('rate').value;const rate=Number(value);document.getElementById('cost').textContent=value!==''&&rate>=0?'Projeção: indexação '+(rate*{index_seconds}/3600).toFixed(2)+' BRL; extrações '+(rate*{extract_seconds}/3600).toFixed(2)+' BRL':'Simulação não configurada';}};</script></main></html>'''
-    (destination/'relatorio.html').write_text(document,encoding='utf-8')
     summary=f"# {title}\n\nEstado {status}. {completed}/{total} execuções e {len(field_rows)} avaliações de campos.\n\n## Método\n\n{method}\n\n## Resultados\n\n| Corpus | Variante | Repetições | Exatidão | Mediana s | Intervalo s | MCP | Rodadas |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n"+'\n'.join(markdown)+"\n\n## Discussão\n\n"+'\n\n'.join(discussion)+f"\n\n{limits}\n\n[Relatório interativo](relatorio.html) · [Medições](measurements.json)\n"
     summary+=f"\n## Qualidade detalhada\n\n| Corpus | Variante | Preenchidos | Precisão | Página encontrada | Precisão listas | Cobertura listas | Abstenção estrita | Limites | Erros |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"+'\n'.join(quality_markdown)
     summary+=f"\n\n## Custos e testes\n\nIndexação: {index_seconds:.2f} s; extrações: {extract_seconds:.2f} s acumulados. API local: zero BRL. Custo de máquina das extrações: {machine_text}. Downloads e preparação do ambiente estão fora desses totais.\n\n{test_text}\n\n[Etapas CSV](stages.csv) · [Trilha de auditoria](audit.json.gz) · [Implementação e limites](../../docs/IMPLEMENTACAO.md)\n"
     summary+='\n## Falhas observadas\n\n'+'\n\n'.join(example_markdown)+'\n'
     summary+='\n## Versão de entrega\n\nO benchmark conserva seu código em frozen-inputs.zip. A versão de entrega acrescenta controles para entradas inválidas, sobreposição alta e falha na inicialização. Conteúdo e offsets dos 1.057 trechos foram comparados e permaneceram iguais. Os prompts e as funções de extração por campo não mudaram. [Verificação e extração adicional](../validation/release.json).\n'
+    if benchmark['input_fingerprint'] == EXPERIMENT:
+        summary = summary.replace('# '+title, '# '+title+'\n\nLeia primeiro o [relatório completo em linguagem simples](relatorio.html): método, recortes, prompts exatos, resultados, limites e próximos passos. A nova fase é o [workbench de testes](../../docs/WORKBENCH.md), com evolução de cada componente e avaliação controlada do grafo. As tabelas abaixo conservam as medições originais.', 1)
     (destination/'RELATORIO.md').write_text(summary,encoding='utf-8')
     render_graph(name)
     export_inputs(name)
+    document = explained_report(document, read_json(destination/'measurements.json'), destination/'frozen-inputs.zip')
+    (destination/'relatorio.html').write_text(document,encoding='utf-8')
     return destination/'relatorio.html'

@@ -1,5 +1,7 @@
 # Relatório de experimentos em documentos extensos
 
+Leia primeiro o [relatório completo em linguagem simples](relatorio.html): método, recortes, prompts exatos, resultados, limites e próximos passos. A nova fase é o [workbench de testes](../../docs/WORKBENCH.md), com evolução de cada componente e avaliação controlada do grafo. As tabelas abaixo conservam as medições originais.
+
 Estado Completo. 36/36 execuções e 720 avaliações de campos.
 
 ## Método

@@ -50,6 +50,8 @@ const { pathToFileURL } = require('url');
   await open('reports/full/relatorio.html');
   const entries = await page.locator('details[data-corpus]').count();
   check(entries > 0, 'Measured report entries');
+  const audit = page.locator('#audit-details');
+  if (await audit.count()) await audit.locator(':scope > summary').click();
   await page.locator('#corpus').selectOption('adpf54');
   await page.locator('#variant').selectOption('F');
   const shown = await page.locator('details[data-corpus]:visible').count();
